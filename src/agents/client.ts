@@ -13,7 +13,7 @@
  * when omitted, the real client is used.
  */
 import OpenAI, { type OpenAI as OpenAIType } from 'openai'
-import { predictionSchema } from '../domain/schemas.js'
+import { modelPredictionSchema } from '../domain/schemas.js'
 import type { Prediction } from '../domain/types.js'
 import type { AgentConfig } from './types.js'
 
@@ -86,7 +86,7 @@ export async function predictViaClient(
   }
 
   const firstRaw = await callOnce(baseMessages)
-  const firstParsed = tryParseAndValidate(firstRaw)
+  const firstParsed = tryParseAndValidate(firstRaw, agentId, matchId)
   if ('ok' in firstParsed) return firstParsed.ok
 
   // Retry once: quote the bad output and ask for valid JSON.
@@ -101,7 +101,7 @@ export async function predictViaClient(
     },
   ]
   const retryRaw = await callOnce(retryMessages)
-  const retryParsed = tryParseAndValidate(retryRaw)
+  const retryParsed = tryParseAndValidate(retryRaw, agentId, matchId)
   if ('ok' in retryParsed) return retryParsed.ok
 
   throw new Error(
@@ -111,9 +111,15 @@ export async function predictViaClient(
   )
 }
 
-/** Returns `{ok: Prediction}` or `{err: unknown}`. */
+/**
+ * Parse + validate the model's JSON against `modelPredictionSchema` (the keys
+ * the prompt asks for), then stamp the engine-managed identity fields. Returns
+ * `{ok: Prediction}` on success or `{err: unknown}` describing the failure.
+ */
 function tryParseAndValidate(
   raw: string,
+  agentId: string,
+  matchId: string,
 ): { ok: Prediction } | { err: unknown } {
   let parsed: unknown
   try {
@@ -121,7 +127,14 @@ function tryParseAndValidate(
   } catch (e) {
     return { err: new Error(`model output was not valid JSON: ${raw}`) }
   }
-  const validated = predictionSchema.safeParse(parsed)
-  if (validated.success) return { ok: validated.data }
-  return { err: validated.error }
+  const validated = modelPredictionSchema.safeParse(parsed)
+  if (!validated.success) return { err: validated.error }
+  return {
+    ok: {
+      ...validated.data,
+      agentId,
+      matchId,
+      createdAt: new Date().toISOString(),
+    },
+  }
 }

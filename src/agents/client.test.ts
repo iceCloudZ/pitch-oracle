@@ -89,4 +89,22 @@ describe('predictViaClient (injected completer)', () => {
     >
     expect(calls[0][0].response_format).toEqual({ type: 'json_object' })
   })
+
+  it('stamps engine identity fields when the model omits them (real-LLM shape)', async () => {
+    // The system prompt asks ONLY for resultProbs/scoreProbs/confidence/reasoning.
+    // A real model never emits agentId/matchId/createdAt; the engine must add them.
+    const modelOutput = {
+      resultProbs: { home: 0.55, draw: 0.25, away: 0.2 },
+      scoreProbs: [{ score: '2-1', prob: 0.2 }],
+      confidence: 0.6,
+      reasoning: 'home advantage',
+    }
+    const completer = vi.fn(async () => JSON.stringify(modelOutput))
+    const pred = await predictViaClient(unusedClient, 'm', 'sys', 'usr', 'deepseek-odds', '2040171', completer)
+    expect(pred.agentId).toBe('deepseek-odds')
+    expect(pred.matchId).toBe('2040171')
+    expect(pred.createdAt).toMatch(/^\d{4}-\d{2}-\d{2}T/) // ISO timestamp injected
+    expect(pred.resultProbs.home).toBe(0.55)
+    expect(completer).toHaveBeenCalledTimes(1)
+  })
 })
