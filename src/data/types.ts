@@ -13,6 +13,11 @@ export interface Fixture {
   competition: string
   /** Vendor status value, pass-through (e.g. 'SCHEDULED' | 'IN_PLAY' | 'FINISHED'). */
   status: string
+  /**
+   * Sporttery (体彩) buyable session number, e.g. '周日010'. Present only for the
+   * sporttery provider; lets the user match a prediction against a paper ticket.
+   */
+  matchNum?: string
 }
 
 /** A normalized news/search result item. */

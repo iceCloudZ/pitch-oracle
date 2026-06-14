@@ -35,6 +35,8 @@ export interface AgentConfig {
 }
 
 export interface TournamentConfig {
+  /** Defaults to 'sporttery' when omitted (体彩 fixtures/odds + football-data results). */
+  provider?: 'sporttery' | 'odds-api'
   sportKey: string
   competition: string
   region?: string

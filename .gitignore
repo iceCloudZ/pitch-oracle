@@ -13,6 +13,11 @@ build/
 .env.*
 !.env.example
 
+# Local config (generated from *.example.json by `pitch-oracle init`).
+# The committed example files are the source of truth.
+config/agents.json
+config/tournament.json
+
 # Logs
 *.log
 npm-debug.log*

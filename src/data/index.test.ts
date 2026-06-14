@@ -10,6 +10,12 @@ describe('data barrel', () => {
     expect(typeof data.fetchResults).toBe('function')
     expect(typeof data.fetchNews).toBe('function')
     expect(typeof data.parseDdgHtml).toBe('function')
+    expect(typeof data.fetchSportteryFixtures).toBe('function')
+    expect(typeof data.fetchSportteryOdds).toBe('function')
+    expect(typeof data.fetchSportteryMatches).toBe('function')
+    expect(typeof data.fetchFixturesResults).toBe('function')
+    expect(typeof data.fetchFixturesResultsWithTeams).toBe('function')
+    expect(typeof data.normalizeTeamKey).toBe('function')
   })
 
   it('exposes the option type families via type-only usage', () => {
@@ -20,7 +26,9 @@ describe('data barrel', () => {
     let _n: data.FetchNewsOptions | undefined
     let _j: data.FetchJsonOptions | undefined
     let _c: data.CacheEntry<number> | undefined
-    void [_f, _o, _r, _n, _j, _c]
+    let _s: data.FetchSportteryOptions | undefined
+    let _fr: data.FetchFixturesResultsOptions | undefined
+    void [_f, _o, _r, _n, _j, _c, _s, _fr]
     expect(true).toBe(true)
   })
 })

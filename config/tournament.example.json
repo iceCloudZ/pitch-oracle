@@ -1,4 +1,5 @@
 {
+  "provider": "sporttery",
   "sportKey": "soccer_fifa_world_cup",
   "competition": "WC",
   "region": "eu",

@@ -2,7 +2,7 @@
 /**
  * pitch-oracle CLI (citty): init / predict / score.
  *
- * The CLI is intentionally thin — all logic lives in the runner. It loads the
+ * The CLI is intentionally thin �?all logic lives in the runner. It loads the
  * tournament + agent configs, wraps the data-layer adapters in a TTL cache,
  * constructs agents from config, and dispatches to runPredict/runScore.
  *
@@ -13,14 +13,19 @@
 import { defineCommand, runMain } from 'citty'
 import { promises as fs } from 'node:fs'
 import path from 'node:path'
+import { pathToFileURL } from 'node:url'
 import readline from 'node:readline/promises'
 
 import { loadAgentConfigs, loadTournamentConfig } from './config.js'
 import { fetchFixtures } from './data/fixtures.js'
 import { fetchOdds } from './data/odds.js'
 import { fetchResults } from './data/results.js'
+import { fetchFixturesResultsWithTeams } from './data/fixtures-results.js'
+import { fetchSportteryFixtures, fetchSportteryOdds } from './data/sporttery.js'
 import { fetchNews } from './data/news.js'
+import type { NewsItem } from './data/types.js'
 import { cached } from './data/cache.js'
+import { joinResultsToFixtures } from './engine/join.js'
 import { writeJsonAtomic } from './store/json.js'
 import {
   HumanAugmentedAgent,
@@ -58,11 +63,95 @@ export function buildAgents(
 /**
  * Wire real (cached) data-layer adapters into RunnerDeps using env-resolved
  * keys from the tournament config. Exported so it can be exercised directly.
+ *
+ * Two providers are supported:
+ *  - 'sporttery' (default): 体彩 fixtures + odds (no key, mainland-friendly);
+ *    results come from football-data.org and are joined onto sporttery
+ *    matchIds via team names so the runner's `resultIndex` lines up.
+ *  - 'odds-api': original the-odds-api fixtures/odds/results path (unchanged).
  */
 export function buildRunnerDeps(
   tournament: TournamentConfig,
   agents: Agent[],
   dataDir: string = DATA_DIR,
+): RunnerDeps {
+  const provider = tournament.provider ?? 'sporttery'
+
+  // News + betting are provider-agnostic.
+  const fetchNewsDep = (query: string) =>
+    fetchNews({
+      query,
+      apiKey: envOrEmpty(tournament.braveApiKeyEnv) || undefined,
+    })
+
+  if (provider === 'sporttery') {
+    return buildSportteryDeps(tournament, agents, dataDir, fetchNewsDep)
+  }
+  return buildOddsApiDeps(tournament, agents, dataDir, fetchNewsDep)
+}
+
+/** 体彩 provider: fixtures + odds from sporttery; results from football-data. */
+function buildSportteryDeps(
+  tournament: TournamentConfig,
+  agents: Agent[],
+  dataDir: string,
+  fetchNewsDep: (query: string) => Promise<NewsItem[]>,
+): RunnerDeps {
+  const spFixturesKey = `sporttery-fixtures-had`
+  const spOddsKey = `sporttery-odds-had`
+  const fdResultsKey = `fd-results-${tournament.competition}`
+
+  // Cached sporttery fixtures; reused by both fetchUpcomingFixtures and the
+  // results join (which needs the sporttery matchId �?team-name mapping).
+  const loadSportteryFixtures = () =>
+    cached(spFixturesKey, CACHE_TTL_MS, () => fetchSportteryFixtures(), CACHE_DIR)
+
+  return {
+    agents,
+    dataDir,
+    bankroll: tournament.bankroll,
+    bettingOpts: tournament.betting,
+    // Sporttery only exposes in-sale matches, so upcoming == all fixtures.
+    fetchUpcomingFixtures: () => loadSportteryFixtures(),
+    fetchFinishedFixtures: () => loadSportteryFixtures().then(() => []),
+    fetchOdds: () =>
+      cached(spOddsKey, CACHE_TTL_MS, () => fetchSportteryOdds(), CACHE_DIR),
+    // Results: pull football-data FINISHED matches (with team names), then
+    // re-key them onto sporttery matchIds so they line up with predictions.
+    fetchResults: async () => {
+      const [fixtures, fdRows] = await Promise.all([
+        loadSportteryFixtures(),
+        cached(
+          fdResultsKey,
+          CACHE_TTL_MS,
+          () =>
+            fetchFixturesResultsWithTeams({
+              apiKey: envOrEmpty(tournament.footballDataApiKeyEnv),
+              competition: tournament.competition,
+            }),
+          CACHE_DIR,
+        ),
+      ])
+      const resultTeams: Record<string, [string, string]> = {}
+      for (const r of fdRows) resultTeams[r.matchId] = [r.homeTeam, r.awayTeam]
+      const { results, warnings } = joinResultsToFixtures({
+        fixtures,
+        resultTeams,
+        results: fdRows,
+      })
+      for (const w of warnings) console.warn(`[join] ${w}`)
+      return results
+    },
+    fetchNews: fetchNewsDep,
+  }
+}
+
+/** the-odds-api provider: original behaviour, unchanged. */
+function buildOddsApiDeps(
+  tournament: TournamentConfig,
+  agents: Agent[],
+  dataDir: string,
+  fetchNewsDep: (query: string) => Promise<NewsItem[]>,
 ): RunnerDeps {
   const fixturesKey = `fixtures-${tournament.competition}`
   const oddsKey = `odds-${tournament.sportKey}-${tournament.region ?? 'eu'}`
@@ -118,11 +207,7 @@ export function buildRunnerDeps(
           }),
         CACHE_DIR,
       ),
-    fetchNews: (query: string) =>
-      fetchNews({
-        query,
-        apiKey: envOrEmpty(tournament.braveApiKeyEnv) || undefined,
-      }),
+    fetchNews: fetchNewsDep,
   }
 }
 
@@ -193,6 +278,7 @@ const AGENTS_EXAMPLE = `{
 `
 
 const TOURNAMENT_EXAMPLE = `{
+  "provider": "sporttery",
   "sportKey": "soccer_fifa_world_cup",
   "competition": "WC",
   "region": "eu",
@@ -372,8 +458,9 @@ const mainCommand = defineCommand({
 })
 
 // Only run when invoked as a script (not when imported in tests).
-// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-explicit-any
-if ((import.meta as any).url === `file://${process.argv[1]}`) {
+// pathToFileURL normalizes the platform path so this works on Windows
+// (argv[1] uses backslashes; import.meta.url is a file: URL).
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   runMain(mainCommand)
 }
 

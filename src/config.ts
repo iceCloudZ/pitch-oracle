@@ -47,6 +47,12 @@ export const agentConfigsFileSchema = z
 
 export const tournamentConfigSchema = z
   .object({
+    /**
+     * Data provider selection:
+     *  - 'sporttery' (default): 体彩 fixtures + odds; football-data results.
+     *  - 'odds-api': the-odds-api fixtures/odds/results (original behaviour).
+     */
+    provider: z.enum(['sporttery', 'odds-api']).optional(),
     sportKey: z.string().min(1),
     competition: z.string().min(1),
     region: z.string().min(1).optional(),
