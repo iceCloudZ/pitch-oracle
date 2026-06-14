@@ -24,11 +24,21 @@ export interface AccuracyScore {
   correctResult: boolean
 }
 
-/** Exact scoreline = +3 (exclusive); else correct W/D/L = +1; else 0. */
+/**
+ * Points: exact scoreline = +3 (exclusive); else correct W/D/L = +1; else 0.
+ *
+ * `exactScore` and `correctResult` are derived independently — `exactScore`
+ * from the top scoreline (topScore), the result signal from argmax(resultProbs)
+ * — so the headline score and the argmax result can imply different outcomes.
+ * To keep leaderboard counters disjoint, the reported `correctResult` is
+ * EXCLUSIVE of exact (false when exactScore is true): the two flags never
+ * overlap, so `exactScores + correctResults <= matches`.
+ */
 export function scorePrediction(pred: Prediction, actual: RegularTimeResult): AccuracyScore {
-  const correctResult = argmaxResult(pred.resultProbs) === resultOf(actual)
+  const resultCorrect = argmaxResult(pred.resultProbs) === resultOf(actual)
   const headline = topScore(pred)
   const exactScore = headline !== null && headline === `${actual.homeScore}-${actual.awayScore}`
-  const points = exactScore ? 3 : correctResult ? 1 : 0
+  const points = exactScore ? 3 : resultCorrect ? 1 : 0
+  const correctResult = !exactScore && resultCorrect
   return { points, exactScore, correctResult }
 }

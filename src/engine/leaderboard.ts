@@ -6,6 +6,7 @@ export interface AccuracyStats {
   totalPoints: number
   matches: number
   exactScores: number
+  /** Result-correct but NOT exact-score (exclusive of exactScores; disjoint). */
   correctResults: number
 }
 
