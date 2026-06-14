@@ -5,7 +5,9 @@
   "type": "module",
   "description": "Multi-agent football prediction arena with odds-driven EV/Kelly bet sizing.",
   "license": "MIT",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
@@ -15,6 +17,8 @@
     "build": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
+    "citty": "^0.2.2",
+    "openai": "^6.42.0",
     "zod": "^3.23.0"
   },
   "devDependencies": {
