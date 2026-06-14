@@ -5,6 +5,9 @@
  * `<dataDir>/agents/{id}/notes/{matchId}.txt` (empty string when absent).
  * The human shapes the analysis; the model still produces calibrated
  * probabilities; the engine still computes the bets.
+ *
+ * The SDK client is constructed lazily (at predict time) when none is passed,
+ * so building agents from config never requires API keys.
  */
 import { promises as fs } from 'node:fs'
 import path from 'node:path'
@@ -15,7 +18,7 @@ import { buildHumanAugmentedUserPrompt, buildSystemPrompt } from './prompt.js'
 import type { Agent, AgentConfig, MatchContext } from './types.js'
 
 export class HumanAugmentedAgent implements Agent {
-  private readonly client: OpenAIType
+  private readonly injectedClient?: OpenAIType
 
   constructor(
     public readonly config: AgentConfig,
@@ -23,7 +26,11 @@ export class HumanAugmentedAgent implements Agent {
     client?: OpenAIType,
     private readonly completer?: Completer,
   ) {
-    this.client = client ?? createClient(config)
+    this.injectedClient = client
+  }
+
+  private get client(): OpenAIType {
+    return this.injectedClient ?? createClient(this.config)
   }
 
   async predict(ctx: MatchContext): Promise<Prediction> {

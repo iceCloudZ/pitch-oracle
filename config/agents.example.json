@@ -1,0 +1,31 @@
+{
+  "agents": [
+    {
+      "id": "claude-blind",
+      "name": "Claude (blind)",
+      "type": "llm",
+      "baseURL": "https://api.anthropic.com/v1/",
+      "apiKeyEnv": "ANTHROPIC_API_KEY",
+      "model": "claude-sonnet-4-6",
+      "seeOdds": false
+    },
+    {
+      "id": "claude-odds",
+      "name": "Claude (sees odds)",
+      "type": "llm",
+      "baseURL": "https://api.anthropic.com/v1/",
+      "apiKeyEnv": "ANTHROPIC_API_KEY",
+      "model": "claude-sonnet-4-6",
+      "seeOdds": true
+    },
+    { "id": "me", "name": "You", "type": "manual" },
+    {
+      "id": "me-ai",
+      "name": "You + AI",
+      "type": "human-augmented",
+      "baseURL": "https://api.anthropic.com/v1/",
+      "apiKeyEnv": "ANTHROPIC_API_KEY",
+      "model": "claude-sonnet-4-6"
+    }
+  ]
+}
