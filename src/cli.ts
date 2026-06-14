@@ -2,7 +2,7 @@
 /**
  * pitch-oracle CLI (citty): init / predict / score.
  *
- * The CLI is intentionally thin â€?all logic lives in the runner. It loads the
+ * The CLI is intentionally thin ï¿½?all logic lives in the runner. It loads the
  * tournament + agent configs, wraps the data-layer adapters in a TTL cache,
  * constructs agents from config, and dispatches to runPredict/runScore.
  *
@@ -23,6 +23,7 @@ import { fetchResults } from './data/results.js'
 import { fetchFixturesResultsWithTeams } from './data/fixtures-results.js'
 import { fetchSportteryFixtures, fetchSportteryOdds } from './data/sporttery.js'
 import { fetchNews } from './data/news.js'
+import { fetchTianApiNews } from './data/tianapi.js'
 import type { NewsItem } from './data/types.js'
 import { cached } from './data/cache.js'
 import { joinResultsToFixtures } from './engine/join.js'
@@ -77,12 +78,16 @@ export function buildRunnerDeps(
 ): RunnerDeps {
   const provider = tournament.provider ?? 'sporttery'
 
-  // News + betting are provider-agnostic.
-  const fetchNewsDep = (query: string) =>
-    fetchNews({
+  // News: prefer TianAPI (football feed, mainland-friendly) when its key is
+  // present; otherwise fall back to Brave Search -> DDG.
+  const fetchNewsDep = (query: string): Promise<NewsItem[]> => {
+    const tianapiKey = envOrEmpty(tournament.tianapiApiKeyEnv)
+    if (tianapiKey) return fetchTianApiNews({ query, apiKey: tianapiKey })
+    return fetchNews({
       query,
       apiKey: envOrEmpty(tournament.braveApiKeyEnv) || undefined,
     })
+  }
 
   if (provider === 'sporttery') {
     return buildSportteryDeps(tournament, agents, dataDir, fetchNewsDep)
@@ -102,7 +107,7 @@ function buildSportteryDeps(
   const fdResultsKey = `fd-results-${tournament.competition}`
 
   // Cached sporttery fixtures; reused by both fetchUpcomingFixtures and the
-  // results join (which needs the sporttery matchId â†?team-name mapping).
+  // results join (which needs the sporttery matchId ï¿½?team-name mapping).
   const loadSportteryFixtures = () =>
     cached(spFixturesKey, CACHE_TTL_MS, () => fetchSportteryFixtures(), CACHE_DIR)
 
@@ -286,6 +291,7 @@ const TOURNAMENT_EXAMPLE = `{
   "footballDataApiKeyEnv": "FOOTBALL_DATA_API_KEY",
   "theOddsApiKeyEnv": "THE_ODDS_API_KEY",
   "braveApiKeyEnv": "BRAVE_API_KEY",
+  "tianapiApiKeyEnv": "TIANAPI_API_KEY",
   "betting": { "kellyFractionRatio": 0.25, "maxPerBet": 0.1 }
 }
 `
@@ -406,6 +412,17 @@ const predictCommand = defineCommand({
     manual: { type: 'boolean', default: false, description: 'Enter a manual prediction instead of running models' },
     agent: { type: 'string', description: 'Agent id (required with --manual)' },
     match: { type: 'string', description: 'Match id (required with --manual)' },
+    agents: {
+      type: 'string',
+      description:
+        'Comma-separated agent filter. Each token matches by exact id or prefix ' +
+        '(e.g. "qwen" matches qwen-blind/qwen-odds; "qwen-blind,deepseek-odds" is exact).',
+    },
+    'no-news': {
+      type: 'boolean',
+      default: false,
+      description: 'Skip news lookups (use when the news provider is unreachable).',
+    },
   },
   async run({ args }) {
     const tournament = await loadTournamentConfig()
@@ -419,8 +436,17 @@ const predictCommand = defineCommand({
       console.log(`Wrote manual input for agent "${args.agent}" match "${args.match}".`)
       return
     }
-    const agents = buildAgents(configs, DATA_DIR)
+    let agents = buildAgents(configs, DATA_DIR)
+    if (args.agents) {
+      const tokens = args.agents.split(',').map((t) => t.trim()).filter(Boolean)
+      agents = agents.filter((a) => tokens.some((t) => a.config.id === t || a.config.id.startsWith(t)))
+      // eslint-disable-next-line no-console
+      console.log(
+        `Agent filter "${args.agents}": running ${agents.length} agent(s) [${agents.map((a) => a.config.id).join(', ')}]`,
+      )
+    }
     const deps = buildRunnerDeps(tournament, agents, DATA_DIR)
+    if (args['no-news']) deps.fetchNews = async () => []
     const summary = await runPredict(deps)
     const ok = summary.results.filter((r) => r.ok).length
     const fail = summary.results.filter((r) => !r.ok).length

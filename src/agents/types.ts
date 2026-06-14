@@ -45,6 +45,7 @@ export interface TournamentConfig {
   theOddsApiKeyEnv: string
   braveApiKeyEnv?: string
   tavilyApiKeyEnv?: string
+  tianapiApiKeyEnv?: string
   betting?: ComputeBetsOptions
 }
 

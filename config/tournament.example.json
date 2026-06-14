@@ -7,5 +7,6 @@
   "footballDataApiKeyEnv": "FOOTBALL_DATA_API_KEY",
   "theOddsApiKeyEnv": "THE_ODDS_API_KEY",
   "braveApiKeyEnv": "BRAVE_API_KEY",
+  "tianapiApiKeyEnv": "TIANAPI_API_KEY",
   "betting": { "kellyFractionRatio": 0.25, "maxPerBet": 0.1 }
 }

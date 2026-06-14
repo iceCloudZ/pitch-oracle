@@ -16,6 +16,7 @@ describe('data barrel', () => {
     expect(typeof data.fetchFixturesResults).toBe('function')
     expect(typeof data.fetchFixturesResultsWithTeams).toBe('function')
     expect(typeof data.normalizeTeamKey).toBe('function')
+    expect(typeof data.fetchTianApiNews).toBe('function')
   })
 
   it('exposes the option type families via type-only usage', () => {
@@ -28,7 +29,8 @@ describe('data barrel', () => {
     let _c: data.CacheEntry<number> | undefined
     let _s: data.FetchSportteryOptions | undefined
     let _fr: data.FetchFixturesResultsOptions | undefined
-    void [_f, _o, _r, _n, _j, _c, _s, _fr]
+    let _ta: data.FetchTianApiOptions | undefined
+    void [_f, _o, _r, _n, _j, _c, _s, _fr, _ta]
     expect(true).toBe(true)
   })
 })

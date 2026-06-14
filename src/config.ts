@@ -61,6 +61,7 @@ export const tournamentConfigSchema = z
     theOddsApiKeyEnv: z.string().min(1),
     braveApiKeyEnv: z.string().min(1).optional(),
     tavilyApiKeyEnv: z.string().min(1).optional(),
+    tianapiApiKeyEnv: z.string().min(1).optional(),
     betting: z
       .object({
         evThreshold: z.number().optional(),
