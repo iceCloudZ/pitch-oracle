@@ -30,3 +30,9 @@ coverage/
 
 # Local data overrides (generated state is committed to the `data` branch in CI)
 data/local/
+
+# Dashboard: synced JSON under static/data/ is a build artifact (copied from
+# repo-root data/ by scripts/sync-data.mjs). Keep the README + .gitkeep only.
+dashboard/static/data/*
+!dashboard/static/data/README.md
+!dashboard/static/data/.gitkeep

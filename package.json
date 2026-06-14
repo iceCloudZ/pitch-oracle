@@ -14,7 +14,9 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
+    "dashboard:sync": "node dashboard/scripts/sync-data.mjs",
+    "dashboard:build": "npm run dashboard:sync && cd dashboard && npm install && npm run build"
   },
   "dependencies": {
     "citty": "^0.2.2",
