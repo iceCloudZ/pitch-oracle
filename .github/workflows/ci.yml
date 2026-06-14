@@ -1,0 +1,46 @@
+# Continuous integration for the pitch-oracle engine + data layer + agents + CLI.
+#
+# Runs on every push to main and on every pull request. We lint/typecheck/test
+# the root package and build the TypeScript; the SvelteKit dashboard is a
+# separate package (own node_modules) and is intentionally NOT built here to
+# keep CI fast. Run `npm run dashboard:build` locally before deploying.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Cancel in-flight runs for the same ref when a new commit lands.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: lint · typecheck · test · build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build

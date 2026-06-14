@@ -1,0 +1,75 @@
+# Daily arena run: score + predict, then archive generated `data/` to the
+# `data` git branch. Designed to run during the World Cup window; in the
+# off-season it no-ops because there are no fixtures to fetch.
+#
+# SECRETS: all API keys are injected from repository Actions secrets. Map them
+# here to the env var names the engine reads (see config/tournament.json).
+#   FOOTBALL_DATA_API_KEY -> football-data.org fixtures
+#   THE_ODDS_API_KEY       -> the-odds-api odds + results
+#   BRAVE_API_KEY          -> Brave search news (optional)
+#   ANTHROPIC_API_KEY      -> LLM agents (any LLM agent in agents.json)
+#
+# TODO(deploy): wiring this `data` branch into a dashboard deploy is
+# environment-specific (Cloudflare Pages / GitHub Pages / Vercel each differ).
+# The branch is the canonical archive; a deploy step should pull it, run
+# `npm run dashboard:build`, and publish. Left as a documented TODO.
+name: Daily arena
+
+on:
+  schedule:
+    # 06:17 UTC daily — during the WC window. Off-season the engine finds no
+    # fixtures and the run is a harmless no-op.
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  arena:
+    name: score · predict · archive
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure API keys
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # Expose the keys for subsequent steps via $GITHUB_ENV. Each engine
+          # adapter reads these names directly from process.env, so making
+          # them explicit here keeps the contract obvious.
+          {
+            echo "FOOTBALL_DATA_API_KEY=${FOOTBALL_DATA_API_KEY}"
+            echo "THE_ODDS_API_KEY=${THE_ODDS_API_KEY}"
+            echo "BRAVE_API_KEY=${BRAVE_API_KEY}"
+            echo "ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}"
+          } >> "$GITHUB_ENV"
+
+      - name: Score pass (settle + leaderboard)
+        run: npx tsx src/cli.ts score
+
+      - name: Predict pass (fixtures + odds + bets)
+        run: npx tsx src/cli.ts predict
+
+      - name: Archive data/ to the data branch
+        run: |
+          git config user.email "arena@pitch-oracle"
+          git config user.name "pitch-oracle-arena"
+          git checkout -B data
+          git add data
+          git commit -m "data: arena run $(date -u +%FT%TZ)" || echo "no changes to commit"
+          git push origin data --force
