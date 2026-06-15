@@ -49,6 +49,7 @@ export class HumanAugmentedAgent implements Agent {
       this.config.id,
       ctx.fixture.id,
       this.completer,
+      this.config.baseURL,
     )
   }
 

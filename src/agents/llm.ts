@@ -42,6 +42,7 @@ export class LlmAgent implements Agent {
       this.config.id,
       ctx.fixture.id,
       this.completer,
+      this.config.baseURL,
     )
   }
 }

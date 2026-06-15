@@ -28,6 +28,10 @@ export function createClient(cfg: AgentConfig): OpenAIType {
   return new OpenAI({
     baseURL: cfg.baseURL,
     apiKey: process.env[cfg.apiKeyEnv ?? ''] ?? '',
+    // Without a timeout a hung connection stalls the whole predict pass (seen
+    // with Qwen's thinking mode). 60s is ample for a single prediction.
+    timeout: 60_000,
+    maxRetries: 0,
   })
 }
 
@@ -62,6 +66,7 @@ export async function predictViaClient(
   agentId: string,
   matchId: string,
   completer?: Completer,
+  baseURL?: string,
 ): Promise<Prediction> {
   const response_format = { type: 'json_object' as const }
   const baseMessages: ChatMessage[] = [
@@ -69,13 +74,25 @@ export async function predictViaClient(
     { role: 'user', content: user },
   ]
 
+  // Qwen (DashScope) defaults to enable_thinking=true, which makes each call
+  // slow and prone to hanging on structured output. Disable it — we want fast,
+  // deterministic JSON, not chain-of-thought.
+  const isQwen = baseURL?.includes('dashscope') ?? false
+
   async function callOnce(messages: ChatMessage[]): Promise<string> {
     if (completer) return completer({ model, messages, response_format })
-    const completion = await client.chat.completions.create({
+    const params: Record<string, unknown> = {
       model,
       messages,
       response_format,
-    })
+    }
+    if (isQwen) params.enable_thinking = false
+    const completion = await client.chat.completions.create(
+      params as unknown as Parameters<typeof client.chat.completions.create>[0],
+    )
+    if (!('choices' in completion)) {
+      throw new Error(`agent "${agentId}" match "${matchId}": unexpected streaming response`)
+    }
     const content = completion.choices[0]?.message?.content
     if (typeof content !== 'string') {
       throw new Error(
