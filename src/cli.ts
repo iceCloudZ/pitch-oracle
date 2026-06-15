@@ -27,6 +27,7 @@ import { fetchTianApiNews } from './data/tianapi.js'
 import type { NewsItem } from './data/types.js'
 import { cached } from './data/cache.js'
 import { joinResultsToFixtures } from './engine/join.js'
+import { loadMatchIndex, indexToFixtures } from './store/match-index.js'
 import { writeJsonAtomic } from './store/json.js'
 import {
   HumanAugmentedAgent,
@@ -124,7 +125,7 @@ function buildSportteryDeps(
     // Results: pull football-data FINISHED matches (with team names), then
     // re-key them onto sporttery matchIds so they line up with predictions.
     fetchResults: async () => {
-      const [fixtures, fdRows] = await Promise.all([
+      const [liveFixtures, fdRows] = await Promise.all([
         loadSportteryFixtures(),
         cached(
           fdResultsKey,
@@ -137,6 +138,13 @@ function buildSportteryDeps(
           CACHE_DIR,
         ),
       ])
+      // Build the matchId<->team-name join key from the persistent index
+      // (covers matches sporttery has already delisted) merged with the live
+      // feed (covers matches not yet predicted/indexed).
+      const idx = await loadMatchIndex(dataDir)
+      const idxFixtures = indexToFixtures(idx)
+      const seen = new Set(idxFixtures.map((f2) => f2.id))
+      const fixtures = [...idxFixtures, ...liveFixtures.filter((f2) => !seen.has(f2.id))]
       const resultTeams: Record<string, [string, string]> = {}
       for (const r of fdRows) resultTeams[r.matchId] = [r.homeTeam, r.awayTeam]
       const { results, warnings } = joinResultsToFixtures({

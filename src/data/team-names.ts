@@ -98,6 +98,14 @@ export const SPORTTERY_TEAM_ALIASES: Record<string, string[]> = {
   NORWAY: ['挪威'],
   IRAQ: ['伊拉克'],
   CONGO_DR: ['刚果金', '刚果(金)', '刚果民主共和国', 'Congo DR', 'DR Congo'],
+
+  // Additional WC 2026 sides not in the core 13 match set above.
+  SOUTH_AFRICA: ['南非', 'South Africa'],
+  CZECHIA: ['捷克', 'Czechia', 'Czech Republic'],
+  BOSNIA_HERZEGOVINA: ['波黑', 'Bosnia-Herzegovina', 'Bosnia and Herzegovina'],
+  HAITI: ['海地'],
+  SCOTLAND: ['苏格兰'],
+  TURKEY: ['土耳其', 'Türkiye', 'Turkiye'],
 }
 
 /** Precomputed reverse index: alias → canonical key. Built once at load. */

@@ -17,7 +17,6 @@
  * common case. An unordered fallback (either orientation) is also tried so a
  * neutral-venue listing difference does not silently drop a match.
  */
-import type { Fixture } from '../data/types.js'
 import type { RegularTimeResult } from '../domain/types.js'
 import { normalizeTeamKey } from '../data/team-names.js'
 
@@ -28,10 +27,13 @@ export interface JoinOutcome {
   warnings: string[]
 }
 
+/** Minimal fixture shape the join needs (id + team names). */
+type JoinFixture = { id: string; homeTeam: string; awayTeam: string }
+
 /** A fixture keyed by its normalized [home,away] tuple (ordered + unordered). */
 interface FixtureIndex {
-  byOrdered: Map<string, Fixture[]>
-  byUnordered: Map<string, Fixture[]>
+  byOrdered: Map<string, JoinFixture[]>
+  byUnordered: Map<string, JoinFixture[]>
 }
 
 function orderedKey(home: string, away: string): string {
@@ -43,9 +45,11 @@ function unorderedKey(a: string, b: string): string {
   return [a, b].sort().join('|')
 }
 
-function buildFixtureIndex(fixtures: Fixture[]): FixtureIndex {
-  const byOrdered = new Map<string, Fixture[]>()
-  const byUnordered = new Map<string, Fixture[]>()
+function buildFixtureIndex(
+  fixtures: Array<{ id: string; homeTeam: string; awayTeam: string }>,
+): FixtureIndex {
+  const byOrdered = new Map<string, JoinFixture[]>()
+  const byUnordered = new Map<string, JoinFixture[]>()
   for (const f of fixtures) {
     const home = normalizeTeamKey(f.homeTeam)
     const away = normalizeTeamKey(f.awayTeam)
@@ -67,7 +71,7 @@ function buildFixtureIndex(fixtures: Fixture[]): FixtureIndex {
  * scores). This keeps the adapter pure and testable.
  */
 export function joinResultsToFixtures(args: {
-  fixtures: Fixture[]
+  fixtures: Array<{ id: string; homeTeam: string; awayTeam: string }>
   /** football-data matchId → [homeEnglishName, awayEnglishName]. */
   resultTeams: Record<string, [string, string]>
   results: RegularTimeResult[]

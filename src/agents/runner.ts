@@ -37,6 +37,7 @@ import {
 } from '../engine/scoring.js'
 import { settleBet } from '../engine/settlement.js'
 import { readJson, writeJsonAtomic } from '../store/json.js'
+import { updateMatchIndex } from '../store/match-index.js'
 import type { Agent, RunnerDeps } from './types.js'
 
 function predictionPath(dataDir: string, agentId: string, matchId: string): string {
@@ -63,6 +64,9 @@ export interface PredictRunSummary {
  */
 export async function runPredict(deps: RunnerDeps): Promise<PredictRunSummary> {
   const fixtures = await deps.fetchUpcomingFixtures()
+  // Persist matchId -> team names so the score pass can join results onto these
+  // matchIds long after sporttery delists the finished matches.
+  await updateMatchIndex(deps.dataDir, fixtures)
   const oddsList = await deps.fetchOdds()
   const oddsIndex = new Map<string, MatchOdds>()
   for (const o of oddsList) oddsIndex.set(o.matchId, o)
