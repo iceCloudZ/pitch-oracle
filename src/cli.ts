@@ -28,6 +28,7 @@ import type { NewsItem } from './data/types.js'
 import { cached } from './data/cache.js'
 import { joinResultsToFixtures } from './engine/join.js'
 import { loadMatchIndex, indexToFixtures } from './store/match-index.js'
+import { persistResults, storeToResults } from './store/results-store.js'
 import { writeJsonAtomic } from './store/json.js'
 import {
   HumanAugmentedAgent,
@@ -153,7 +154,10 @@ function buildSportteryDeps(
         results: fdRows,
       })
       for (const w of warnings) console.warn(`[join] ${w}`)
-      return results
+      // Persist confirmed results so a flaky football-data response can't
+      // drop a score we've already seen. Return the merged store.
+      const merged = await persistResults(dataDir, results)
+      return storeToResults(merged)
     },
     fetchNews: fetchNewsDep,
   }
