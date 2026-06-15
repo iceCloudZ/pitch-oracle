@@ -85,7 +85,7 @@ export const SPORTTERY_TEAM_ALIASES: Record<string, string[]> = {
   POLAND: ['波兰'],
   EGYPT: ['埃及'],
   PARAGUAY: ['巴拉圭'],
-  CAPE_VERDE: ['佛得角', '佛得角群岛', 'Cape Verde Islands'],
+  CAPE_VERDE: ['佛得角', '佛得角群岛', 'Cape Verde', 'Cape Verde Islands'],
 
   // Group M
   UKRAINE: ['乌克兰'],
