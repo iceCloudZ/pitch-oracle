@@ -66,7 +66,7 @@ export const SPORTTERY_TEAM_ALIASES: Record<string, string[]> = {
   // Group I
   IRAN: ['伊朗'],
   ENGLAND: ['英格兰'],
-  NEW_ZEALAND: ['新西兰'],
+  NEW_ZEALAND: ['新西兰', 'New Zealand'],
   WALES: ['威尔士'],
 
   // Group J
