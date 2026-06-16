@@ -3,460 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>世界杯预测竞技场 · 6/16</title>
+<title>世界杯预测竞技场 · 平局之夜</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-    background: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-  }
-
-  .poster {
-    width: 800px;
-    background: #ffffff;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-  }
-
-  /* HEADER */
-  .header {
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1f4e 50%, #2d1b69 100%);
-    padding: 40px 44px 36px;
-    position: relative;
-    overflow: hidden;
-  }
-  .header::before {
-    content: '';
-    position: absolute;
-    top: -60px; right: -60px;
-    width: 240px; height: 240px;
-    background: radial-gradient(circle, rgba(120,80,255,0.3) 0%, transparent 70%);
-    border-radius: 50%;
-  }
-  .header::after {
-    content: '⚽';
-    position: absolute;
-    bottom: -20px; right: 30px;
-    font-size: 120px;
-    opacity: 0.08;
-  }
-  .header .tag {
-    display: inline-block;
-    background: rgba(255,255,255,0.12);
-    backdrop-filter: blur(10px);
-    color: #a8b4ff;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding: 6px 16px;
-    border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.15);
-    margin-bottom: 16px;
-  }
-  .header h1 {
-    color: #ffffff;
-    font-size: 34px;
-    font-weight: 900;
-    letter-spacing: -0.5px;
-    line-height: 1.2;
-  }
-  .header h1 .accent {
-    background: linear-gradient(90deg, #7c5cff, #00d4ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .header .subtitle {
-    color: #8892c0;
-    font-size: 15px;
-    margin-top: 8px;
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  /* SECTION TITLE */
-  .section {
-    padding: 32px 44px 0;
-  }
-  .section-title {
-    font-size: 14px;
-    font-weight: 700;
-    color: #0a0e27;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  .section-title .dot {
-    width: 8px; height: 8px;
-    background: #7c5cff;
-    border-radius: 50%;
-  }
-  .section-title .line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, #e0e0e0, transparent);
-  }
-
-  /* PREDICTIONS TABLE */
-  .pred-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    font-size: 13px;
-  }
-  .pred-table th {
-    text-align: left;
-    color: #8892b0;
-    font-weight: 500;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    padding: 8px 10px;
-    border-bottom: 2px solid #f0f0f5;
-  }
-  .pred-table td {
-    padding: 12px 10px;
-    border-bottom: 1px solid #f5f5f8;
-    color: #2a2a3e;
-    vertical-align: middle;
-  }
-  .pred-table tr:last-child td { border-bottom: none; }
-  .match-name {
-    font-weight: 700;
-    color: #0a0e27;
-    white-space: nowrap;
-  }
-  .match-time {
-    font-size: 11px;
-    color: #a0a0b8;
-    font-family: 'JetBrains Mono', monospace;
-    margin-top: 2px;
-  }
-  .prob-cell {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 700;
-    text-align: center;
-    min-width: 56px;
-  }
-  .prob-bar {
-    display: inline-block;
-    width: 36px;
-    height: 4px;
-    border-radius: 2px;
-    margin-right: 4px;
-    vertical-align: middle;
-  }
-  .pick-badge {
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 700;
-  }
-  .pick-home { background: #eef0ff; color: #5a3fff; }
-  .pick-away { background: #ffeef0; color: #e83a5f; }
-  .pick-draw { background: #fff8e0; color: #c89500; }
-
-  /* AI CARDS */
-  .ai-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    padding: 0 44px;
-    margin-top: 24px;
-  }
-  .ai-card {
-    border: 1.5px solid #eceef5;
-    border-radius: 16px;
-    padding: 20px 18px;
-    position: relative;
-    overflow: hidden;
-  }
-  .ai-card.highlight { border-color: #7c5cff; background: linear-gradient(180deg, #faf9ff 0%, #fff 100%); }
-  .ai-card .ai-name {
-    font-size: 15px;
-    font-weight: 700;
-    color: #0a0e27;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .ai-card .ai-icon {
-    width: 28px; height: 28px;
-    border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 14px;
-    color: #fff;
-  }
-  .ai-card .ai-records {
-    margin-top: 12px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: #8892b0;
-  }
-  .ai-card .ai-records strong {
-    color: #0a0e27;
-    font-size: 22px;
-    display: block;
-    margin-top: 2px;
-  }
-  .ai-card .ai-pnl {
-    margin-top: 10px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    font-weight: 700;
-  }
-  .pnl-positive { color: #00b878; }
-  .pnl-negative { color: #e83a5f; }
-
-  /* BET SLIP */
-  .bet-section {
-    margin: 28px 44px 0;
-    background: linear-gradient(135deg, #0a0e27 0%, #1a1f4e 100%);
-    border-radius: 18px;
-    padding: 24px 28px;
-    position: relative;
-    overflow: hidden;
-  }
-  .bet-section::before {
-    content: '🎫';
-    position: absolute;
-    top: 10px; right: 20px;
-    font-size: 48px;
-    opacity: 0.1;
-  }
-  .bet-section h3 {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 16px;
-  }
-  .bet-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-  .bet-row:last-child { border-bottom: none; }
-  .bet-label {
-    color: #a8b4ff;
-    font-size: 13px;
-  }
-  .bet-value {
-    color: #fff;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 700;
-    font-size: 13px;
-  }
-  .bet-value.green { color: #00ffa3; }
-  .bet-total {
-    margin-top: 14px;
-    padding-top: 14px;
-    border-top: 2px solid rgba(255,255,255,0.15);
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .bet-total .label { color: #8892c0; font-size: 12px; }
-  .bet-total .amount {
-    color: #00ffa3;
-    font-size: 28px;
-    font-weight: 900;
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  /* FOOTER */
-  .footer {
-    padding: 24px 44px 36px;
-    text-align: center;
-  }
-  .footer .disclaimer {
-    font-size: 11px;
-    color: #c0c0d0;
-    line-height: 1.6;
-  }
-  .footer .source {
-    margin-top: 8px;
-    font-size: 11px;
-    color: #a0a0b8;
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  /* divergence highlight */
-  .divergence {
-    background: #fffbe6;
-  }
-  .divergence .match-name { color: #b8860b; }
+  body { font-family: 'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif; background:#f0f2f5; display:flex; justify-content:center; padding:40px 20px; }
+  .poster { width:800px; background:#fff; border-radius:24px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,0.12); }
+  .header { background:linear-gradient(135deg,#0a0e27 0%,#1a1f4e 50%,#2d1b69 100%); padding:40px 44px 36px; position:relative; overflow:hidden; }
+  .header::before { content:''; position:absolute; top:-60px; right:-60px; width:240px; height:240px; background:radial-gradient(circle,rgba(120,80,255,0.3) 0%,transparent 70%); border-radius:50%; }
+  .header::after { content:'⚽'; position:absolute; bottom:-20px; right:30px; font-size:120px; opacity:0.08; }
+  .header .tag { display:inline-block; background:rgba(255,255,255,0.12); color:#a8b4ff; font-size:13px; font-weight:500; letter-spacing:2px; padding:6px 16px; border-radius:20px; border:1px solid rgba(255,255,255,0.15); margin-bottom:16px; }
+  .header h1 { color:#fff; font-size:34px; font-weight:900; letter-spacing:-0.5px; line-height:1.2; }
+  .header h1 .accent { background:linear-gradient(90deg,#00ffa3,#00d4ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+  .header .subtitle { color:#8892c0; font-size:15px; margin-top:8px; font-family:'JetBrains Mono',monospace; }
+  .header .draw-banner { margin-top:14px; display:inline-block; background:rgba(255,200,0,0.15); color:#ffd700; font-size:13px; font-weight:700; padding:5px 14px; border-radius:16px; border:1px solid rgba(255,215,0,0.3); }
+  .section { padding:32px 44px 0; }
+  .section-title { font-size:14px; font-weight:700; color:#0a0e27; letter-spacing:1px; display:flex; align-items:center; gap:10px; margin-bottom:20px; }
+  .section-title .dot { width:8px; height:8px; background:#7c5cff; border-radius:50%; }
+  .section-title .line { flex:1; height:1px; background:linear-gradient(90deg,#e0e0e0,transparent); }
+  .result-table { width:100%; border-collapse:separate; border-spacing:0; font-size:13px; }
+  .result-table th { text-align:left; color:#8892b0; font-weight:500; font-size:11px; padding:8px 8px; border-bottom:2px solid #f0f0f5; }
+  .result-table td { padding:11px 8px; border-bottom:1px solid #f5f5f8; color:#2a2a3e; vertical-align:middle; }
+  .result-table tr:last-child td { border-bottom:none; }
+  .match-name { font-weight:700; color:#0a0e27; white-space:nowrap; }
+  .score { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:15px; text-align:center; }
+  .score-draw { color:#c89500; }
+  .score-win { color:#00b878; }
+  .verdict { text-align:center; font-weight:700; font-size:12px; }
+  .v-hit { color:#00b878; }
+  .v-miss { color:#ccc; }
+  .ai-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:0 44px; margin-top:24px; }
+  .ai-card { border:1.5px solid #eceef5; border-radius:16px; padding:20px 18px; position:relative; }
+  .ai-card.winner { border-color:#00b878; background:linear-gradient(180deg,#f0fdf4 0%,#fff 100%); }
+  .ai-card .ai-name { font-size:15px; font-weight:700; color:#0a0e27; display:flex; align-items:center; gap:8px; }
+  .ai-card .ai-icon { width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:14px; color:#fff; }
+  .ai-card .big-num { margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:28px; font-weight:900; }
+  .ai-card .sub { font-size:12px; color:#8892b0; margin-top:4px; }
+  .ai-card .crown { position:absolute; top:-10px; right:16px; font-size:24px; }
+  .bet-section { margin:28px 44px 0; background:linear-gradient(135deg,#0a0e27 0%,#1a1f4e 100%); border-radius:18px; padding:24px 28px; }
+  .bet-section h3 { color:#fff; font-size:16px; font-weight:700; margin-bottom:16px; }
+  .bet-row { display:flex; justify-content:space-between; align-items:center; padding:9px 0; border-bottom:1px solid rgba(255,255,255,0.08); }
+  .bet-row:last-child { border-bottom:none; }
+  .bet-label { color:#a8b4ff; font-size:13px; }
+  .bet-value { color:#fff; font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; }
+  .bet-value.green { color:#00ffa3; }
+  .bet-value.red { color:#ff6b6b; }
+  .bet-total { margin-top:14px; padding-top:14px; border-top:2px solid rgba(255,255,255,0.15); display:flex; justify-content:space-between; align-items:baseline; }
+  .bet-total .label { color:#8892c0; font-size:12px; }
+  .bet-total .amount { font-size:28px; font-weight:900; font-family:'JetBrains Mono',monospace; }
+  .footer { padding:24px 44px 36px; text-align:center; }
+  .footer .disclaimer { font-size:11px; color:#c0c0d0; line-height:1.6; }
+  .footer .source { margin-top:8px; font-size:11px; color:#a0a0b8; font-family:'JetBrains Mono',monospace; }
+  .draw-row { background:#fffdf0; }
 </style>
 </head>
 <body>
 <div class="poster">
-
-  <!-- HEADER -->
   <div class="header">
-    <span class="tag">⚽ WORLD CUP 2026 · PREDICTION ARENA</span>
-    <h1>三 AI 竞技 <span class="accent">+ 真金白银</span></h1>
-    <div class="subtitle">DeepSeek · Qwen · GLM-5.2  vs  Human  |  2026-06-16</div>
+    <span class="tag">⚽ WORLD CUP 2026 · 平局之夜</span>
+    <h1>Human <span class="accent">8 分碾压</span> 全部 AI</h1>
+    <div class="subtitle">7 场 5 平 · 人工直觉 >> DeepSeek · Qwen · GLM-5.2</div>
+    <span class="draw-banner">😱 71% 平局率 · 所有 AI 集体翻车</span>
   </div>
-
-  <!-- AI COMPARISON CARDS -->
   <div class="section">
-    <div class="section-title">
-      <span class="dot"></span> 三方 AI 战绩 <span class="line"></span>
-      <span style="font-size:12px;color:#a0a0b8;font-weight:400">已结算 3 场</span>
-    </div>
-  </div>
-
-  <div class="ai-cards">
-    <div class="ai-card highlight">
-      <div class="ai-name"><span class="ai-icon" style="background:#7c5cff">🤖</span> GLM-5.2<br><span style="font-size:11px;color:#8892b0;font-weight:400">（我，手动模式）</span></div>
-      <div class="ai-records">
-        历史命中率<br>
-        <strong>— <span style="font-size:13px;color:#a0a0b8">待结算</span></strong>
-      </div>
-      <div class="ai-pnl">今晚 4 场预测已提交</div>
-    </div>
-    <div class="ai-card">
-      <div class="ai-name"><span class="ai-icon" style="background:#1a73e8">🧠</span> DeepSeek<br><span style="font-size:11px;color:#8892b0;font-weight:400">v4-pro</span></div>
-      <div class="ai-records">
-        命中率 / 下注ROI<br>
-        <strong>33% <span class="pnl-negative" style="font-size:13px">-68.7%</span></strong>
-      </div>
-      <div class="ai-pnl pnl-negative">下注：-31.74 units</div>
-    </div>
-    <div class="ai-card">
-      <div class="ai-name"><span class="ai-icon" style="background:#00b878">🧠</span> Qwen<br><span style="font-size:11px;color:#8892b0;font-weight:400">3.6-max</span></div>
-      <div class="ai-records">
-        命中率 / 下注ROI<br>
-        <strong>33% <span class="pnl-positive" style="font-size:13px">+106%</span></strong>
-      </div>
-      <div class="ai-pnl pnl-positive">下注：+7.45 units</div>
-    </div>
-  </div>
-
-  <!-- PREDICTIONS TABLE -->
-  <div class="section" style="padding-top: 28px">
-    <div class="section-title">
-      <span class="dot"></span> 今晚 4 场 · 三方预测对比 <span class="line"></span>
-    </div>
-
-    <table class="pred-table">
-      <thead>
-        <tr>
-          <th>比赛</th>
-          <th style="text-align:center">DeepSeek</th>
-          <th style="text-align:center">Qwen</th>
-          <th style="text-align:center">GLM</th>
-          <th style="text-align:center">主推荐</th>
-        </tr>
-      </thead>
+    <div class="section-title"><span class="dot"></span> 7 场结算 · 你 vs AI <span class="line"></span><span style="font-size:12px;color:#a0a0b8;font-weight:400">✓=命中 ★=精确比分</span></div>
+    <table class="result-table">
+      <thead><tr><th>比赛</th><th style="text-align:center">比分</th><th style="text-align:center">你</th><th style="text-align:center">DeepSeek</th><th style="text-align:center">Qwen</th><th style="text-align:center">GLM</th></tr></thead>
       <tbody>
-        <tr>
-          <td>
-            <div class="match-name">🇪🇸 西班牙 vs 佛得角</div>
-            <div class="match-time">00:00 · 让2球</div>
-          </td>
-          <td class="prob-cell" style="color:#a0a0b8">未预测</td>
-          <td class="prob-cell" style="color:#a0a0b8">未预测</td>
-          <td class="prob-cell">
-            <span class="prob-bar" style="background:#7c5cff;width:82px"></span><br>
-            <span style="color:#7c5cff">主胜 82%</span>
-          </td>
-          <td><span class="pick-badge pick-home">西让2胜 1.54</span></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="match-name">🇧🇪 比利时 vs 埃及</div>
-            <div class="match-time">03:00</div>
-          </td>
-          <td class="prob-cell"><span style="color:#5a3fff">主胜 58%</span></td>
-          <td class="prob-cell"><span style="color:#00b878">主胜 62%</span></td>
-          <td class="prob-cell"><span style="color:#7c5cff">主胜 58%</span></td>
-          <td><span class="pick-badge pick-home">比让1胜 2.41</span></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="match-name">🇸🇦 沙特 vs 🇺🇾 乌拉圭</div>
-            <div class="match-time">06:00</div>
-          </td>
-          <td class="prob-cell"><span style="color:#e83a5f">客胜 62%</span></td>
-          <td class="prob-cell"><span style="color:#e83a5f">客胜 69%</span></td>
-          <td class="prob-cell"><span style="color:#7c5cff">客胜 70%</span></td>
-          <td><span class="pick-badge pick-away">沙特让1胜平</span></td>
-        </tr>
-        <tr class="divergence">
-          <td>
-            <div class="match-name">⚠️ 伊朗 vs 新西兰</div>
-            <div class="match-time">09:00 · 三方分歧最大</div>
-          </td>
-          <td class="prob-cell"><span style="color:#5a3fff">主胜 60%</span></td>
-          <td class="prob-cell"><span style="color:#00b878">主胜 52%</span></td>
-          <td class="prob-cell"><span style="color:#7c5cff">主胜 48%</span></td>
-          <td><span class="pick-badge pick-away">伊朗让1负 2.02</span></td>
-        </tr>
+        <tr class="draw-row"><td><div class="match-name">荷兰 vs 日本</div></td><td class="score score-draw">2-2</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">—</td></tr>
+        <tr><td><div class="match-name">科特迪瓦 vs 厄瓜多尔</div></td><td class="score score-win">1-0</td><td class="verdict v-hit">主胜★</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">—</td></tr>
+        <tr><td><div class="match-name">瑞典 vs 突尼斯</div></td><td class="score score-win">5-1</td><td class="verdict v-hit">主胜✓</td><td class="verdict v-hit">主胜✓</td><td class="verdict v-hit">主胜✓</td><td class="verdict v-miss">—</td></tr>
+        <tr class="draw-row"><td><div class="match-name">西班牙 vs 佛得角</div></td><td class="score score-draw">0-0</td><td class="verdict v-miss">让胜✗</td><td class="verdict v-miss">—</td><td class="verdict v-miss">—</td><td class="verdict v-miss">主胜✗</td></tr>
+        <tr class="draw-row"><td><div class="match-name">比利时 vs 埃及</div></td><td class="score score-draw">1-1</td><td class="verdict v-miss">让胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td></tr>
+        <tr class="draw-row"><td><div class="match-name">沙特 vs 乌拉圭</div></td><td class="score score-draw">1-1</td><td class="verdict v-hit">平★</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">客胜✗</td></tr>
+        <tr class="draw-row"><td><div class="match-name">伊朗 vs 新西兰</div></td><td class="score score-draw">2-2</td><td class="verdict v-hit">平✓</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td></tr>
       </tbody>
     </table>
   </div>
-
-  <!-- BET SLIP -->
+  <div class="section" style="padding-top:24px">
+    <div class="section-title"><span class="dot" style="background:#00b878"></span> 最终排行榜 <span class="line"></span></div>
+  </div>
+  <div class="ai-cards">
+    <div class="ai-card winner">
+      <span class="crown">👑</span>
+      <div class="ai-name"><span class="ai-icon" style="background:#00b878">🧑</span> Human（你）</div>
+      <div class="big-num" style="color:#00b878">8 <span style="font-size:14px;color:#8892b0">分</span></div>
+      <div class="sub">4/7 命中 · 2 精确比分 · 唯一猜对平局</div>
+    </div>
+    <div class="ai-card">
+      <div class="ai-name"><span class="ai-icon" style="background:#1a73e8">🧠</span> DeepSeek</div>
+      <div class="big-num" style="color:#1a73e8">1 <span style="font-size:14px;color:#8892b0">分</span></div>
+      <div class="sub">1/6 命中 · 0 平局 · ROI -60%</div>
+    </div>
+    <div class="ai-card">
+      <div class="ai-name"><span class="ai-icon" style="background:#6c5ce7">🧠</span> Qwen + GLM</div>
+      <div class="big-num" style="color:#e83a5f">1+0 <span style="font-size:14px;color:#8892b0">分</span></div>
+      <div class="sub">Qwen 1/6 · GLM 0/4 · 集体翻车</div>
+    </div>
+  </div>
   <div class="bet-section">
-    <h3>🎫 实际投注 · slip-002</h3>
-
-    <div class="bet-row">
-      <span class="bet-label">第一单 · 3串1+2串1（10倍）</span>
-      <span class="bet-value">80 元</span>
-    </div>
-    <div class="bet-row">
-      <span class="bet-label" style="padding-left:16px;font-size:12px">西让2胜 × 比让1胜 × 伊朗让1负</span>
-      <span class="bet-value" style="font-size:12px">综合赔率 7.50</span>
-    </div>
-    <div class="bet-row">
-      <span class="bet-label">第二单 · 沙特让1胜+平 复式（5倍）</span>
-      <span class="bet-value">20 元</span>
-    </div>
-
-    <div class="bet-total">
-      <span class="label">本期投入</span>
-      <span class="amount">¥100</span>
-    </div>
+    <h3>🎫 真金白银 · 累计战绩</h3>
+    <div class="bet-row"><span class="bet-label">slip-001 · 科特迪瓦复式 + 瑞典大胜</span><span class="bet-value green">+¥51.94</span></div>
+    <div class="bet-row"><span class="bet-label">slip-002 · 串关全挂 + 沙特全场平 4.25 中</span><span class="bet-value red">-¥47.50</span></div>
+    <div class="bet-total"><span class="label">累计净盈亏</span><span class="amount" style="color:#00ffa3">+¥4.44</span></div>
   </div>
-
-  <!-- PREVIOUS RECORD -->
-  <div class="section" style="padding-bottom: 8px">
-    <div class="section-title">
-      <span class="dot" style="background:#00b878"></span> 上期战绩 <span class="line"></span>
-    </div>
-    <div style="display:flex;gap:16px;margin-bottom:8px">
-      <div style="flex:1;background:#f0fdf4;border-radius:12px;padding:16px 20px;border:1px solid #c6f6d5">
-        <div style="font-size:12px;color:#38a169;font-weight:500">slip-001 净盈亏</div>
-        <div style="font-size:32px;font-weight:900;color:#00b878;font-family:'JetBrains Mono',monospace">+¥51.94</div>
-        <div style="font-size:12px;color:#48bb78;margin-top:4px">ROI +53% · 科特迪瓦复式 + 瑞典大胜</div>
-      </div>
-      <div style="flex:1;background:#f7fafc;border-radius:12px;padding:16px 20px;border:1px solid #e2e8f0">
-        <div style="font-size:12px;color:#718096;font-weight:500">最佳 AI · me-ai</div>
-        <div style="font-size:32px;font-weight:900;color:#0a0e27;font-family:'JetBrains Mono',monospace">+143%</div>
-        <div style="font-size:12px;color:#a0aec0;margin-top:4px">Human 跑赢所有 AI 下注建议</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
   <div class="footer">
-    <div class="disclaimer">
-      ⚠️ 本内容仅供数据分析与学习交流，模拟资金，不构成投注建议。<br>
-      理性观赛，量力而行，请勿沉迷。18+
-    </div>
+    <div class="disclaimer">⚠️ 本内容仅供数据分析与学习交流，模拟资金，不构成投注建议。<br>理性观赛，量力而行，请勿沉迷。18+</div>
     <div class="source">pitch-oracle · sporttery + football-data + DeepSeek + Qwen + GLM-5.2</div>
   </div>
-
 </div>
 </body>
 </html>

@@ -1,0 +1,346 @@
+{
+  "_comment": "Real bet slips (实际投注记录). Manually maintained.",
+  "_schema": {
+    "id": "唯一标识",
+    "matchIndexId": "体彩 matchId（和 match-index.json 对应）",
+    "matchNum": "体彩场次号",
+    "homeTeam": "主队",
+    "awayTeam": "客队",
+    "market": "玩法：had=胜平负, hhad=让球胜平负",
+    "selections": "选了的结果数组，如 ['home'] 或 ['home','draw']（复式）",
+    "goalLine": "让球数（仅 hhad）",
+    "odds": "各选项的赔率，如 {home:1.86} 或 {home:3.15,draw:2.65}",
+    "stake": "该注实际投注金额（元，含倍数）",
+    "boughtAt": "购买时间 ISO",
+    "status": "pending/won/lost",
+    "settledScore": "结算比分，如 '2-2'",
+    "pnl": "盈亏（元），正=赢，负=亏"
+  },
+  "slips": [
+    {
+      "id": "slip-001",
+      "description": "3串1+2串1，7倍，98元。科特迪瓦复式(胜+平)导致7注。",
+      "boughtAt": "2026-06-14T20:00:00+08:00",
+      "totalStake": 98,
+      "multiplier": 7,
+      "unitPrice": 2,
+      "totalLegs": 7,
+      "legs": [
+        {
+          "type": "3串1",
+          "count": 2,
+          "matches": [
+            {
+              "matchIndexId": "2040171",
+              "matchNum": "周日010",
+              "homeTeam": "荷兰",
+              "awayTeam": "日本",
+              "market": "had",
+              "selection": "home",
+              "odds": 1.86
+            },
+            {
+              "matchIndexId": "2040172",
+              "matchNum": "周日011",
+              "homeTeam": "科特迪瓦",
+              "awayTeam": "厄瓜多尔",
+              "market": "had",
+              "selections": [
+                "home",
+                "draw"
+              ],
+              "odds": {
+                "home": 3.15,
+                "draw": 2.65
+              },
+              "note": "复式：胜+平"
+            },
+            {
+              "matchIndexId": "2040173",
+              "matchNum": "周日012",
+              "homeTeam": "瑞典",
+              "awayTeam": "突尼斯",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -1,
+              "odds": null,
+              "note": "让1球，赔率待确认"
+            }
+          ],
+          "status": "lost",
+          "settledScore": {
+            "2040171": "2-2",
+            "2040172": "1-0"
+          },
+          "pnl": -28,
+          "note": "荷兰2-2平局，荷兰胜未中→3串1全挂。2注×7倍×2元=28元本金全损。"
+        },
+        {
+          "type": "2串1",
+          "combination": "荷兰+科特迪瓦",
+          "count": 2,
+          "matches": [
+            {
+              "matchIndexId": "2040171",
+              "market": "had",
+              "selection": "home",
+              "odds": 1.86
+            },
+            {
+              "matchIndexId": "2040172",
+              "market": "had",
+              "selections": [
+                "home",
+                "draw"
+              ],
+              "odds": {
+                "home": 3.15,
+                "draw": 2.65
+              }
+            }
+          ],
+          "status": "lost",
+          "pnl": -28,
+          "note": "荷兰胜未中→挂。2注(科特迪瓦复式)×7倍×2元=28元全损。"
+        },
+        {
+          "type": "2串1",
+          "combination": "荷兰+瑞典",
+          "count": 1,
+          "matches": [
+            {
+              "matchIndexId": "2040171",
+              "market": "had",
+              "selection": "home",
+              "odds": 1.86
+            },
+            {
+              "matchIndexId": "2040173",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -1,
+              "odds": null
+            }
+          ],
+          "status": "lost",
+          "pnl": -14,
+          "note": "荷兰胜未中→挂。1注×7倍×2元=14元全损。"
+        },
+        {
+          "type": "2串1",
+          "combination": "科特迪瓦+瑞典",
+          "count": 2,
+          "subLegs": [
+            {
+              "name": "注A: 科特迪瓦胜 × 瑞典让1胜",
+              "ivorySelection": "home",
+              "ivoryHit": true,
+              "swedenPending": false,
+              "swedenResult": "5-1",
+              "swedenHandicapResult": "让1后4-1，赢3球→中",
+              "swedenHhadOdds": 3.4,
+              "stake": 14,
+              "status": "won",
+              "payout": 149.94,
+              "pnl": 135.94,
+              "note": "3.15×3.4×7×2=149.94元回报。净赚135.94元(相对这注14元本金)。"
+            },
+            {
+              "name": "注B: 科特迪瓦平 × 瑞典让1胜",
+              "ivorySelection": "draw",
+              "ivoryHit": false,
+              "stake": 14,
+              "status": "lost",
+              "pnl": -14,
+              "note": "科特迪瓦实际1-0胜，不是平→未中。"
+            }
+          ],
+          "status": "pending",
+          "pnl": null,
+          "note": "复式拆成2注。注A(科胜)待瑞典；注B(科平)已挂。"
+        }
+      ],
+      "summary": {
+        "totalStake": 98,
+        "totalReturn": 149.94,
+        "netPnl": 51.94,
+        "roi": 0.53,
+        "settledNote": "98元投入，149.94元回报，净赚51.94元(+53%)。6注挂(-84元)，1注中(科特迪瓦胜3.15×瑞典让1胜3.4×7×2=149.94元)。瑞典5-1突尼斯让1后赢3球稳中。"
+      }
+    },
+    {
+      "id": "slip-002",
+      "description": "6/16四场。第一单：西让2胜+比让1胜+伊朗让1负(2串1+3串1,10倍,80元)。第二单：沙特让1胜+让1平复式(5倍,20元)。总100元。",
+      "boughtAt": "2026-06-15T23:30:00+08:00",
+      "totalStake": 100,
+      "legs": [
+        {
+          "type": "3串1",
+          "count": 1,
+          "multiplier": 10,
+          "stake": 20,
+          "matches": [
+            {
+              "matchIndexId": "2040174",
+              "matchNum": "周一013",
+              "homeTeam": "西班牙",
+              "awayTeam": "佛得角",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -2,
+              "odds": 1.54
+            },
+            {
+              "matchIndexId": "2040175",
+              "matchNum": "周一014",
+              "homeTeam": "比利时",
+              "awayTeam": "埃及",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -1,
+              "odds": 2.41
+            },
+            {
+              "matchIndexId": "2040177",
+              "matchNum": "周一016",
+              "homeTeam": "伊朗",
+              "awayTeam": "新西兰",
+              "market": "hhad",
+              "selection": "away",
+              "goalLine": -1,
+              "odds": 2.02,
+              "note": "伊朗让1负=伊朗不胜或只赢1球"
+            }
+          ],
+          "combinedOdds": 7.497028,
+          "status": "pending"
+        },
+        {
+          "type": "2串1",
+          "combination": "西班牙+比利时",
+          "count": 1,
+          "multiplier": 10,
+          "stake": 20,
+          "matches": [
+            {
+              "matchIndexId": "2040174",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -2,
+              "odds": 1.54
+            },
+            {
+              "matchIndexId": "2040175",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -1,
+              "odds": 2.41
+            }
+          ],
+          "combinedOdds": 3.7114000000000003,
+          "status": "pending"
+        },
+        {
+          "type": "2串1",
+          "combination": "西班牙+伊朗",
+          "count": 1,
+          "multiplier": 10,
+          "stake": 20,
+          "matches": [
+            {
+              "matchIndexId": "2040174",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -2,
+              "odds": 1.54
+            },
+            {
+              "matchIndexId": "2040177",
+              "market": "hhad",
+              "selection": "away",
+              "goalLine": -1,
+              "odds": 2.02
+            }
+          ],
+          "combinedOdds": 3.1108000000000002,
+          "status": "pending"
+        },
+        {
+          "type": "2串1",
+          "combination": "比利时+伊朗",
+          "count": 1,
+          "multiplier": 10,
+          "stake": 20,
+          "matches": [
+            {
+              "matchIndexId": "2040175",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -1,
+              "odds": 2.41
+            },
+            {
+              "matchIndexId": "2040177",
+              "market": "hhad",
+              "selection": "away",
+              "goalLine": -1,
+              "odds": 2.02
+            }
+          ],
+          "combinedOdds": 4.868200000000001,
+          "status": "pending"
+        },
+        {
+          "type": "单关",
+          "combination": "沙特让1胜",
+          "count": 1,
+          "multiplier": 5,
+          "stake": 10,
+          "matches": [
+            {
+              "matchIndexId": "2040176",
+              "matchNum": "周一015",
+              "homeTeam": "沙特",
+              "awayTeam": "乌拉圭",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": 1,
+              "odds": 2.84,
+              "note": "沙特让1胜=沙特赢(乌拉圭输,爆冷)"
+            }
+          ],
+          "status": "pending"
+        },
+        {
+          "type": "单关",
+          "combination": "沙特让1平",
+          "count": 1,
+          "multiplier": 5,
+          "stake": 10,
+          "matches": [
+            {
+              "matchIndexId": "2040176",
+              "matchNum": "周一015",
+              "homeTeam": "沙特",
+              "awayTeam": "乌拉圭",
+              "market": "hhad",
+              "selection": "draw",
+              "goalLine": 1,
+              "odds": 3.3,
+              "note": "沙特让1平=沙特只输1球(乌拉圭赢1球)"
+            }
+          ],
+          "status": "pending"
+        }
+      ],
+      "summary": {
+        "totalStake": 100,
+        "firstSlipStake": 80,
+        "firstSlipMultiplier": 10,
+        "secondSlipStake": 20,
+        "secondSlipMultiplier": 5,
+        "pendingNote": "4场全待定。6注(4串关+2单关)。"
+      }
+    }
+  ]
+}
