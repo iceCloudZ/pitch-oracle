@@ -341,6 +341,106 @@
         "secondSlipMultiplier": 5,
         "pendingNote": "4场全待定。6注(4串关+2单关)。"
       }
+    },
+    {
+      "id": "slip-003",
+      "description": "6/17四场。第一单：阿根廷让1胜+法国让1胜(2串1,20倍,40元)。第二单：伊拉克让2胜平复式×奥地利让1负(2串1,15倍,60元)。总100元。",
+      "boughtAt": "2026-06-16T23:00:00+08:00",
+      "totalStake": 100,
+      "legs": [
+        {
+          "type": "2串1",
+          "combination": "阿根廷让1胜 × 法国让1胜",
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            {
+              "matchIndexId": "2040180",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -1,
+              "odds": 1.9,
+              "result": "阿根廷3-0→让胜✓"
+            },
+            {
+              "matchIndexId": "2040178",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": -1,
+              "odds": 2.15,
+              "result": "法国3-1→让胜✓"
+            }
+          ],
+          "combinedOdds": 4.09,
+          "status": "won",
+          "payout": 163.6,
+          "pnl": 123.6,
+          "note": "全中！4.09×40=163.6元"
+        },
+        {
+          "type": "2串1",
+          "combination": "伊拉克让2胜 × 奥地利让1负",
+          "multiplier": 15,
+          "stake": 30,
+          "matches": [
+            {
+              "matchIndexId": "2040179",
+              "market": "hhad",
+              "selection": "home",
+              "goalLine": 2,
+              "odds": 2.21,
+              "result": "伊拉克1-4→让负✗"
+            },
+            {
+              "matchIndexId": "2040181",
+              "market": "hhad",
+              "selection": "away",
+              "goalLine": -1,
+              "odds": 3.45,
+              "result": "奥地利3-1→让胜(约旦负)✗"
+            }
+          ],
+          "combinedOdds": 7.63,
+          "status": "lost",
+          "pnl": -30,
+          "note": "伊拉克让2负(挪威赢3球)→挂。"
+        },
+        {
+          "type": "2串1",
+          "combination": "伊拉克让2平 × 奥地利让1负",
+          "multiplier": 15,
+          "stake": 30,
+          "matches": [
+            {
+              "matchIndexId": "2040179",
+              "market": "hhad",
+              "selection": "draw",
+              "goalLine": 2,
+              "odds": 3.89,
+              "result": "伊拉克1-4→让负✗"
+            },
+            {
+              "matchIndexId": "2040181",
+              "market": "hhad",
+              "selection": "away",
+              "goalLine": -1,
+              "odds": 3.45,
+              "result": "奥地利3-1→让胜✗"
+            }
+          ],
+          "combinedOdds": 13.42,
+          "status": "lost",
+          "pnl": -30,
+          "note": "伊拉克让2负→挂。"
+        }
+      ],
+      "summary": {
+        "totalStake": 100,
+        "totalReturn": 163.6,
+        "netPnl": 63.6,
+        "roi": 0.636,
+        "settledNote": "阿根廷+法国让1胜全中！伊拉克挪威大比分溃败全挂。"
+      }
     }
   ]
 }

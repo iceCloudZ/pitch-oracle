@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040181",
+  "resultProbs": {
+    "home": 0.65,
+    "draw": 0.23,
+    "away": 0.12
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-0",
+      "prob": 0.13
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.08
+    },
+    {
+      "score": "0-0",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "奥地利（阿拉巴+萨比策+阿瑙）实力强于约旦，但约旦亚洲杯四强有组织力。奥地利赢面大但最可能小比分。调高平局到23%。",
+  "createdAt": "2026-06-16T03:44:16.797Z"
+}

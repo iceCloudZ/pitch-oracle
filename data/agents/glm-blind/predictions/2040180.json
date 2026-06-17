@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040180",
+  "resultProbs": {
+    "home": 0.72,
+    "draw": 0.18,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.17
+    },
+    {
+      "score": "1-0",
+      "prob": 0.13
+    },
+    {
+      "score": "3-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.08
+    },
+    {
+      "score": "1-1",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.68,
+  "reasoning": "阿根廷（梅西+劳塔罗+恩佐）实力碾压阿尔及利亚（马赫雷斯独木难支）。这场悬念是赢几球而非谁赢。预计阿根廷赢2球。",
+  "createdAt": "2026-06-16T03:44:16.797Z"
+}

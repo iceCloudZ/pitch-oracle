@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040179",
+  "resultProbs": {
+    "home": 0.15,
+    "draw": 0.22,
+    "away": 0.63
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.18
+    },
+    {
+      "score": "1-2",
+      "prob": 0.12
+    },
+    {
+      "score": "0-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-3",
+      "prob": 0.08
+    },
+    {
+      "score": "1-3",
+      "prob": 0.06
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "挪威有哈兰德+厄德高实力远强于伊拉克。伊拉克亚洲中游。挪威赢面大但哈兰德国家队效率不如俱乐部，可能只赢1-2球。",
+  "createdAt": "2026-06-16T03:44:16.797Z"
+}

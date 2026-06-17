@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-odds",
+  "matchId": "2040181",
+  "resultProbs": {
+    "home": 0.7,
+    "draw": 0.2,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.14
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "3-0",
+      "prob": 0.08
+    },
+    {
+      "score": "1-1",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.62,
+  "reasoning": "看赔率后（奥隐含76%）我给70%略保守。奥地利实力碾压约旦。预计赢1-2球。",
+  "createdAt": "2026-06-16T03:44:16.797Z"
+}
