@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.82,
+    "draw": 0.13,
+    "away": 0.05
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.22
+    },
+    {
+      "score": "3-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-1",
+      "prob": 0.12
+    },
+    {
+      "score": "3-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Portugal possesses a significant gap in technical quality, squad depth, and tactical organization compared to DR Congo. While DR Congo has physicality, Portugal's control of possession and superior finishing ability should lead to a comfortable victory in regular time.",
+  "agentId": "qwen-blind",
+  "matchId": "2040182",
+  "createdAt": "2026-06-15T02:06:20.743Z"
+}

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.33,
+    "draw": 0.32,
+    "away": 0.35
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.14
+    },
+    {
+      "score": "0-1",
+      "prob": 0.12
+    },
+    {
+      "score": "1-0",
+      "prob": 0.11
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.4,
+  "reasoning": "Neutral-site World Cup clash between two evenly matched mid-tier sides. Ecuador's recent tournament consistency and defensive organization slightly offset Ivory Coast's attacking talent and AFCON momentum. Expect a tight, low-scoring affair with high uncertainty due to the 2026 timeframe and neutral venue.",
+  "agentId": "qwen-blind",
+  "matchId": "2040172",
+  "createdAt": "2026-06-14T18:17:29.720Z"
+}

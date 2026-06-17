@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.35,
+    "draw": 0.32,
+    "away": 0.33
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "0-1",
+      "prob": 0.11
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "Both Ghana and Panama are mid-tier teams with comparable squad depth and tactical discipline. Ghana possesses slightly more individual flair in attack, while Panama is organized defensively but lacks consistent scoring power. The match is likely to be tight and low-scoring, with a high probability of a draw or a narrow one-goal margin victory for either side.",
+  "agentId": "qwen-blind",
+  "matchId": "2040184",
+  "createdAt": "2026-06-15T02:06:47.234Z"
+}

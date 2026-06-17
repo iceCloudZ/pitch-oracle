@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.78,
+    "draw": 0.14,
+    "away": 0.08
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "3-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-1",
+      "prob": 0.12
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    },
+    {
+      "score": "3-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.85,
+  "reasoning": "Austria is a significantly stronger European side with superior tactical organization and squad depth compared to Jordan. The market odds (1.21 for home win) heavily favor Austria, reflecting the massive gap in quality. Jordan's defensive limitations against high-intensity pressing will likely lead to multiple goals conceded, making a comfortable Austrian victory the most probable outcome.",
+  "agentId": "qwen-odds",
+  "matchId": "2040181",
+  "createdAt": "2026-06-15T02:06:13.865Z"
+}

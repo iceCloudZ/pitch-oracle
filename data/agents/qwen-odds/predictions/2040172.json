@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.28,
+    "draw": 0.34,
+    "away": 0.38
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.16
+    },
+    {
+      "score": "0-1",
+      "prob": 0.12
+    },
+    {
+      "score": "0-0",
+      "prob": 0.11
+    },
+    {
+      "score": "1-0",
+      "prob": 0.09
+    },
+    {
+      "score": "1-2",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.42,
+  "reasoning": "Market odds imply a tight contest with a slight edge to Ecuador, reflecting their tactical discipline and midfield control. Ivory Coast possess high-end attacking talent but can be defensively inconsistent. World Cup group-stage caution on a neutral venue points to a low-scoring, cagey affair with a high probability of a draw or narrow away win.",
+  "agentId": "qwen-odds",
+  "matchId": "2040172",
+  "createdAt": "2026-06-14T18:18:20.198Z"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "matchId": "2040185",
+    "agentId": "me-ai",
+    "market": "home",
+    "modelProb": 0.13,
+    "impliedProb": 0.10989010989010989,
+    "decimalOdds": 9.1,
+    "oddsTimestamp": "2026-06-14 22:47:27",
+    "ev": 0.18300000000000005,
+    "kellyFraction": 0.0225925925925926,
+    "recommendedStakePct": 0.00564814814814815
+  },
+  {
+    "matchId": "2040185",
+    "agentId": "me-ai",
+    "market": "draw",
+    "modelProb": 0.22,
+    "impliedProb": 0.21978021978021978,
+    "decimalOdds": 4.55,
+    "oddsTimestamp": "2026-06-14 22:47:27",
+    "ev": 0.0009999999999998899,
+    "kellyFraction": 0.00028169014084503943,
+    "recommendedStakePct": 0.00007042253521125986
+  }
+]

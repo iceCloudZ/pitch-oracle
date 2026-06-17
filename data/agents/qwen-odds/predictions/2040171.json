@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.48,
+    "draw": 0.27,
+    "away": 0.25
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.11
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "2-0",
+      "prob": 0.08
+    },
+    {
+      "score": "0-1",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "Market odds imply a moderate Netherlands favorite (~48%), consistent with their tactical maturity and squad depth. Japan's disciplined structure and transition threat keep draw and away probabilities substantial. World Cup conditions typically favor cautious, low-scoring affairs, making 1-0 and 1-1 the most likely outcomes. Probabilities are normalized from market consensus and adjusted for tournament variance.",
+  "agentId": "qwen-odds",
+  "matchId": "2040171",
+  "createdAt": "2026-06-14T18:16:33.595Z"
+}

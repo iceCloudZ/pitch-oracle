@@ -1,0 +1,26 @@
+{
+  "agentId": "me-ai",
+  "matchId": "2040173",
+  "resultProbs": {
+    "home": 0.7,
+    "draw": 0.2,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.15
+    },
+    {
+      "score": "3-0",
+      "prob": 0.1
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "slip-001: 买瑞典让1胜",
+  "createdAt": "2026-06-15T20:00:00+08:00"
+}

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.73,
+    "draw": 0.17,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.14
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "3-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "1-1",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Argentina are strong favorites with superior quality and recent World Cup success, while Algeria lack the same level of elite talent. However, Algeria are capable of disciplined defense and World Cup matches can be unpredictable, keeping draw and away win probabilities non-negligible.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040180",
+  "createdAt": "2026-06-14T17:19:25.412Z"
+}

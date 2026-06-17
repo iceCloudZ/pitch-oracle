@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.53,
+    "draw": 0.27,
+    "away": 0.2
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "1-1",
+      "prob": 0.13
+    },
+    {
+      "score": "0-0",
+      "prob": 0.11
+    },
+    {
+      "score": "2-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Normalized market odds and historical performance indicate Sweden as clear favorites due to superior tactical structure and set-piece threat. Tunisia's organized defense limits high-scoring outcomes, making 1-0 and 1-1 the most probable regular-time results. Variance inherent to World Cup group matches tempers overall confidence.",
+  "agentId": "qwen-odds",
+  "matchId": "2040173",
+  "createdAt": "2026-06-14T18:20:01.993Z"
+}

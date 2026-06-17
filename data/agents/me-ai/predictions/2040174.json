@@ -1,0 +1,26 @@
+{
+  "agentId": "me-ai",
+  "matchId": "2040174",
+  "resultProbs": {
+    "home": 0.82,
+    "draw": 0.12,
+    "away": 0.06
+  },
+  "scoreProbs": [
+    {
+      "score": "3-0",
+      "prob": 0.2
+    },
+    {
+      "score": "2-0",
+      "prob": 0.12
+    },
+    {
+      "score": "4-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "slip-002: 买西班牙让2胜",
+  "createdAt": "2026-06-15T20:00:00+08:00"
+}

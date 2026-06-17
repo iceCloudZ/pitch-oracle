@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.65,
+    "draw": 0.25,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Iran, ranked significantly higher and with more World Cup experience, is clear favorite. New Zealand will likely set up defensively, resulting in a low-scoring game. Iran's superior attack should secure a narrow win.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040177",
+  "createdAt": "2026-06-14T17:17:57.131Z"
+}

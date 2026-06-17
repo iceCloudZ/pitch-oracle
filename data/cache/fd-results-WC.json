@@ -1,0 +1,89 @@
+{
+  "expiresAt": 1781497359471,
+  "data": [
+    {
+      "matchId": "537327",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeTeam": "Mexico",
+      "awayTeam": "South Africa"
+    },
+    {
+      "matchId": "537328",
+      "homeScore": 2,
+      "awayScore": 1,
+      "homeTeam": "South Korea",
+      "awayTeam": "Czechia"
+    },
+    {
+      "matchId": "537333",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homeTeam": "Canada",
+      "awayTeam": "Bosnia-Herzegovina"
+    },
+    {
+      "matchId": "537345",
+      "homeScore": 4,
+      "awayScore": 1,
+      "homeTeam": "United States",
+      "awayTeam": "Paraguay"
+    },
+    {
+      "matchId": "537334",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homeTeam": "Qatar",
+      "awayTeam": "Switzerland"
+    },
+    {
+      "matchId": "537339",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homeTeam": "Brazil",
+      "awayTeam": "Morocco"
+    },
+    {
+      "matchId": "537340",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homeTeam": "Haiti",
+      "awayTeam": "Scotland"
+    },
+    {
+      "matchId": "537346",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeTeam": "Australia",
+      "awayTeam": "Turkey"
+    },
+    {
+      "matchId": "537351",
+      "homeScore": 7,
+      "awayScore": 1,
+      "homeTeam": "Germany",
+      "awayTeam": "Curaçao"
+    },
+    {
+      "matchId": "537357",
+      "homeScore": 2,
+      "awayScore": 2,
+      "homeTeam": "Netherlands",
+      "awayTeam": "Japan"
+    },
+    {
+      "matchId": "537352",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "Ecuador"
+    },
+    {
+      "matchId": "537358",
+      "homeScore": 5,
+      "awayScore": 1,
+      "homeTeam": "Sweden",
+      "awayTeam": "Tunisia"
+    }
+  ]
+}

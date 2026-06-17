@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.42,
+    "draw": 0.31,
+    "away": 0.27
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.16
+    },
+    {
+      "score": "1-0",
+      "prob": 0.14
+    },
+    {
+      "score": "0-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.55,
+  "reasoning": "Iran typically employs a disciplined, defensive structure in World Cup tournaments, making them difficult to break down. New Zealand, while physically robust and improving, often struggles against organized Asian defenses away from home. The match is likely to be low-scoring and tight, with Iran's tactical experience giving them a slight edge in regular time, though a draw remains a very high probability due to the cautious nature of both sides in a group stage opener.",
+  "agentId": "qwen-blind",
+  "matchId": "2040177",
+  "createdAt": "2026-06-15T02:05:24.369Z"
+}

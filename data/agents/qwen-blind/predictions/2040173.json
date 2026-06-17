@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.48,
+    "draw": 0.28,
+    "away": 0.24
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-1",
+      "prob": 0.15
+    },
+    {
+      "score": "0-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "Sweden holds a slight edge in individual quality and set-piece threat, but Tunisia's compact defensive structure and counter-attacking pace make this a tight, low-scoring affair. Neutral World Cup venue and tactical caution increase draw probability.",
+  "agentId": "qwen-blind",
+  "matchId": "2040173",
+  "createdAt": "2026-06-14T18:19:11.916Z"
+}

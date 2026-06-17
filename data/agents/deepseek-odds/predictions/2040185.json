@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.1,
+    "draw": 0.2,
+    "away": 0.7
+  },
+  "scoreProbs": [
+    {
+      "score": "0-1",
+      "prob": 0.18
+    },
+    {
+      "score": "0-2",
+      "prob": 0.15
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.09
+    },
+    {
+      "score": "1-2",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Colombia is the stronger team with higher FIFA ranking and more World Cup experience. Uzbekistan is a less proven side, likely to defend deep. Expect a low-scoring match with Colombia dominating possession. Market odds heavily favor Colombia, and our analysis aligns. However, Uzbekistan could hold for a draw.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040185",
+  "createdAt": "2026-06-14T17:22:45.084Z"
+}

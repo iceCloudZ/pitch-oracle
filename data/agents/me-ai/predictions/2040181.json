@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.74,
+    "draw": 0.17,
+    "away": 0.09
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.15
+    },
+    {
+      "score": "1-0",
+      "prob": 0.13
+    },
+    {
+      "score": "3-0",
+      "prob": 0.11
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "1-1",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Austria is a significantly stronger team, expected to control the game. Jordan will likely defend deep, leading to a low-scoring match. Austria wins most encounters, but a draw is possible if they struggle to break down the defense.",
+  "agentId": "me-ai",
+  "matchId": "2040181",
+  "createdAt": "2026-06-14T17:20:23.576Z"
+}

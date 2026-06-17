@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.12,
+    "draw": 0.23,
+    "away": 0.65
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.18
+    },
+    {
+      "score": "1-2",
+      "prob": 0.15
+    },
+    {
+      "score": "0-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-3",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Colombia possesses significantly superior technical quality and squad depth compared to Uzbekistan. While Uzbekistan is organized defensively, the gap in individual talent and World Cup experience favors a comfortable away win for Colombia, likely by a margin of two goals.",
+  "agentId": "qwen-blind",
+  "matchId": "2040185",
+  "createdAt": "2026-06-15T02:07:00.169Z"
+}

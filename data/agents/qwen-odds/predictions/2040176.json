@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.08,
+    "draw": 0.19,
+    "away": 0.73
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.16
+    },
+    {
+      "score": "0-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-2",
+      "prob": 0.11
+    },
+    {
+      "score": "0-3",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.85,
+  "reasoning": "Uruguay possesses a significantly stronger squad depth and tactical discipline compared to Saudi Arabia. The market odds heavily favor Uruguay (implied ~73% win probability), reflecting the gap in quality. Saudi Arabia may struggle to create high-quality chances against a solid Uruguayan defense, making low-scoring away wins or clean sheets the most likely outcomes.",
+  "agentId": "qwen-odds",
+  "matchId": "2040176",
+  "createdAt": "2026-06-15T02:05:16.169Z"
+}

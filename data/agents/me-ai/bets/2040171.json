@@ -1,0 +1,14 @@
+[
+  {
+    "matchId": "2040171",
+    "agentId": "me-ai",
+    "market": "home",
+    "modelProb": 0.55,
+    "impliedProb": 0.5376344086021505,
+    "decimalOdds": 1.86,
+    "oddsTimestamp": "2026-06-14 22:47:27",
+    "ev": 0.02300000000000013,
+    "kellyFraction": 0.026744186046511777,
+    "recommendedStakePct": 0.006686046511627944
+  }
+]

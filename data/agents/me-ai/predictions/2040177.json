@@ -1,0 +1,26 @@
+{
+  "agentId": "me-ai",
+  "matchId": "2040177",
+  "resultProbs": {
+    "home": 0.3,
+    "draw": 0.4,
+    "away": 0.3
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.16
+    },
+    {
+      "score": "2-2",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "slip-002: 买伊朗让1负（伊朗不胜）",
+  "createdAt": "2026-06-15T20:00:00+08:00"
+}

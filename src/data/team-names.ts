@@ -44,7 +44,7 @@ export const SPORTTERY_TEAM_ALIASES: Record<string, string[]> = {
   SPAIN: ['西班牙'],
   GERMANY: ['德国', '德意志'],
   JAPAN: ['日本'],
-  COSTA_RICA: ['哥斯达黎加'],
+  COSTA_RICA: ['哥斯达黎加', 'Costa Rica'],
 
   // Group F
   BELGIUM: ['比利时'],
@@ -61,7 +61,7 @@ export const SPORTTERY_TEAM_ALIASES: Record<string, string[]> = {
   PORTUGAL: ['葡萄牙'],
   GHANA: ['加纳'],
   URUGUAY: ['乌拉圭'],
-  SOUTH_KOREA: ['韩国', '南韩', 'Korea Republic', 'Korea South'],
+  SOUTH_KOREA: ['韩国', '南韩', 'South Korea', 'Korea Republic', 'Korea South'],
 
   // Group I
   IRAN: ['伊朗'],

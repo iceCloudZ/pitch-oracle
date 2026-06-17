@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.6,
+    "draw": 0.25,
+    "away": 0.15
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "France possesses greater squad depth and World Cup experience, making them strong favorites. Senegal's athleticism and recent AFCON title give them a fighting chance, but a draw or narrow France win is most likely.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040178",
+  "createdAt": "2026-06-14T17:18:27.067Z"
+}

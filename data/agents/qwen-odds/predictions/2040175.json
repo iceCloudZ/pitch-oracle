@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.65,
+    "draw": 0.22,
+    "away": 0.13
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "2-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.11
+    },
+    {
+      "score": "3-0",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.72,
+  "reasoning": "Market odds (1.43) imply a ~65% win probability for Belgium, reflecting their superior squad depth and technical quality compared to Egypt. While Egypt is defensively organized, the gap in individual talent favors a controlled Belgian victory, likely with a clean sheet or narrow margin.",
+  "agentId": "qwen-odds",
+  "matchId": "2040175",
+  "createdAt": "2026-06-15T02:05:02.112Z"
+}

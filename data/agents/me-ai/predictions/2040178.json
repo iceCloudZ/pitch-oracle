@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.6,
+    "draw": 0.25,
+    "away": 0.15
+  },
+  "scoreProbs": [
+    {
+      "score": "2-1",
+      "prob": 0.1
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-0",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.06
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "France are favorites given their world-class squad and recent tournament success, but Senegal are tough opponents and could hold them to a draw or steal a win. Probabilities reflect neutral venue, so France have a 60% chance of victory, with a 25% chance of a draw and 15% for Senegal.",
+  "agentId": "me-ai",
+  "matchId": "2040178",
+  "createdAt": "2026-06-14T17:18:52.133Z"
+}

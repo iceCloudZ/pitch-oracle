@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.12,
+    "draw": 0.21,
+    "away": 0.67
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.14
+    },
+    {
+      "score": "0-1",
+      "prob": 0.13
+    },
+    {
+      "score": "1-2",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    },
+    {
+      "score": "0-3",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Uruguay is significantly stronger based on squad quality and historical performance. Saudi Arabia will defend deep but struggle to contain Uruguay's attack. Market odds heavily favor Uruguay, with fair implied probability around 68%.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040176",
+  "createdAt": "2026-06-14T17:17:37.160Z"
+}

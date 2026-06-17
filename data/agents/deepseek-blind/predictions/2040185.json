@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.17,
+    "draw": 0.23,
+    "away": 0.6
+  },
+  "scoreProbs": [
+    {
+      "score": "0-1",
+      "prob": 0.134
+    },
+    {
+      "score": "0-2",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.107
+    },
+    {
+      "score": "1-2",
+      "prob": 0.096
+    },
+    {
+      "score": "0-0",
+      "prob": 0.074
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Colombia has stronger squad and more World Cup experience; Uzbekistan is improving but likely outclassed. Neutral venue, low-scoring match expected.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040185",
+  "createdAt": "2026-06-14T17:22:35.104Z"
+}

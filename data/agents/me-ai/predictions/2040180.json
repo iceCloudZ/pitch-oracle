@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.68,
+    "draw": 0.22,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "2-1",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Argentina are strong favorites as reigning world champions with superior squad quality. Algeria may adopt a defensive approach. However, Argentina's occasional vulnerability in group stages and the neutral venue add uncertainty.",
+  "agentId": "me-ai",
+  "matchId": "2040180",
+  "createdAt": "2026-06-14T17:19:37.951Z"
+}

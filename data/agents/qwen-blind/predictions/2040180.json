@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.72,
+    "draw": 0.18,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-1",
+      "prob": 0.12
+    },
+    {
+      "score": "3-0",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Argentina remains a dominant force with superior squad depth and tactical cohesion compared to Algeria. While Algeria can be dangerous on the counter-attack, Argentina's control of possession and defensive solidity make them clear favorites. The probability reflects Argentina's high win rate but accounts for potential World Cup volatility.",
+  "agentId": "qwen-blind",
+  "matchId": "2040180",
+  "createdAt": "2026-06-15T02:05:52.863Z"
+}

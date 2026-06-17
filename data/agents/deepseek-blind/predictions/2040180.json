@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.68,
+    "draw": 0.22,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.13
+    },
+    {
+      "score": "2-0",
+      "prob": 0.13
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    },
+    {
+      "score": "3-0",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Argentina are strong favorites with superior talent and recent success. Algeria can be competitive but likely to struggle against Argentina's defense.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040180",
+  "createdAt": "2026-06-14T17:19:10.888Z"
+}

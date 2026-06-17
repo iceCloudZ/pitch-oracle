@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.62,
+    "draw": 0.24,
+    "away": 0.14
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.134
+    },
+    {
+      "score": "2-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.107
+    },
+    {
+      "score": "2-1",
+      "prob": 0.096
+    },
+    {
+      "score": "0-0",
+      "prob": 0.074
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Belgium's superior squad and form make them clear favorites, but Egypt's organized defense could frustrate them, leading to a potential low-scoring match or draw.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040175",
+  "createdAt": "2026-06-14T17:17:04.076Z"
+}

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.55,
+    "draw": 0.25,
+    "away": 0.2
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-0",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.08
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Belgium's superior squad and recent tournament experience make them favorites, but Egypt's defensive discipline and counter-attacking threat, led by Salah, limit the margin. A low-scoring affair is likely.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040175",
+  "createdAt": "2026-06-14T17:16:43.717Z"
+}

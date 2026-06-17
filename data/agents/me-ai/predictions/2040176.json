@@ -1,0 +1,26 @@
+{
+  "agentId": "me-ai",
+  "matchId": "2040176",
+  "resultProbs": {
+    "home": 0.15,
+    "draw": 0.45,
+    "away": 0.4
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.18
+    },
+    {
+      "score": "0-1",
+      "prob": 0.12
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "slip-002: 买沙特全场平（4.25）",
+  "createdAt": "2026-06-15T20:00:00+08:00"
+}

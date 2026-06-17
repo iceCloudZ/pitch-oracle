@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.28,
+    "draw": 0.33,
+    "away": 0.39
+  },
+  "scoreProbs": [
+    {
+      "score": "0-0",
+      "prob": 0.157
+    },
+    {
+      "score": "0-1",
+      "prob": 0.157
+    },
+    {
+      "score": "1-0",
+      "prob": 0.134
+    },
+    {
+      "score": "1-1",
+      "prob": 0.134
+    },
+    {
+      "score": "0-2",
+      "prob": 0.079
+    }
+  ],
+  "confidence": 0.55,
+  "reasoning": "Market odds suggest a tight contest with Ecuador slightly favored. A Poisson model with low expected goals (Ivory Coast 0.85, Ecuador 1.0) approximates the implied probabilities and indicates the most likely scorelines are low-scoring draws or narrow wins.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040172",
+  "createdAt": "2026-06-14T17:15:48.790Z"
+}

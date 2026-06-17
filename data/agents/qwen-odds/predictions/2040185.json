@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.08,
+    "draw": 0.16,
+    "away": 0.76
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.14
+    },
+    {
+      "score": "0-1",
+      "prob": 0.13
+    },
+    {
+      "score": "1-2",
+      "prob": 0.11
+    },
+    {
+      "score": "0-3",
+      "prob": 0.09
+    },
+    {
+      "score": "1-3",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Colombia's superior technical quality and squad depth heavily outweigh Uzbekistan's defensive organization. The market odds (1.25 away win) strongly favor Colombia, reflecting a significant gap in FIFA rankings and recent form. Uzbekistan may keep it close early, but Colombia is likely to break through for a comfortable victory.",
+  "agentId": "qwen-odds",
+  "matchId": "2040185",
+  "createdAt": "2026-06-15T02:07:07.052Z"
+}

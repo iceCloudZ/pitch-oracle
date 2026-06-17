@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.71,
+    "draw": 0.19,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "2-1",
+      "prob": 0.15
+    },
+    {
+      "score": "1-0",
+      "prob": 0.14
+    },
+    {
+      "score": "3-1",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "France's superior squad depth and attacking quality heavily favor them, reflected in the low home odds (1.35). Senegal is physically robust and dangerous on counters, preventing a shutout probability from being too high, but France's technical advantage should secure a win in regular time.",
+  "agentId": "qwen-odds",
+  "matchId": "2040178",
+  "createdAt": "2026-06-15T02:05:46.666Z"
+}

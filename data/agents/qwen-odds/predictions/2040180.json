@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.76,
+    "draw": 0.15,
+    "away": 0.09
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-1",
+      "prob": 0.12
+    },
+    {
+      "score": "3-0",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.85,
+  "reasoning": "Argentina's superior squad depth and tactical cohesion under Scaloni make them heavy favorites against an Algerian side that lacks the same level of international pedigree. The market odds (1.26) imply a ~79% win probability; I slightly discount this to account for potential World Cup opening-match caution or Messi's age-related load management, but still favor a comfortable home victory.",
+  "agentId": "qwen-odds",
+  "matchId": "2040180",
+  "createdAt": "2026-06-15T02:06:00.661Z"
+}

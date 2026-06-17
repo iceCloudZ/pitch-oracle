@@ -1,0 +1,26 @@
+{
+  "agentId": "me-ai",
+  "matchId": "2040171",
+  "resultProbs": {
+    "home": 0.55,
+    "draw": 0.25,
+    "away": 0.2
+  },
+  "scoreProbs": [
+    {
+      "score": "2-1",
+      "prob": 0.15
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "slip-001: 买荷兰胜",
+  "createdAt": "2026-06-15T20:00:00+08:00"
+}

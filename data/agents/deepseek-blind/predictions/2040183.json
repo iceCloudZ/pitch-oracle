@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.4,
+    "draw": 0.3,
+    "away": 0.3
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.08
+    },
+    {
+      "score": "1-0",
+      "prob": 0.08
+    },
+    {
+      "score": "2-2",
+      "prob": 0.06
+    },
+    {
+      "score": "0-0",
+      "prob": 0.06
+    }
+  ],
+  "confidence": 0.55,
+  "reasoning": "Historically tight encounters between England and Croatia, with both teams possessing strong midfields and experienced tournament performers. England's depth and recent tournament consistency give them a slight edge, but Croatia's resilience and midfield quality make a draw or away win plausible. No current form or news data available, so forecast relies on typical patterns in World Cup group stage matches.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040183",
+  "createdAt": "2026-06-14T17:21:07.425Z"
+}

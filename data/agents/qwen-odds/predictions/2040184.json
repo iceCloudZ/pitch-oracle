@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.48,
+    "draw": 0.27,
+    "away": 0.25
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.13
+    },
+    {
+      "score": "2-1",
+      "prob": 0.11
+    },
+    {
+      "score": "0-0",
+      "prob": 0.09
+    },
+    {
+      "score": "2-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Market odds favor Ghana (Home) with a slight edge due to superior physicality and tournament experience compared to Panama. However, the close odds indicate a competitive match where a draw is highly probable. Ghana's defensive solidity suggests low-scoring outcomes like 1-0 or 1-1 are most likely.",
+  "agentId": "qwen-odds",
+  "matchId": "2040184",
+  "createdAt": "2026-06-15T02:06:54.276Z"
+}

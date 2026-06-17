@@ -1,0 +1,26 @@
+{
+  "agentId": "me-ai",
+  "matchId": "2040172",
+  "resultProbs": {
+    "home": 0.38,
+    "draw": 0.32,
+    "away": 0.3
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "slip-001: 买科特迪瓦胜+平（复式）",
+  "createdAt": "2026-06-15T20:00:00+08:00"
+}

@@ -1,0 +1,26 @@
+{
+  "agentId": "me-ai",
+  "matchId": "2040175",
+  "resultProbs": {
+    "home": 0.62,
+    "draw": 0.24,
+    "away": 0.14
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.13
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "slip-002: 买比利时让1胜",
+  "createdAt": "2026-06-15T20:00:00+08:00"
+}

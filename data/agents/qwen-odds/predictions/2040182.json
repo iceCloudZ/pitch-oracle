@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.85,
+    "draw": 0.11,
+    "away": 0.04
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.22
+    },
+    {
+      "score": "3-0",
+      "prob": 0.19
+    },
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "3-1",
+      "prob": 0.11
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.82,
+  "reasoning": "Portugal possesses a significant superiority in squad depth, technical quality, and tactical discipline compared to DR Congo. The market odds (1.14 for home win) reflect this massive disparity. DR Congo's defensive vulnerabilities against high-level European attacks suggest they will struggle to keep a clean sheet or secure a draw, making a comfortable Portuguese victory the most likely outcome.",
+  "agentId": "qwen-odds",
+  "matchId": "2040182",
+  "createdAt": "2026-06-15T02:06:27.549Z"
+}
