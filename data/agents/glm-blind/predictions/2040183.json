@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040183",
+  "resultProbs": {
+    "home": 0.52,
+    "draw": 0.28,
+    "away": 0.2
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.13
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    },
+    {
+      "score": "2-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.55,
+  "reasoning": "英格兰整体强于克罗地亚但攻坚不稳定。克罗地亚(莫德里奇39岁最后一届)大赛韧性强、中场控制仍在。平局概率被低估。",
+  "createdAt": "2026-06-17T07:08:47.120Z"
+}

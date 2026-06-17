@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-odds",
+  "matchId": "2040183",
+  "resultProbs": {
+    "home": 0.55,
+    "draw": 0.27,
+    "away": 0.18
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.13
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-1",
+      "prob": 0.1
+    },
+    {
+      "score": "2-0",
+      "prob": 0.08
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.56,
+  "reasoning": "看赔率(英隐含61%)略保守到55%。克罗地亚让1负(2.21)有正EV——克罗地亚不至于输2球。全场平(3.55)也值得考虑。",
+  "createdAt": "2026-06-17T07:08:47.120Z"
+}

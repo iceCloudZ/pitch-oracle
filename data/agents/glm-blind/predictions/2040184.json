@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040184",
+  "resultProbs": {
+    "home": 0.35,
+    "draw": 0.38,
+    "away": 0.27
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.15
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    },
+    {
+      "score": "0-1",
+      "prob": 0.08
+    },
+    {
+      "score": "2-1",
+      "prob": 0.06
+    }
+  ],
+  "confidence": 0.5,
+  "reasoning": "4场里最势均力敌。加纳体能强技术粗糙，巴拿马组织一般。谁赢都不意外，平局概率最高(38%)。",
+  "createdAt": "2026-06-17T07:08:47.120Z"
+}

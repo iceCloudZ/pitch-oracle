@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-odds",
+  "matchId": "2040185",
+  "resultProbs": {
+    "home": 0.1,
+    "draw": 0.2,
+    "away": 0.7
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.19
+    },
+    {
+      "score": "0-1",
+      "prob": 0.11
+    },
+    {
+      "score": "1-2",
+      "prob": 0.1
+    },
+    {
+      "score": "0-3",
+      "prob": 0.1
+    },
+    {
+      "score": "1-3",
+      "prob": 0.06
+    }
+  ],
+  "confidence": 0.66,
+  "reasoning": "看赔率(哥隐含82%)认同70%。哥伦比亚全场负(1.22)太低没价值，让球也偏低。这场不适合投注。",
+  "createdAt": "2026-06-17T07:08:47.120Z"
+}
