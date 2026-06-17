@@ -3,109 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>世界杯预测竞技场 · 平局之夜</title>
+<title>世界杯预测竞技场 · 11场战报</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif; background:#f0f2f5; display:flex; justify-content:center; padding:40px 20px; }
-  .poster { width:800px; background:#fff; border-radius:24px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,0.12); }
-  .header { background:linear-gradient(135deg,#0a0e27 0%,#1a1f4e 50%,#2d1b69 100%); padding:40px 44px 36px; position:relative; overflow:hidden; }
-  .header::before { content:''; position:absolute; top:-60px; right:-60px; width:240px; height:240px; background:radial-gradient(circle,rgba(120,80,255,0.3) 0%,transparent 70%); border-radius:50%; }
-  .header::after { content:'⚽'; position:absolute; bottom:-20px; right:30px; font-size:120px; opacity:0.08; }
-  .header .tag { display:inline-block; background:rgba(255,255,255,0.12); color:#a8b4ff; font-size:13px; font-weight:500; letter-spacing:2px; padding:6px 16px; border-radius:20px; border:1px solid rgba(255,255,255,0.15); margin-bottom:16px; }
-  .header h1 { color:#fff; font-size:34px; font-weight:900; letter-spacing:-0.5px; line-height:1.2; }
-  .header h1 .accent { background:linear-gradient(90deg,#00ffa3,#00d4ff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-  .header .subtitle { color:#8892c0; font-size:15px; margin-top:8px; font-family:'JetBrains Mono',monospace; }
-  .header .draw-banner { margin-top:14px; display:inline-block; background:rgba(255,200,0,0.15); color:#ffd700; font-size:13px; font-weight:700; padding:5px 14px; border-radius:16px; border:1px solid rgba(255,215,0,0.3); }
-  .section { padding:32px 44px 0; }
-  .section-title { font-size:14px; font-weight:700; color:#0a0e27; letter-spacing:1px; display:flex; align-items:center; gap:10px; margin-bottom:20px; }
-  .section-title .dot { width:8px; height:8px; background:#7c5cff; border-radius:50%; }
-  .section-title .line { flex:1; height:1px; background:linear-gradient(90deg,#e0e0e0,transparent); }
-  .result-table { width:100%; border-collapse:separate; border-spacing:0; font-size:13px; }
-  .result-table th { text-align:left; color:#8892b0; font-weight:500; font-size:11px; padding:8px 8px; border-bottom:2px solid #f0f0f5; }
-  .result-table td { padding:11px 8px; border-bottom:1px solid #f5f5f8; color:#2a2a3e; vertical-align:middle; }
-  .result-table tr:last-child td { border-bottom:none; }
-  .match-name { font-weight:700; color:#0a0e27; white-space:nowrap; }
-  .score { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:15px; text-align:center; }
-  .score-draw { color:#c89500; }
-  .score-win { color:#00b878; }
-  .verdict { text-align:center; font-weight:700; font-size:12px; }
-  .v-hit { color:#00b878; }
-  .v-miss { color:#ccc; }
-  .ai-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:0 44px; margin-top:24px; }
-  .ai-card { border:1.5px solid #eceef5; border-radius:16px; padding:20px 18px; position:relative; }
-  .ai-card.winner { border-color:#00b878; background:linear-gradient(180deg,#f0fdf4 0%,#fff 100%); }
-  .ai-card .ai-name { font-size:15px; font-weight:700; color:#0a0e27; display:flex; align-items:center; gap:8px; }
-  .ai-card .ai-icon { width:28px; height:28px; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:14px; color:#fff; }
-  .ai-card .big-num { margin-top:12px; font-family:'JetBrains Mono',monospace; font-size:28px; font-weight:900; }
-  .ai-card .sub { font-size:12px; color:#8892b0; margin-top:4px; }
-  .ai-card .crown { position:absolute; top:-10px; right:16px; font-size:24px; }
-  .bet-section { margin:28px 44px 0; background:linear-gradient(135deg,#0a0e27 0%,#1a1f4e 100%); border-radius:18px; padding:24px 28px; }
-  .bet-section h3 { color:#fff; font-size:16px; font-weight:700; margin-bottom:16px; }
-  .bet-row { display:flex; justify-content:space-between; align-items:center; padding:9px 0; border-bottom:1px solid rgba(255,255,255,0.08); }
-  .bet-row:last-child { border-bottom:none; }
-  .bet-label { color:#a8b4ff; font-size:13px; }
-  .bet-value { color:#fff; font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; }
-  .bet-value.green { color:#00ffa3; }
-  .bet-value.red { color:#ff6b6b; }
-  .bet-total { margin-top:14px; padding-top:14px; border-top:2px solid rgba(255,255,255,0.15); display:flex; justify-content:space-between; align-items:baseline; }
-  .bet-total .label { color:#8892c0; font-size:12px; }
-  .bet-total .amount { font-size:28px; font-weight:900; font-family:'JetBrains Mono',monospace; }
-  .footer { padding:24px 44px 36px; text-align:center; }
-  .footer .disclaimer { font-size:11px; color:#c0c0d0; line-height:1.6; }
-  .footer .source { margin-top:8px; font-size:11px; color:#a0a0b8; font-family:'JetBrains Mono',monospace; }
-  .draw-row { background:#fffdf0; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;background:#f0f2f5;display:flex;justify-content:center;padding:40px 20px}
+.poster{width:800px;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.12)}
+.header{background:linear-gradient(135deg,#0a0e27 0%,#1a1f4e 50%,#2d1b69 100%);padding:40px 44px 36px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(0,255,163,0.25) 0%,transparent 70%);border-radius:50%}
+.header::after{content:'⚽';position:absolute;bottom:-20px;right:30px;font-size:120px;opacity:0.08}
+.header .tag{display:inline-block;background:rgba(255,255,255,0.12);color:#a8b4ff;font-size:13px;font-weight:500;letter-spacing:2px;padding:6px 16px;border-radius:20px;border:1px solid rgba(255,255,255,0.15);margin-bottom:16px}
+.header h1{color:#fff;font-size:34px;font-weight:900;letter-spacing:-0.5px;line-height:1.2}
+.header h1 .accent{background:linear-gradient(90deg,#00ffa3,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.header .subtitle{color:#8892c0;font-size:15px;margin-top:8px;font-family:'JetBrains Mono',monospace}
+.header .pnl-banner{margin-top:14px;display:inline-block;background:rgba(0,255,163,0.15);color:#00ffa3;font-size:14px;font-weight:700;padding:6px 16px;border-radius:16px;border:1px solid rgba(0,255,163,0.3)}
+.section{padding:32px 44px 0}
+.section-title{font-size:14px;font-weight:700;color:#0a0e27;letter-spacing:1px;display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.section-title .dot{width:8px;height:8px;background:#00b878;border-radius:50%}
+.section-title .line{flex:1;height:1px;background:linear-gradient(90deg,#e0e0e0,transparent)}
+.lb-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px}
+.lb-table th{text-align:left;color:#8892b0;font-weight:500;font-size:12px;padding:8px 12px;border-bottom:2px solid #f0f0f5}
+.lb-table td{padding:12px;border-bottom:1px solid #f5f5f8;color:#2a2a3e;vertical-align:middle}
+.lb-table tr:last-child td{border-bottom:none}
+.lb-table .rank{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:16px;text-align:center}
+.lb-table .name{font-weight:700;color:#0a0e27}
+.lb-table .pts{font-family:'JetBrains Mono',monospace;font-weight:900;font-size:18px;text-align:center}
+.lb-table .human-row{background:linear-gradient(90deg,#f0fdf4,#fff)}
+.lb-table .human-row .name{color:#00b878}
+.bet-section{margin:28px 44px 0;background:linear-gradient(135deg,#0a0e27 0%,#1a1f4e 100%);border-radius:18px;padding:24px 28px}
+.bet-section h3{color:#fff;font-size:16px;font-weight:700;margin-bottom:16px}
+.bet-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+.bet-row:last-child{border-bottom:none}
+.bet-label{color:#a8b4ff;font-size:13px}
+.bet-value{color:#fff;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13px}
+.bet-value.green{color:#00ffa3}
+.bet-value.red{color:#ff6b6b}
+.bet-total{margin-top:14px;padding-top:14px;border-top:2px solid rgba(255,255,255,0.15);display:flex;justify-content:space-between;align-items:baseline}
+.bet-total .label{color:#8892c0;font-size:12px}
+.bet-total .amount{font-size:32px;font-weight:900;font-family:'JetBrains Mono',monospace}
+.footer{padding:24px 44px 36px;text-align:center}
+.footer .disclaimer{font-size:11px;color:#c0c0d0;line-height:1.6}
+.footer .source{margin-top:8px;font-size:11px;color:#a0a0b8;font-family:'JetBrains Mono',monospace}
 </style>
 </head>
 <body>
 <div class="poster">
   <div class="header">
-    <span class="tag">⚽ WORLD CUP 2026 · 平局之夜</span>
-    <h1>Human <span class="accent">8 分碾压</span> 全部 AI</h1>
-    <div class="subtitle">7 场 5 平 · 人工直觉 >> DeepSeek · Qwen · GLM-5.2</div>
-    <span class="draw-banner">😱 71% 平局率 · 所有 AI 集体翻车</span>
+    <span class="tag">⚽ WORLD CUP 2026 · 11 场战报</span>
+    <h1>Human <span class="accent">11 分碾压</span> 全部 AI</h1>
+    <div class="subtitle">人工直觉 >> DeepSeek · Qwen · GLM-5.2 · 11 场已结算</div>
+    <span class="pnl-banner">💰 累计净赚 +¥68.04（ROI +24%）</span>
   </div>
   <div class="section">
-    <div class="section-title"><span class="dot"></span> 7 场结算 · 你 vs AI <span class="line"></span><span style="font-size:12px;color:#a0a0b8;font-weight:400">✓=命中 ★=精确比分</span></div>
-    <table class="result-table">
-      <thead><tr><th>比赛</th><th style="text-align:center">比分</th><th style="text-align:center">你</th><th style="text-align:center">DeepSeek</th><th style="text-align:center">Qwen</th><th style="text-align:center">GLM</th></tr></thead>
+    <div class="section-title"><span class="dot"></span> 最终排行榜 <span class="line"></span><span style="font-size:12px;color:#a0a0b8;font-weight:400">11场 · 准确率+精确比分</span></div>
+    <table class="lb-table">
+      <thead>
+        <tr><th style="text-align:center">#</th><th>选手</th><th style="text-align:center">积分</th><th style="text-align:center">命中</th><th style="text-align:center">精确比分</th><th style="text-align:center">场次</th><th style="text-align:center">命中率</th></tr>
+      </thead>
       <tbody>
-        <tr class="draw-row"><td><div class="match-name">荷兰 vs 日本</div></td><td class="score score-draw">2-2</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">—</td></tr>
-        <tr><td><div class="match-name">科特迪瓦 vs 厄瓜多尔</div></td><td class="score score-win">1-0</td><td class="verdict v-hit">主胜★</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">—</td></tr>
-        <tr><td><div class="match-name">瑞典 vs 突尼斯</div></td><td class="score score-win">5-1</td><td class="verdict v-hit">主胜✓</td><td class="verdict v-hit">主胜✓</td><td class="verdict v-hit">主胜✓</td><td class="verdict v-miss">—</td></tr>
-        <tr class="draw-row"><td><div class="match-name">西班牙 vs 佛得角</div></td><td class="score score-draw">0-0</td><td class="verdict v-miss">让胜✗</td><td class="verdict v-miss">—</td><td class="verdict v-miss">—</td><td class="verdict v-miss">主胜✗</td></tr>
-        <tr class="draw-row"><td><div class="match-name">比利时 vs 埃及</div></td><td class="score score-draw">1-1</td><td class="verdict v-miss">让胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td></tr>
-        <tr class="draw-row"><td><div class="match-name">沙特 vs 乌拉圭</div></td><td class="score score-draw">1-1</td><td class="verdict v-hit">平★</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">客胜✗</td><td class="verdict v-miss">客胜✗</td></tr>
-        <tr class="draw-row"><td><div class="match-name">伊朗 vs 新西兰</div></td><td class="score score-draw">2-2</td><td class="verdict v-hit">平✓</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td><td class="verdict v-miss">主胜✗</td></tr>
+        <tr class="human-row"><td class="rank">👑1</td><td class="name">🧑 Human（你）</td><td class="pts" style="color:#00b878">11</td><td style="text-align:center">5</td><td style="text-align:center">2 ★</td><td style="text-align:center">10</td><td style="text-align:center;font-weight:700;color:#00b878">70%</td></tr>
+        <tr><td class="rank">2</td><td class="name">🧠 DeepSeek (blind)</td><td class="pts" style="color:#1a73e8">4</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">9</td><td style="text-align:center">44%</td></tr>
+        <tr><td class="rank">2</td><td class="name">🧠 DeepSeek (odds)</td><td class="pts" style="color:#1a73e8">4</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">9</td><td style="text-align:center">44%</td></tr>
+        <tr><td class="rank">2</td><td class="name">🧠 Qwen (blind)</td><td class="pts" style="color:#6c5ce7">4</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">9</td><td style="text-align:center">44%</td></tr>
+        <tr><td class="rank">2</td><td class="name">🧠 Qwen (odds)</td><td class="pts" style="color:#6c5ce7">4</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">9</td><td style="text-align:center">44%</td></tr>
+        <tr><td class="rank">2</td><td class="name">🧠 GLM-5.2 (blind)</td><td class="pts" style="color:#e83a5f">4</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">8</td><td style="text-align:center">50%</td></tr>
+        <tr><td class="rank">2</td><td class="name">🧠 GLM-5.2 (odds)</td><td class="pts" style="color:#e83a5f">4</td><td style="text-align:center">4</td><td style="text-align:center">0</td><td style="text-align:center">8</td><td style="text-align:center">50%</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="section" style="padding-top:24px">
-    <div class="section-title"><span class="dot" style="background:#00b878"></span> 最终排行榜 <span class="line"></span></div>
-  </div>
-  <div class="ai-cards">
-    <div class="ai-card winner">
-      <span class="crown">👑</span>
-      <div class="ai-name"><span class="ai-icon" style="background:#00b878">🧑</span> Human（你）</div>
-      <div class="big-num" style="color:#00b878">8 <span style="font-size:14px;color:#8892b0">分</span></div>
-      <div class="sub">4/7 命中 · 2 精确比分 · 唯一猜对平局</div>
-    </div>
-    <div class="ai-card">
-      <div class="ai-name"><span class="ai-icon" style="background:#1a73e8">🧠</span> DeepSeek</div>
-      <div class="big-num" style="color:#1a73e8">1 <span style="font-size:14px;color:#8892b0">分</span></div>
-      <div class="sub">1/6 命中 · 0 平局 · ROI -60%</div>
-    </div>
-    <div class="ai-card">
-      <div class="ai-name"><span class="ai-icon" style="background:#6c5ce7">🧠</span> Qwen + GLM</div>
-      <div class="big-num" style="color:#e83a5f">1+0 <span style="font-size:14px;color:#8892b0">分</span></div>
-      <div class="sub">Qwen 1/6 · GLM 0/4 · 集体翻车</div>
-    </div>
-  </div>
   <div class="bet-section">
-    <h3>🎫 真金白银 · 累计战绩</h3>
+    <h3>🎫 真金白银 · 三期战绩</h3>
     <div class="bet-row"><span class="bet-label">slip-001 · 科特迪瓦复式 + 瑞典大胜</span><span class="bet-value green">+¥51.94</span></div>
     <div class="bet-row"><span class="bet-label">slip-002 · 串关全挂 + 沙特全场平 4.25 中</span><span class="bet-value red">-¥47.50</span></div>
-    <div class="bet-total"><span class="label">累计净盈亏</span><span class="amount" style="color:#00ffa3">+¥4.44</span></div>
+    <div class="bet-row"><span class="bet-label">slip-003 · 阿根廷+法国让1胜全中！</span><span class="bet-value green">+¥63.60</span></div>
+    <div class="bet-total"><span class="label">累计净盈亏（投入 ¥288）</span><span class="amount" style="color:#00ffa3">+¥68.04</span></div>
   </div>
   <div class="footer">
     <div class="disclaimer">⚠️ 本内容仅供数据分析与学习交流，模拟资金，不构成投注建议。<br>理性观赛，量力而行，请勿沉迷。18+</div>
