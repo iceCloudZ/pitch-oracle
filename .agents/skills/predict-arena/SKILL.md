@@ -79,15 +79,22 @@ Ensure each matchId is in `data/match-index.json` (add if missing: `{ "<id>": { 
 
 ### 5. Help design the bet slip
 
-Based on the analysis and EV, help the user design a bet slip. Typical patterns the user prefers:
+Based on the analysis and EV, help the user design a bet slip. **Follow the conservative strategy** (established after slip-004's -170 loss taught us high-variance bets bleed the bankroll):
 
-- **Two slips**: one stable (强队让胜串关), one speculative (弱队扛住/买平).
-- **让球 (handicap) focus**: the user buys handicap markets, not just 1x2.
-- **2串1 is the sweet spot**: 3串1+ is high variance.
-- **Buying draws**: when you sense "平局之夜" potential, buy full-time draw at 3.0-4.5 odds (historically profitable for this user).
-- **Budget**: typically ¥100 per round.
+**Mandatory rules:**
+- **NO score bets (比分)**. Score markets have ~10-15% hit rate and devastated the bankroll in slip-004. Only use 胜负(had) and 让球(hhad).
+- **NO 穿盘 (win by 2+ handicap wins)**. Handicap wins requiring the favorite to win by 2+ are too sensitive to "win by exactly 1" outcomes. Prefer handicap bets where "win by 1 is enough" or "underdog holds" (让负).
+- **2串1 only**. 3串1+ is forbidden — the all-or-nothing payout structure is a bankroll killer.
+- **Max 3 legs (注) per round**.
+- **Budget: ¥100 per round, fixed.** Never increase after a loss.
 
-Compute the combined odds, stake allocation, and present an EV-weighted payout table. Let the user adjust before confirming.
+**Typical slip structure (two legs):**
+- **Leg 1 (stable)**: two strong favorites in a 2串1, buying either straight win (had) or handicap win where 1 goal suffices. Combined odds ~3-4.
+- **Leg 2 (speculative)**: a draw or underdog-holds bet. The user has historically profited from buying draws at 3.0-4.5 odds (Saudi 1-1, Iran 2-2). When you sense draw potential, recommend full-time draw.
+
+Compute the combined odds, stake allocation, and present a payout table. Let the user adjust before confirming.
+
+**Allocation guidance:** Leg 1 gets ~60-70% of budget (higher hit probability), Leg 2 gets ~30-40% (higher odds, lower hit rate but bigger payoff).
 
 ### 6. Record to my-bets.json
 
