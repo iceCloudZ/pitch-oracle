@@ -543,16 +543,16 @@
     },
     {
       "id": "slip-005",
-      "description": "6/19四场。第一单：加拿大×捷克×瑞士全场胜3串1(40倍,80元)。第二单：韩国让1负单关(60倍,120元)。总200元。",
+      "description": "6/19四场。第一单：捷/瑞/加/韩让负 3串1+4串1(12倍,120元)。第二单：捷比分(1-1/1-2)×墨比分(1-1/0-1)复式串(10倍,80元)。总200元。",
       "boughtAt": "2026-06-18T22:00:00+08:00",
       "totalStake": 200,
       "legs": [
         {
-          "type": "3串1",
-          "combination": "加拿大胜 × 捷克胜 × 瑞士胜",
-          "count": 1,
-          "multiplier": 40,
-          "stake": 80,
+          "type": "3串1+4串1",
+          "combination": "捷克胜×瑞士胜×加拿大胜×韩国让1负",
+          "count": 5,
+          "multiplier": 12,
+          "stake": 120,
           "matches": [
             {
               "matchIndexId": "2040237",
@@ -580,18 +580,7 @@
               "market": "had",
               "selection": "home",
               "odds": 1.38
-            }
-          ],
-          "combinedOdds": 2.7489599999999994,
-          "status": "pending"
-        },
-        {
-          "type": "单关",
-          "combination": "韩国让1负（墨西哥让1后不胜）",
-          "count": 1,
-          "multiplier": 60,
-          "stake": 120,
-          "matches": [
+            },
             {
               "matchIndexId": "2040238",
               "matchNum": "周四028",
@@ -600,22 +589,67 @@
               "market": "hhad",
               "selection": "away",
               "goalLine": -1,
-              "odds": 1.72,
-              "note": "墨西哥让1负=韩国不败或只输1球"
+              "odds": 1.72
             }
           ],
-          "status": "pending"
+          "status": "pending",
+          "note": "4注3串1+1注4串1=5注。综合赔率：3串1约2.75/2.06/3.23/1.66(各3场)，4串1约4.72。"
+        },
+        {
+          "type": "比分复式串",
+          "combination": "捷克1-1/1-2 × 墨西哥1-1/0-1",
+          "count": 4,
+          "multiplier": 10,
+          "stake": 80,
+          "matches": [
+            {
+              "matchIndexId": "2040235",
+              "matchNum": "周四025",
+              "homeTeam": "捷克",
+              "awayTeam": "南非",
+              "market": "crs",
+              "selections": [
+                "1-1",
+                "1-2"
+              ],
+              "odds": {
+                "1-1": 5.25,
+                "1-2": 13
+              },
+              "note": "对冲：覆盖捷克不胜"
+            },
+            {
+              "matchIndexId": "2040238",
+              "matchNum": "周四028",
+              "homeTeam": "墨西哥",
+              "awayTeam": "韩国",
+              "market": "crs",
+              "selections": [
+                "1-1",
+                "0-1"
+              ],
+              "odds": {
+                "1-1": 5.2,
+                "0-1": 10
+              },
+              "note": "对冲：覆盖平局或韩国小胜"
+            }
+          ],
+          "status": "pending",
+          "combinedOddsRange": {
+            "min": 27.3,
+            "max": 130
+          },
+          "note": "4注复式。最低组合(1-1×1-1)=27.3，最高(1-2×0-1)=130.0。对冲胜负串。"
         }
       ],
       "summary": {
         "totalStake": 200,
-        "firstSlipStake": 80,
-        "firstSlipMultiplier": 40,
-        "firstSlipOdds": 2.75,
-        "secondSlipStake": 120,
-        "secondSlipMultiplier": 60,
-        "secondSlipOdds": 1.72,
-        "pendingNote": "2注待定。3串1综合2.75。韩国让1负1.72（正EV安全网）。"
+        "firstSlipStake": 120,
+        "firstSlipMultiplier": 12,
+        "secondSlipStake": 80,
+        "secondSlipMultiplier": 10,
+        "pendingNote": "5注胜负串+4注比分串=9注。对冲设计：捷克/韩国不胜时比分串兜底。"
       }
     }
   ]
