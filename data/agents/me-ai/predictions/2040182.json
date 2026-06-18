@@ -1,34 +1,26 @@
 {
+  "agentId": "me-ai",
+  "matchId": "2040182",
   "resultProbs": {
-    "home": 0.72,
-    "draw": 0.18,
-    "away": 0.1
+    "home": 0.85,
+    "draw": 0.1,
+    "away": 0.05
   },
   "scoreProbs": [
     {
-      "score": "2-0",
-      "prob": 0.15
-    },
-    {
-      "score": "1-0",
-      "prob": 0.12
-    },
-    {
       "score": "3-0",
-      "prob": 0.12
+      "prob": 0.18
     },
     {
-      "score": "1-1",
+      "score": "2-0",
+      "prob": 0.13
+    },
+    {
+      "score": "4-0",
       "prob": 0.1
-    },
-    {
-      "score": "2-1",
-      "prob": 0.08
     }
   ],
-  "confidence": 0.7,
-  "reasoning": "Portugal, with superior technical quality and depth, clear favorites against DR Congo. Expected dominant possession and several scoring chances. DR Congo may defend deep but likely to concede. Draw possible if Portugal underperforms.",
-  "agentId": "me-ai",
-  "matchId": "2040182",
-  "createdAt": "2026-06-14T17:20:59.608Z"
+  "confidence": 0.55,
+  "reasoning": "slip-004: 买葡让2胜（实际1-1平→让负✗）",
+  "createdAt": "2026-06-18T05:41:31.687Z"
 }

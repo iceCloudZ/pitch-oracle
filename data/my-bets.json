@@ -478,7 +478,9 @@
             }
           ],
           "combinedOdds": 4.7763,
-          "status": "pending"
+          "status": "lost",
+          "pnl": -80,
+          "note": "葡萄牙1-1刚果金→让2负。串关全挂。"
         },
         {
           "type": "比分串(复式9注)",
@@ -527,18 +529,16 @@
             "max": 181.5
           },
           "lowestPayout": 319,
-          "status": "pending",
-          "note": "9注复式。最低赔率组合英1-1×加1-1=31.9。中了最低组=31.9×10=319元。"
+          "status": "lost",
+          "note": "英格兰4-2不在2-1/1-1/1-2选号内。9注全挂。",
+          "pnl": -90
         }
       ],
       "summary": {
         "totalStake": 170,
-        "firstSlipStake": 80,
-        "firstSlipMultiplier": 40,
-        "firstSlipOdds": 4.78,
-        "secondSlipStake": 90,
-        "secondSlipMultiplier": 5,
-        "pendingNote": "2注待定。穿盘串综合4.78。比分串9注复式，最低赔率31.9。"
+        "totalReturn": 0,
+        "netPnl": -170,
+        "note": "全损。葡萄牙被刚果金逼平(1-1)，英格兰大胜4-2(超出比分覆盖范围)。"
       }
     }
   ]

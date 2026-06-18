@@ -1,34 +1,26 @@
 {
+  "agentId": "me-ai",
+  "matchId": "2040183",
   "resultProbs": {
-    "home": 0.46,
-    "draw": 0.28,
-    "away": 0.26
+    "home": 0.6,
+    "draw": 0.25,
+    "away": 0.15
   },
   "scoreProbs": [
     {
-      "score": "1-1",
+      "score": "2-1",
       "prob": 0.12
     },
     {
       "score": "1-0",
-      "prob": 0.11
+      "prob": 0.1
     },
     {
-      "score": "2-1",
-      "prob": 0.09
-    },
-    {
-      "score": "0-0",
+      "score": "1-1",
       "prob": 0.08
-    },
-    {
-      "score": "2-0",
-      "prob": 0.07
     }
   ],
-  "confidence": 0.7,
-  "reasoning": "England slight favourites due to stronger squad depth and recent form, but Croatia's tournament experience and resilience make a draw or narrow Croatia win possible.",
-  "agentId": "me-ai",
-  "matchId": "2040183",
-  "createdAt": "2026-06-14T17:21:41.799Z"
+  "confidence": 0.55,
+  "reasoning": "slip-004: 买英比分2-1/1-1/1-2（实际4-2→不在范围✗）",
+  "createdAt": "2026-06-18T05:41:31.687Z"
 }

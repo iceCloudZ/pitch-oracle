@@ -1,34 +1,26 @@
 {
+  "agentId": "me-ai",
+  "matchId": "2040185",
   "resultProbs": {
-    "home": 0.13,
-    "draw": 0.22,
-    "away": 0.65
+    "home": 0.12,
+    "draw": 0.2,
+    "away": 0.68
   },
   "scoreProbs": [
     {
-      "score": "0-1",
-      "prob": 0.12
-    },
-    {
       "score": "0-2",
-      "prob": 0.1
+      "prob": 0.16
     },
     {
-      "score": "1-1",
-      "prob": 0.09
+      "score": "0-1",
+      "prob": 0.1
     },
     {
       "score": "1-2",
       "prob": 0.08
-    },
-    {
-      "score": "0-0",
-      "prob": 0.07
     }
   ],
-  "confidence": 0.7,
-  "reasoning": "Colombia's superior quality and experience in major tournaments gives them the edge, but Uzbekistan's organized defense could keep the score low. World Cup setting may lead to a cautious start.",
-  "agentId": "me-ai",
-  "matchId": "2040185",
-  "createdAt": "2026-06-14T17:22:56.331Z"
+  "confidence": 0.55,
+  "reasoning": "slip-004: 买哥让1负（实际1-3→让负✓但串关因葡挂了）",
+  "createdAt": "2026-06-18T05:41:31.687Z"
 }

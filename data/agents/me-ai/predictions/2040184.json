@@ -1,34 +1,26 @@
 {
+  "agentId": "me-ai",
+  "matchId": "2040184",
   "resultProbs": {
-    "home": 0.42,
-    "draw": 0.31,
-    "away": 0.27
+    "home": 0.35,
+    "draw": 0.35,
+    "away": 0.3
   },
   "scoreProbs": [
-    {
-      "score": "1-0",
-      "prob": 0.12
-    },
     {
       "score": "1-1",
       "prob": 0.13
     },
     {
+      "score": "1-0",
+      "prob": 0.1
+    },
+    {
       "score": "0-0",
-      "prob": 0.09
-    },
-    {
-      "score": "2-0",
       "prob": 0.08
-    },
-    {
-      "score": "0-1",
-      "prob": 0.07
     }
   ],
   "confidence": 0.55,
-  "reasoning": "Ghana historically stronger than Panama, but neutral venue adds uncertainty. Match likely low-scoring.",
-  "agentId": "me-ai",
-  "matchId": "2040184",
-  "createdAt": "2026-06-14T17:22:11.262Z"
+  "reasoning": "slip-004: 买加比分2-1/1-1/1-2（实际1-0→不在范围✗）",
+  "createdAt": "2026-06-18T05:41:31.687Z"
 }
