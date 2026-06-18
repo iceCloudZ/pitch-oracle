@@ -540,6 +540,83 @@
         "netPnl": -170,
         "note": "全损。葡萄牙被刚果金逼平(1-1)，英格兰大胜4-2(超出比分覆盖范围)。"
       }
+    },
+    {
+      "id": "slip-005",
+      "description": "6/19四场。第一单：加拿大×捷克×瑞士全场胜3串1(40倍,80元)。第二单：韩国让1负单关(60倍,120元)。总200元。",
+      "boughtAt": "2026-06-18T22:00:00+08:00",
+      "totalStake": 200,
+      "legs": [
+        {
+          "type": "3串1",
+          "combination": "加拿大胜 × 捷克胜 × 瑞士胜",
+          "count": 1,
+          "multiplier": 40,
+          "stake": 80,
+          "matches": [
+            {
+              "matchIndexId": "2040237",
+              "matchNum": "周四027",
+              "homeTeam": "加拿大",
+              "awayTeam": "卡塔尔",
+              "market": "had",
+              "selection": "home",
+              "odds": 1.2
+            },
+            {
+              "matchIndexId": "2040235",
+              "matchNum": "周四025",
+              "homeTeam": "捷克",
+              "awayTeam": "南非",
+              "market": "had",
+              "selection": "home",
+              "odds": 1.66
+            },
+            {
+              "matchIndexId": "2040236",
+              "matchNum": "周四026",
+              "homeTeam": "瑞士",
+              "awayTeam": "波黑",
+              "market": "had",
+              "selection": "home",
+              "odds": 1.38
+            }
+          ],
+          "combinedOdds": 2.7489599999999994,
+          "status": "pending"
+        },
+        {
+          "type": "单关",
+          "combination": "韩国让1负（墨西哥让1后不胜）",
+          "count": 1,
+          "multiplier": 60,
+          "stake": 120,
+          "matches": [
+            {
+              "matchIndexId": "2040238",
+              "matchNum": "周四028",
+              "homeTeam": "墨西哥",
+              "awayTeam": "韩国",
+              "market": "hhad",
+              "selection": "away",
+              "goalLine": -1,
+              "odds": 1.72,
+              "note": "墨西哥让1负=韩国不败或只输1球"
+            }
+          ],
+          "status": "pending"
+        }
+      ],
+      "summary": {
+        "totalStake": 200,
+        "firstSlipStake": 80,
+        "firstSlipMultiplier": 40,
+        "firstSlipOdds": 2.75,
+        "secondSlipStake": 120,
+        "secondSlipMultiplier": 60,
+        "secondSlipOdds": 1.72,
+        "pendingNote": "2注待定。3串1综合2.75。韩国让1负1.72（正EV安全网）。"
+      }
     }
   ]
 }

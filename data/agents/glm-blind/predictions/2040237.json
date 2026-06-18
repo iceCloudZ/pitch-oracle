@@ -1,0 +1,34 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040237",
+  "resultProbs": {
+    "home": 0.78,
+    "draw": 0.15,
+    "away": 0.07
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.15
+    },
+    {
+      "score": "3-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    },
+    {
+      "score": "3-1",
+      "prob": 0.08
+    },
+    {
+      "score": "2-1",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.72,
+  "reasoning": "加拿大(戴维斯+拉林)东道主之一，速度型打法碾压卡塔尔(归化球员磨合差)。预计大胜。",
+  "createdAt": "2026-06-18T06:02:38.297Z"
+}
