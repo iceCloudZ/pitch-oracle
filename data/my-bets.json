@@ -704,6 +704,157 @@
         "secondSlipMultiplier": 10,
         "settledNote": "全损200元。捷克1-1平局爆冷(选了捷克胜)、墨西哥1-0韩国(选了韩国让1负=需韩国+1后赢即韩国平或胜，实际让平)双双不中。胜负串5注全挂，比分串4注(墨西哥1-0不在1-1/0-1选号内)全挂。对冲设计本想用比分串兜底捷克不胜，但墨西哥侧未中。"
       }
+    },
+    {
+      "id": "slip-006",
+      "description": "6/20四场。美/摩/巴三穿盘 × 土耳其胜负胜平复式，3串1+4串1，9注，20倍，360元。核心押巴西美国摩洛哥净胜2+，土耳其复式放大回报。",
+      "boughtAt": "2026-06-19T17:46:00+08:00",
+      "totalStake": 360,
+      "multiplier": 20,
+      "unitPrice": 2,
+      "totalLegs": 9,
+      "legs": [
+        {
+          "type": "3串1",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040239", "matchNum": "周五029", "homeTeam": "美国", "awayTeam": "澳大利亚", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.51, "note": "美国净胜2+算中" },
+            { "matchIndexId": "2040240", "matchNum": "周五030", "homeTeam": "苏格兰", "awayTeam": "摩洛哥", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.82, "note": "苏格兰受1，买让负=摩洛哥净胜2+算中" },
+            { "matchIndexId": "2040241", "matchNum": "周五031", "homeTeam": "巴西", "awayTeam": "海地", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63, "note": "巴西净胜3+算中" }
+          ],
+          "combinedOdds": 11.540346,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "美国 × 摩洛哥 × 土耳其胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040239", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.51 },
+            { "matchIndexId": "2040240", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.82 },
+            { "matchIndexId": "2040242", "matchNum": "周五032", "homeTeam": "土耳其", "awayTeam": "巴拉圭", "market": "had", "selection": "home", "odds": 1.78 }
+          ],
+          "combinedOdds": 12.59556,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "美国 × 摩洛哥 × 土耳其平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040239", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.51 },
+            { "matchIndexId": "2040240", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.82 },
+            { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
+          ],
+          "combinedOdds": 23.209776,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "美国 × 巴西 × 土耳其胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040239", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.51 },
+            { "matchIndexId": "2040241", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63 },
+            { "matchIndexId": "2040242", "market": "had", "selection": "home", "odds": 1.78 }
+          ],
+          "combinedOdds": 7.284014,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "美国 × 巴西 × 土耳其平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040239", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.51 },
+            { "matchIndexId": "2040241", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63 },
+            { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
+          ],
+          "combinedOdds": 13.414368,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "摩洛哥 × 巴西 × 土耳其胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040240", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.82 },
+            { "matchIndexId": "2040241", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63 },
+            { "matchIndexId": "2040242", "market": "had", "selection": "home", "odds": 1.78 }
+          ],
+          "combinedOdds": 8.182068,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "摩洛哥 × 巴西 × 土耳其平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040240", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.82 },
+            { "matchIndexId": "2040241", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63 },
+            { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
+          ],
+          "combinedOdds": 15.080592,
+          "status": "pending"
+        },
+        {
+          "type": "4串1",
+          "combination": "美国 × 摩洛哥 × 巴西 × 土耳其胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040239", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.51 },
+            { "matchIndexId": "2040240", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.82 },
+            { "matchIndexId": "2040241", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63 },
+            { "matchIndexId": "2040242", "market": "had", "selection": "home", "odds": 1.78 }
+          ],
+          "combinedOdds": 20.54369472,
+          "status": "pending"
+        },
+        {
+          "type": "4串1",
+          "combination": "美国 × 摩洛哥 × 巴西 × 土耳其平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040239", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.51 },
+            { "matchIndexId": "2040240", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.82 },
+            { "matchIndexId": "2040241", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63 },
+            { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
+          ],
+          "combinedOdds": 37.8419856,
+          "status": "pending"
+        }
+      ],
+      "summary": {
+        "totalStake": 360,
+        "multiplier": 20,
+        "unitPrice": 2,
+        "totalLegs": 9,
+        "payoutScenario": {
+          "threeThrough_turkeyWin": 1202.8,
+          "threeThrough_turkeyDraw": 2022.0,
+          "onlyUsMor_turkeyWin": 251.9,
+          "onlyUsMor_turkeyDraw": 464.2
+        },
+        "pendingNote": "9注(7个3串1+2个4串1)。核心：美/摩/巴三穿盘，土耳其胜平复式放大回报。最大命门巴西穿盘(8/9注含它)。全中土耳其平最高+2022。"
+      }
     }
   ]
 }

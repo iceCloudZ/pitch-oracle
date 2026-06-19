@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040239",
+  "resultProbs": {
+    "home": 0.66,
+    "draw": 0.21,
+    "away": 0.13
+  },
+  "scoreProbs": [
+    { "score": "2-0", "prob": 0.15 },
+    { "score": "2-1", "prob": 0.12 },
+    { "score": "3-0", "prob": 0.12 },
+    { "score": "1-0", "prob": 0.11 },
+    { "score": "1-1", "prob": 0.10 }
+  ],
+  "confidence": 0.66,
+  "reasoning": "2026东道主美国坐镇本土，球迷加持，整体实力强于澳大利亚。小组赛首轮美国应能掌控节奏取胜，但穿盘(净胜2+)需进攻端火力全开，有小胜风险。",
+  "createdAt": "2026-06-19T09:46:31.259Z"
+}

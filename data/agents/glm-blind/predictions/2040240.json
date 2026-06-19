@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040240",
+  "resultProbs": {
+    "home": 0.16,
+    "draw": 0.25,
+    "away": 0.59
+  },
+  "scoreProbs": [
+    { "score": "0-2", "prob": 0.14 },
+    { "score": "0-1", "prob": 0.13 },
+    { "score": "1-2", "prob": 0.11 },
+    { "score": "1-1", "prob": 0.11 },
+    { "score": "0-3", "prob": 0.08 }
+  ],
+  "confidence": 0.59,
+  "reasoning": "摩洛哥卡塔尔世界杯四强班底，阿什拉夫齐耶赫领衔，硬实力远超苏格兰。但苏格兰身体对抗强，密集防守可能让摩洛哥攻坚受阻，有被偷平的风险。",
+  "createdAt": "2026-06-19T09:46:31.259Z"
+}

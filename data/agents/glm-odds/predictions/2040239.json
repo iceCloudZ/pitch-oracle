@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-odds",
+  "matchId": "2040239",
+  "resultProbs": {
+    "home": 0.68,
+    "draw": 0.20,
+    "away": 0.12
+  },
+  "scoreProbs": [
+    { "score": "2-0", "prob": 0.16 },
+    { "score": "3-0", "prob": 0.13 },
+    { "score": "2-1", "prob": 0.11 },
+    { "score": "1-0", "prob": 0.10 },
+    { "score": "3-1", "prob": 0.08 }
+  ],
+  "confidence": 0.68,
+  "reasoning": "2026东道主美国本土作战有球迷加持，实力碾压澳大利亚。胜负1.45隐含69%主胜合理。穿盘(让1需净胜2+)概率约55%，美国进攻端火力足够。",
+  "createdAt": "2026-06-19T09:46:31.259Z"
+}

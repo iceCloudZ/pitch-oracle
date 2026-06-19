@@ -74,5 +74,25 @@
   "2040238": {
     "homeTeam": "墨西哥",
     "awayTeam": "韩国"
+  },
+  "2040239": {
+    "homeTeam": "美国",
+    "awayTeam": "澳大利亚"
+  },
+  "2040240": {
+    "homeTeam": "苏格兰",
+    "awayTeam": "摩洛哥"
+  },
+  "2040241": {
+    "homeTeam": "巴西",
+    "awayTeam": "海地"
+  },
+  "2040242": {
+    "homeTeam": "土耳其",
+    "awayTeam": "巴拉圭"
+  },
+  "2040243": {
+    "homeTeam": "荷兰",
+    "awayTeam": "瑞典"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040241",
+  "resultProbs": {
+    "home": 0.89,
+    "draw": 0.07,
+    "away": 0.04
+  },
+  "scoreProbs": [
+    { "score": "3-0", "prob": 0.19 },
+    { "score": "4-0", "prob": 0.16 },
+    { "score": "5-0", "prob": 0.11 },
+    { "score": "3-1", "prob": 0.09 },
+    { "score": "4-1", "prob": 0.07 }
+  ],
+  "confidence": 0.84,
+  "reasoning": "巴西对加勒比弱旅海地实力悬殊，胜负毫无悬念。核心看穿盘——巴西进攻火力(维尼修斯领衔)足以净胜3球+，预计3-0起步。唯一风险是领先后保守轮换只赢2球。",
+  "createdAt": "2026-06-19T09:46:31.259Z"
+}
