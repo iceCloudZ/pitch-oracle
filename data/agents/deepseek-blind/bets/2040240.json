@@ -1,0 +1,26 @@
+[
+  {
+    "matchId": "2040240",
+    "agentId": "deepseek-blind",
+    "market": "home",
+    "modelProb": 0.25,
+    "impliedProb": 0.1801801801801802,
+    "decimalOdds": 5.55,
+    "oddsTimestamp": "2026-06-19 17:41:35",
+    "ev": 0.38749999999999996,
+    "kellyFraction": 0.08516483516483515,
+    "recommendedStakePct": 0.02129120879120879
+  },
+  {
+    "matchId": "2040240",
+    "agentId": "deepseek-blind",
+    "market": "draw",
+    "modelProb": 0.3,
+    "impliedProb": 0.2824858757062147,
+    "decimalOdds": 3.54,
+    "oddsTimestamp": "2026-06-19 17:41:35",
+    "ev": 0.062000000000000055,
+    "kellyFraction": 0.02440944881889766,
+    "recommendedStakePct": 0.006102362204724415
+  }
+]
