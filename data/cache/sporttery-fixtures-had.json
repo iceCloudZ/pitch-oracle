@@ -1,51 +1,6 @@
 {
-  "expiresAt": 1781761554413,
+  "expiresAt": 1781860017431,
   "data": [
-    {
-      "id": "2040235",
-      "homeTeam": "捷克",
-      "awayTeam": "南非",
-      "commenceTime": "2026-06-19T00:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周四025"
-    },
-    {
-      "id": "2040236",
-      "homeTeam": "瑞士",
-      "awayTeam": "波黑",
-      "commenceTime": "2026-06-19T03:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周四026"
-    },
-    {
-      "id": "2040237",
-      "homeTeam": "加拿大",
-      "awayTeam": "卡塔尔",
-      "commenceTime": "2026-06-19T06:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周四027"
-    },
-    {
-      "id": "2040238",
-      "homeTeam": "墨西哥",
-      "awayTeam": "韩国",
-      "commenceTime": "2026-06-19T09:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周四028"
-    },
-    {
-      "id": "2040233",
-      "homeTeam": "AC奥卢",
-      "awayTeam": "玛丽港",
-      "commenceTime": "2026-06-18T17:59:00+08:00",
-      "competition": "芬超",
-      "status": "Selling",
-      "matchNum": "周四201"
-    },
     {
       "id": "2040239",
       "homeTeam": "美国",
@@ -99,6 +54,33 @@
       "competition": "世界杯",
       "status": "Selling",
       "matchNum": "周六036"
+    },
+    {
+      "id": "2040248",
+      "homeTeam": "比利时",
+      "awayTeam": "伊朗",
+      "commenceTime": "2026-06-22T03:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周日038"
+    },
+    {
+      "id": "2040249",
+      "homeTeam": "乌拉圭",
+      "awayTeam": "佛得角",
+      "commenceTime": "2026-06-22T06:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周日039"
+    },
+    {
+      "id": "2040250",
+      "homeTeam": "新西兰",
+      "awayTeam": "埃及",
+      "commenceTime": "2026-06-22T09:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周日040"
     }
   ]
 }

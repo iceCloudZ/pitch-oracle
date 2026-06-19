@@ -1,5 +1,5 @@
 {
-  "expiresAt": 1781761554413,
+  "expiresAt": 1781860017431,
   "data": [
     {
       "matchId": "537327",
@@ -156,11 +156,46 @@
       "awayTeam": "Croatia"
     },
     {
+      "matchId": "537410",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeTeam": "Ghana",
+      "awayTeam": "Panama"
+    },
+    {
       "matchId": "537404",
       "homeScore": 1,
       "awayScore": 3,
       "homeTeam": "Uzbekistan",
       "awayTeam": "Colombia"
+    },
+    {
+      "matchId": "537329",
+      "homeScore": 1,
+      "awayScore": 1,
+      "homeTeam": "Czechia",
+      "awayTeam": "South Africa"
+    },
+    {
+      "matchId": "537335",
+      "homeScore": 4,
+      "awayScore": 1,
+      "homeTeam": "Switzerland",
+      "awayTeam": "Bosnia-Herzegovina"
+    },
+    {
+      "matchId": "537336",
+      "homeScore": 6,
+      "awayScore": 0,
+      "homeTeam": "Canada",
+      "awayTeam": "Qatar"
+    },
+    {
+      "matchId": "537330",
+      "homeScore": 1,
+      "awayScore": 0,
+      "homeTeam": "Mexico",
+      "awayTeam": "South Korea"
     }
   ]
 }
