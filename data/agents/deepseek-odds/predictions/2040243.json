@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.54,
+    "draw": 0.27,
+    "away": 0.19
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "2-0",
+      "prob": 0.11
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Netherlands are clear favorites based on squad strength and recent form. Sweden are defensively organized but struggle to score against top teams. A low-scoring game is likely, with Netherlands winning narrowly.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040243",
+  "createdAt": "2026-06-19T09:56:42.049Z"
+}

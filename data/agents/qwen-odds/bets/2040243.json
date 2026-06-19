@@ -1,0 +1,26 @@
+[
+  {
+    "matchId": "2040243",
+    "agentId": "qwen-odds",
+    "market": "home",
+    "modelProb": 0.63,
+    "impliedProb": 0.6289308176100629,
+    "decimalOdds": 1.59,
+    "oddsTimestamp": "2026-06-19 17:41:35",
+    "ev": 0.0017000000000000348,
+    "kellyFraction": 0.0028813559322034485,
+    "recommendedStakePct": 0.0007203389830508621
+  },
+  {
+    "matchId": "2040243",
+    "agentId": "qwen-odds",
+    "market": "draw",
+    "modelProb": 0.28,
+    "impliedProb": 0.27932960893854747,
+    "decimalOdds": 3.58,
+    "oddsTimestamp": "2026-06-19 17:41:35",
+    "ev": 0.0024000000000001798,
+    "kellyFraction": 0.0009302325581396045,
+    "recommendedStakePct": 0.00023255813953490114
+  }
+]

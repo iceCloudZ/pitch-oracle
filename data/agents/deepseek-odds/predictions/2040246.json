@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.14,
+    "draw": 0.23,
+    "away": 0.63
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.12
+    },
+    {
+      "score": "1-2",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-1",
+      "prob": 0.08
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Japan's strong World Cup record and market odds indicate clear superiority; Tunisia likely to struggle offensively.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040246",
+  "createdAt": "2026-06-19T09:58:07.435Z"
+}

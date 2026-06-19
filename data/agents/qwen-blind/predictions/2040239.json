@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.45,
+    "draw": 0.28,
+    "away": 0.27
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "1-1",
+      "prob": 0.14
+    },
+    {
+      "score": "2-1",
+      "prob": 0.12
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-0",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "The US holds home advantage and slightly superior squad depth compared to Australia, making them favorites in a tight contest. However, Australia's physical style and defensive organization make a draw or narrow away win plausible, leading to moderate confidence in the forecast.",
+  "agentId": "qwen-blind",
+  "matchId": "2040239",
+  "createdAt": "2026-06-19T09:54:32.263Z"
+}

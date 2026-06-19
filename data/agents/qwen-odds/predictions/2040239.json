@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.65,
+    "draw": 0.22,
+    "away": 0.13
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.18
+    },
+    {
+      "score": "2-0",
+      "prob": 0.16
+    },
+    {
+      "score": "2-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "3-0",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Market odds heavily favor the USA (implied ~65% win probability), reflecting their status as hosts and superior squad depth compared to Australia. The Socceroos are likely to adopt a defensive low-block, making a clean sheet or narrow victory for the US the most probable outcome. The gap in quality suggests a comfortable home win is more likely than a draw.",
+  "agentId": "qwen-odds",
+  "matchId": "2040239",
+  "createdAt": "2026-06-19T09:54:38.833Z"
+}

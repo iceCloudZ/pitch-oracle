@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.5,
+    "draw": 0.28,
+    "away": 0.22
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.11
+    },
+    {
+      "score": "0-0",
+      "prob": 0.09
+    },
+    {
+      "score": "2-0",
+      "prob": 0.08
+    },
+    {
+      "score": "0-1",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Paraguay's core player absence tilts odds towards Turkey. Expect a low-scoring match with Turkey having a slight edge in a neutral World Cup setting.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040242",
+  "createdAt": "2026-06-19T09:55:53.979Z"
+}

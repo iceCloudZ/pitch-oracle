@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.61,
+    "draw": 0.23,
+    "away": 0.16
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.13
+    },
+    {
+      "score": "2-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.11
+    },
+    {
+      "score": "2-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "USA as co-hosts with stronger squad and home advantage; market odds imply ~61% win probability. Australia likely to defend but struggle to score.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040239",
+  "createdAt": "2026-06-19T09:54:25.677Z"
+}

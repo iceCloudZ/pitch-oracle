@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.72,
+    "draw": 0.18,
+    "away": 0.1
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "2-1",
+      "prob": 0.14
+    },
+    {
+      "score": "3-0",
+      "prob": 0.11
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Uruguay's superior squad depth and defensive organization heavily outweigh Cape Verde's physical resilience. Market odds (1.31) imply a strong home favorite status; Uruguay is likely to control possession and break down a low block, leading to a comfortable but potentially narrow victory given Cape Verde's ability to frustrate opponents.",
+  "agentId": "qwen-odds",
+  "matchId": "2040249",
+  "createdAt": "2026-06-19T09:59:36.636Z"
+}

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.62,
+    "draw": 0.23,
+    "away": 0.15
+  },
+  "scoreProbs": [
+    {
+      "score": "2-1",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "2-0",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "3-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Germany's superior tactical structure and squad depth give them a clear edge over Ivory Coast, whose reliance on individual brilliance often struggles against organized European defenses in World Cup group stages.",
+  "agentId": "qwen-blind",
+  "matchId": "2040244",
+  "createdAt": "2026-06-19T09:57:25.000Z"
+}

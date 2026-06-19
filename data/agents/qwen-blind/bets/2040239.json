@@ -1,0 +1,26 @@
+[
+  {
+    "matchId": "2040239",
+    "agentId": "qwen-blind",
+    "market": "draw",
+    "modelProb": 0.28,
+    "impliedProb": 0.2610966057441253,
+    "decimalOdds": 3.83,
+    "oddsTimestamp": "2026-06-19 17:41:35",
+    "ev": 0.07240000000000002,
+    "kellyFraction": 0.025583038869257956,
+    "recommendedStakePct": 0.006395759717314489
+  },
+  {
+    "matchId": "2040239",
+    "agentId": "qwen-blind",
+    "market": "away",
+    "modelProb": 0.27,
+    "impliedProb": 0.17857142857142858,
+    "decimalOdds": 5.6,
+    "oddsTimestamp": "2026-06-19 17:41:35",
+    "ev": 0.512,
+    "kellyFraction": 0.11130434782608696,
+    "recommendedStakePct": 0.02782608695652174
+  }
+]

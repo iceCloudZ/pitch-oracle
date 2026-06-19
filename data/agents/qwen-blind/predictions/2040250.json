@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.15,
+    "draw": 0.25,
+    "away": 0.6
+  },
+  "scoreProbs": [
+    {
+      "score": "0-1",
+      "prob": 0.18
+    },
+    {
+      "score": "0-2",
+      "prob": 0.16
+    },
+    {
+      "score": "1-2",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Egypt possesses significantly higher individual quality and tactical discipline compared to New Zealand. While the All Whites are physically robust and dangerous on set-pieces, Egypt's superior technical ability in midfield and attack should allow them to control possession and create more high-quality chances, leading to a likely away victory.",
+  "agentId": "qwen-blind",
+  "matchId": "2040250",
+  "createdAt": "2026-06-19T10:00:00.495Z"
+}

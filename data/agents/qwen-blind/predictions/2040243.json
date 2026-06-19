@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.52,
+    "draw": 0.26,
+    "away": 0.22
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.13
+    },
+    {
+      "score": "2-1",
+      "prob": 0.11
+    },
+    {
+      "score": "2-0",
+      "prob": 0.09
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Netherlands holds a slight edge due to superior squad depth and tactical discipline under Koeman, while Sweden relies on physicality and counter-attacks. The 'Group of Death' context suggests a cautious start, favoring low-scoring outcomes where Netherlands' individual quality in midfield can break the deadlock.",
+  "agentId": "qwen-blind",
+  "matchId": "2040243",
+  "createdAt": "2026-06-19T09:56:48.775Z"
+}

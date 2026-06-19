@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.28,
+    "draw": 0.32,
+    "away": 0.4
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.16
+    },
+    {
+      "score": "0-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-2",
+      "prob": 0.12
+    },
+    {
+      "score": "0-0",
+      "prob": 0.11
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.55,
+  "reasoning": "Morocco possesses superior technical quality and midfield control compared to Scotland's physically robust but less creative setup. However, World Cup group stages often see tight, low-scoring affairs where defensive organization (Scotland's strength) keeps games close. Morocco is favored due to individual talent, but a draw is highly probable given the tournament context.",
+  "agentId": "qwen-blind",
+  "matchId": "2040240",
+  "createdAt": "2026-06-19T09:55:17.905Z"
+}

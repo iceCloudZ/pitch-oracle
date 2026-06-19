@@ -94,5 +94,25 @@
   "2040243": {
     "homeTeam": "荷兰",
     "awayTeam": "瑞典"
+  },
+  "2040244": {
+    "homeTeam": "德国",
+    "awayTeam": "科特迪瓦"
+  },
+  "2040246": {
+    "homeTeam": "突尼斯",
+    "awayTeam": "日本"
+  },
+  "2040248": {
+    "homeTeam": "比利时",
+    "awayTeam": "伊朗"
+  },
+  "2040249": {
+    "homeTeam": "乌拉圭",
+    "awayTeam": "佛得角"
+  },
+  "2040250": {
+    "homeTeam": "新西兰",
+    "awayTeam": "埃及"
   }
 }

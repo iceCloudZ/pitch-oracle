@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.2,
+    "draw": 0.22,
+    "away": 0.58
+  },
+  "scoreProbs": [
+    {
+      "score": "0-1",
+      "prob": 0.15
+    },
+    {
+      "score": "0-2",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    },
+    {
+      "score": "1-2",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Morocco's recent stronger tournament performances and squad depth make them favorites, but Scotland's tenacity and tournament unpredictability warrant caution, reflected in a reasonable draw and home win probability.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040240",
+  "createdAt": "2026-06-19T09:55:11.479Z"
+}

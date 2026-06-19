@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.45,
+    "draw": 0.3,
+    "away": 0.25
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "1-0",
+      "prob": 0.11
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    },
+    {
+      "score": "2-0",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "USA slightly higher ranked, home continent advantage, but Australia resilient. Expect a tight contest with low scoring.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040239",
+  "createdAt": "2026-06-19T09:54:08.597Z"
+}

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.5,
+    "draw": 0.28,
+    "away": 0.22
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "1-1",
+      "prob": 0.13
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "2-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Turkey's solid European qualification form and Paraguay missing a key player give Turkey an edge. However, World Cup matches can be tight, and Paraguay's defensive resilience could lead to a draw.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040242",
+  "createdAt": "2026-06-19T09:55:31.451Z"
+}

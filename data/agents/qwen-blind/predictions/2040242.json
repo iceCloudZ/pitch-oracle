@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.45,
+    "draw": 0.32,
+    "away": 0.23
+  },
+  "scoreProbs": [
+    {
+      "score": "1-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-1",
+      "prob": 0.16
+    },
+    {
+      "score": "2-1",
+      "prob": 0.14
+    },
+    {
+      "score": "0-0",
+      "prob": 0.12
+    },
+    {
+      "score": "2-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Turkey benefits from home advantage and a more balanced squad depth. Paraguay's lack of key players significantly hampers their offensive threat, making them likely to adopt a defensive posture. This favors a low-scoring game where Turkey has the edge in breaking down a compact defense, though a draw remains a strong possibility due to tournament caution.",
+  "agentId": "qwen-blind",
+  "matchId": "2040242",
+  "createdAt": "2026-06-19T09:56:01.472Z"
+}

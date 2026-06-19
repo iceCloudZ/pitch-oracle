@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.68,
+    "draw": 0.21,
+    "away": 0.11
+  },
+  "scoreProbs": [
+    {
+      "score": "2-1",
+      "prob": 0.14
+    },
+    {
+      "score": "2-0",
+      "prob": 0.13
+    },
+    {
+      "score": "1-0",
+      "prob": 0.11
+    },
+    {
+      "score": "3-1",
+      "prob": 0.09
+    },
+    {
+      "score": "1-1",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Germany is the clear favorite based on market odds (implied ~68% win probability) and superior squad depth compared to Ivory Coast. While Ivory Coast possesses physicality and counter-attacking threat capable of scoring, Germany's tactical discipline and offensive quality should secure a regular-time victory, likely by a narrow margin or comfortable two-goal lead.",
+  "agentId": "qwen-odds",
+  "matchId": "2040244",
+  "createdAt": "2026-06-19T09:57:31.896Z"
+}

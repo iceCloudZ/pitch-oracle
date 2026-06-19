@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.25,
+    "draw": 0.3,
+    "away": 0.45
+  },
+  "scoreProbs": [
+    {
+      "score": "1-2",
+      "prob": 0.18
+    },
+    {
+      "score": "1-1",
+      "prob": 0.16
+    },
+    {
+      "score": "0-1",
+      "prob": 0.14
+    },
+    {
+      "score": "0-2",
+      "prob": 0.12
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Japan's superior technical discipline, tactical cohesion, and depth in European-based players give them a clear edge over Tunisia. While Tunisia is physically robust and dangerous on counters, Japan's ability to control possession and exploit defensive gaps makes them the favorite, though a draw remains plausible due to tournament volatility.",
+  "agentId": "qwen-blind",
+  "matchId": "2040246",
+  "createdAt": "2026-06-19T09:58:14.697Z"
+}
