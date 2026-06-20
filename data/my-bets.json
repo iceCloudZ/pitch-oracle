@@ -880,6 +880,160 @@
         "settledScore": { "2040239": "2-0", "2040240": "0-1", "2040241": "3-0", "2040242": "0-1" },
         "settledNote": "全损360元。美国2-0穿✅、巴西3-0穿✅都到位，但摩洛哥0-1只赢1球(让平，需净胜2球才穿)打穿失败，土耳其0-1输巴拉圭。9注里6注含摩洛哥死腿、6注含土耳其死腿，两条死腿拖垮整张单。命门巴西反而穿了。"
       }
+    },
+    {
+      "id": "slip-007",
+      "description": "6/21四场。德/厄/日三穿盘 × 荷兰胜平复式，4串1(2注)+3串1(7注)=9注，20倍，360元。荷兰复式做放大器，荷平时所有含荷注赔率翻倍。耐揍：荷平+任一穿盘挂仍多正收益。",
+      "boughtAt": "2026-06-20T19:00:00+08:00",
+      "totalStake": 360,
+      "multiplier": 20,
+      "unitPrice": 2,
+      "totalLegs": 9,
+      "legs": [
+        {
+          "type": "4串1",
+          "combination": "德国穿 × 厄瓜多尔穿 × 日本穿 × 荷兰胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040244", "matchNum": "周六034", "homeTeam": "德国", "awayTeam": "科特迪瓦", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04, "note": "德国净胜2+算中" },
+            { "matchIndexId": "2040245", "matchNum": "周六035", "homeTeam": "厄瓜多尔", "awayTeam": "库拉索", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.85, "note": "厄瓜多尔净胜3+算中" },
+            { "matchIndexId": "2040246", "matchNum": "周六036", "homeTeam": "突尼斯", "awayTeam": "日本", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21, "note": "突受1，买让负=日本净胜2+算中" },
+            { "matchIndexId": "2040243", "matchNum": "周六033", "homeTeam": "荷兰", "awayTeam": "瑞典", "market": "had", "selection": "home", "odds": 1.53 }
+          ],
+          "combinedOdds": 12.7648746,
+          "status": "pending"
+        },
+        {
+          "type": "4串1",
+          "combination": "德国穿 × 厄瓜多尔穿 × 日本穿 × 荷兰平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040244", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04 },
+            { "matchIndexId": "2040245", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.85 },
+            { "matchIndexId": "2040246", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21 },
+            { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
+          ],
+          "combinedOdds": 31.9378215,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "德国穿 × 厄瓜多尔穿 × 日本穿",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040244", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04 },
+            { "matchIndexId": "2040245", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.85 },
+            { "matchIndexId": "2040246", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21 }
+          ],
+          "combinedOdds": 8.3408340,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "德国穿 × 厄瓜多尔穿 × 荷兰胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040244", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04 },
+            { "matchIndexId": "2040245", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.85 },
+            { "matchIndexId": "2040243", "market": "had", "selection": "home", "odds": 1.53 }
+          ],
+          "combinedOdds": 5.77605,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "德国穿 × 厄瓜多尔穿 × 荷兰平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040244", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04 },
+            { "matchIndexId": "2040245", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.85 },
+            { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
+          ],
+          "combinedOdds": 14.45881,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "德国穿 × 日本穿 × 荷兰胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040244", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04 },
+            { "matchIndexId": "2040246", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21 },
+            { "matchIndexId": "2040243", "market": "had", "selection": "home", "odds": 1.53 }
+          ],
+          "combinedOdds": 6.8998446,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "德国穿 × 日本穿 × 荷兰平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040244", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04 },
+            { "matchIndexId": "2040246", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21 },
+            { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
+          ],
+          "combinedOdds": 17.2791486,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "厄瓜多尔穿 × 日本穿 × 荷兰胜",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040245", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.85 },
+            { "matchIndexId": "2040246", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21 },
+            { "matchIndexId": "2040243", "market": "had", "selection": "home", "odds": 1.53 }
+          ],
+          "combinedOdds": 6.2470055,
+          "status": "pending"
+        },
+        {
+          "type": "3串1",
+          "combination": "厄瓜多尔穿 × 日本穿 × 荷兰平",
+          "count": 1,
+          "multiplier": 20,
+          "stake": 40,
+          "matches": [
+            { "matchIndexId": "2040245", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.85 },
+            { "matchIndexId": "2040246", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21 },
+            { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
+          ],
+          "combinedOdds": 15.6684255,
+          "status": "pending"
+        }
+      ],
+      "summary": {
+        "totalStake": 360,
+        "multiplier": 20,
+        "unitPrice": 2,
+        "totalLegs": 9,
+        "payoutScenario": {
+          "threeThrough_netherlandsDraw": 4534.4,
+          "threeThrough_netherlandsWin": 1776.8,
+          "threeThrough_netherlandsLoss": 313.6,
+          "germanyMiss_netherlandsDraw": 606.7,
+          "ecuadorMiss_netherlandsDraw": 681.2,
+          "japanMiss_netherlandsDraw": 558.4
+        },
+        "pendingNote": "9注(2个4串1+7个3串1)。核心：德/厄/日三穿盘，荷兰胜平复式放大回报。荷兰复式是放大器：荷平时所有含荷注赔率翻倍。耐揍结构：荷平+任一穿盘挂仍多正收益。全损仅在'荷胜+某穿盘挂'。全中荷平最高+4534。"
+      }
     }
   ]
 }

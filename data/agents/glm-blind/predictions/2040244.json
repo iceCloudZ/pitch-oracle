@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040244",
+  "resultProbs": {
+    "home": 0.76,
+    "draw": 0.15,
+    "away": 0.09
+  },
+  "scoreProbs": [
+    { "score": "2-0", "prob": 0.15 },
+    { "score": "3-0", "prob": 0.13 },
+    { "score": "3-1", "prob": 0.10 },
+    { "score": "2-1", "prob": 0.09 },
+    { "score": "4-0", "prob": 0.08 }
+  ],
+  "confidence": 0.74,
+  "reasoning": "德国刚7-1屠库拉索，穆西亚拉维尔茨领衔的进攻端火力全开，对科特迪瓦是实力碾压。预计大胜，穿盘(净胜2+)概率高。",
+  "createdAt": "2026-06-20T10:49:56.910Z"
+}

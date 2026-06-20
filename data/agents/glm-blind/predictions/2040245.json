@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040245",
+  "resultProbs": {
+    "home": 0.80,
+    "draw": 0.12,
+    "away": 0.08
+  },
+  "scoreProbs": [
+    { "score": "3-0", "prob": 0.16 },
+    { "score": "2-0", "prob": 0.14 },
+    { "score": "4-0", "prob": 0.11 },
+    { "score": "3-1", "prob": 0.09 },
+    { "score": "5-0", "prob": 0.07 }
+  ],
+  "confidence": 0.76,
+  "reasoning": "厄瓜多尔南美球队身体技术碾压加勒比鱼腩库拉索，库拉索刚被7-1屠防线崩盘。预计大胜，穿盘(净胜3球+)是核心看点。",
+  "createdAt": "2026-06-20T10:49:56.910Z"
+}

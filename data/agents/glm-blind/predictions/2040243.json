@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040243",
+  "resultProbs": {
+    "home": 0.52,
+    "draw": 0.29,
+    "away": 0.19
+  },
+  "scoreProbs": [
+    { "score": "1-0", "prob": 0.14 },
+    { "score": "1-1", "prob": 0.11 },
+    { "score": "2-1", "prob": 0.11 },
+    { "score": "0-0", "prob": 0.07 },
+    { "score": "2-0", "prob": 0.09 }
+  ],
+  "confidence": 0.52,
+  "reasoning": "荷兰整体实力强于瑞典，但瑞典刚5-1大胜士气正盛，防守反击战术成熟，有能力死守偷平。荷兰攻坚铁桶阵未必轻松，平局概率被低估。",
+  "createdAt": "2026-06-20T10:49:56.910Z"
+}
