@@ -1,0 +1,27 @@
+repo: pitch-oracle
+stories:
+  - id: PO-1
+    title: 项目骨架（TypeScript ESM + Vitest + Zod + ESLint/Prettier + 目录约定）
+    status: done
+    doc: docs/superpowers/plans/2026-06-14-pitch-oracle-core-engine.md
+    priority: high
+  - id: PO-2
+    title: Plan 1 Core Engine — domain types/schemas + probability/odds/EV/Kelly/scoring/Brier/settlement/leaderboard + 原子 JSON store（纯函数单测，无网络依赖）
+    status: doing
+    doc: docs/superpowers/plans/2026-06-14-pitch-oracle-core-engine.md
+    priority: high
+  - id: PO-3
+    title: Plan 2 Data Layer — fixtures(football-data.org)、odds+results(the-odds-api)、news(Brave→DDG 兜底)、cache/retry
+    status: todo
+    doc: docs/superpowers/plans/2026-06-14-pitch-oracle-data-layer.md
+    priority: high
+  - id: PO-4
+    title: Plan 3 Agents + CLI — OpenAI 兼容 client、prompt、runner、llm/manual/human-augmented 三类 agent、citty 命令
+    status: todo
+    doc: docs/superpowers/plans/2026-06-14-pitch-oracle-agents-cli.md
+    priority: high
+  - id: PO-5
+    title: Plan 4 Dashboard + CI — SvelteKit 静态看板、GitHub Actions 每日 cron + 测试流水线、README 与发布
+    status: todo
+    doc: docs/superpowers/plans/2026-06-14-pitch-oracle-dashboard-ci.md
+    priority: medium
