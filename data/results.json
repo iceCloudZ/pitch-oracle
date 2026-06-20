@@ -93,5 +93,25 @@
     "homeScore": 1,
     "awayScore": 0,
     "updatedAt": "2026-06-19T09:02:01.313Z"
+  },
+  "2040239": {
+    "homeScore": 2,
+    "awayScore": 0,
+    "updatedAt": "2026-06-20T10:06:46.670Z"
+  },
+  "2040240": {
+    "homeScore": 0,
+    "awayScore": 1,
+    "updatedAt": "2026-06-20T10:06:46.670Z"
+  },
+  "2040241": {
+    "homeScore": 3,
+    "awayScore": 0,
+    "updatedAt": "2026-06-20T10:06:46.670Z"
+  },
+  "2040242": {
+    "homeScore": 0,
+    "awayScore": 1,
+    "updatedAt": "2026-06-20T10:06:46.670Z"
   }
 }

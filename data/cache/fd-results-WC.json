@@ -1,5 +1,5 @@
 {
-  "expiresAt": 1781860017431,
+  "expiresAt": 1781950305465,
   "data": [
     {
       "matchId": "537327",
@@ -196,6 +196,34 @@
       "awayScore": 0,
       "homeTeam": "Mexico",
       "awayTeam": "South Korea"
+    },
+    {
+      "matchId": "537348",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeTeam": "United States",
+      "awayTeam": "Australia"
+    },
+    {
+      "matchId": "537342",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homeTeam": "Scotland",
+      "awayTeam": "Morocco"
+    },
+    {
+      "matchId": "537341",
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeTeam": "Brazil",
+      "awayTeam": "Haiti"
+    },
+    {
+      "matchId": "537347",
+      "homeScore": 0,
+      "awayScore": 1,
+      "homeTeam": "Turkey",
+      "awayTeam": "Paraguay"
     }
   ]
 }

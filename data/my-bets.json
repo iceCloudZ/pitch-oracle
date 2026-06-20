@@ -707,7 +707,7 @@
     },
     {
       "id": "slip-006",
-      "description": "6/20四场。美/摩/巴三穿盘 × 土耳其胜负胜平复式，3串1+4串1，9注，20倍，360元。核心押巴西美国摩洛哥净胜2+，土耳其复式放大回报。",
+      "description": "6/20四场。美/摩/巴三穿盘 × 土耳其胜负胜平复式，3串1+4串1，9注，20倍，360元。结算：美巴穿但摩只赢1球(让平)+土0-1输球，9注全挂，-360。",
       "boughtAt": "2026-06-19T17:46:00+08:00",
       "totalStake": 360,
       "multiplier": 20,
@@ -725,7 +725,10 @@
             { "matchIndexId": "2040241", "matchNum": "周五031", "homeTeam": "巴西", "awayTeam": "海地", "market": "hhad", "selection": "home", "goalLine": -2, "odds": 1.63, "note": "巴西净胜3+算中" }
           ],
           "combinedOdds": 11.540346,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040239": "2-0", "2040240": "0-1", "2040241": "3-0" },
+          "pnl": -40,
+          "note": "美国2-0穿✅+巴西3-0穿✅，但摩洛哥0-1只赢1球(让平不中)→全挂。"
         },
         {
           "type": "3串1",
@@ -739,7 +742,10 @@
             { "matchIndexId": "2040242", "matchNum": "周五032", "homeTeam": "土耳其", "awayTeam": "巴拉圭", "market": "had", "selection": "home", "odds": 1.78 }
           ],
           "combinedOdds": 12.59556,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040239": "2-0", "2040240": "0-1", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "摩洛哥让平+土耳其输球，两条死腿→全挂。"
         },
         {
           "type": "3串1",
@@ -753,7 +759,10 @@
             { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
           ],
           "combinedOdds": 23.209776,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040239": "2-0", "2040240": "0-1", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "摩洛哥让平+土耳其输球→全挂。"
         },
         {
           "type": "3串1",
@@ -767,7 +776,10 @@
             { "matchIndexId": "2040242", "market": "had", "selection": "home", "odds": 1.78 }
           ],
           "combinedOdds": 7.284014,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040239": "2-0", "2040241": "3-0", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "美国穿✅+巴西穿✅，但土耳其0-1输球(选胜不中)→全挂。"
         },
         {
           "type": "3串1",
@@ -781,7 +793,10 @@
             { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
           ],
           "combinedOdds": 13.414368,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040239": "2-0", "2040241": "3-0", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "美国穿✅+巴西穿✅，但土耳其0-1输球(选平不中)→全挂。"
         },
         {
           "type": "3串1",
@@ -795,7 +810,10 @@
             { "matchIndexId": "2040242", "market": "had", "selection": "home", "odds": 1.78 }
           ],
           "combinedOdds": 8.182068,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040240": "0-1", "2040241": "3-0", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "巴西穿✅，但摩洛哥让平+土耳其输球→全挂。"
         },
         {
           "type": "3串1",
@@ -809,7 +827,10 @@
             { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
           ],
           "combinedOdds": 15.080592,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040240": "0-1", "2040241": "3-0", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "巴西穿✅，但摩洛哥让平+土耳其输球→全挂。"
         },
         {
           "type": "4串1",
@@ -824,7 +845,10 @@
             { "matchIndexId": "2040242", "market": "had", "selection": "home", "odds": 1.78 }
           ],
           "combinedOdds": 20.54369472,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040239": "2-0", "2040240": "0-1", "2040241": "3-0", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "美国穿✅+巴西穿✅，但摩洛哥让平+土耳其输球→全挂。"
         },
         {
           "type": "4串1",
@@ -839,21 +863,22 @@
             { "matchIndexId": "2040242", "market": "had", "selection": "draw", "odds": 3.28 }
           ],
           "combinedOdds": 37.8419856,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040239": "2-0", "2040240": "0-1", "2040241": "3-0", "2040242": "0-1" },
+          "pnl": -40,
+          "note": "美国穿✅+巴西穿✅，但摩洛哥让平+土耳其输球→全挂。"
         }
       ],
       "summary": {
         "totalStake": 360,
+        "totalReturn": 0,
+        "netPnl": -360,
+        "roi": -1.0,
         "multiplier": 20,
         "unitPrice": 2,
         "totalLegs": 9,
-        "payoutScenario": {
-          "threeThrough_turkeyWin": 1202.8,
-          "threeThrough_turkeyDraw": 2022.0,
-          "onlyUsMor_turkeyWin": 251.9,
-          "onlyUsMor_turkeyDraw": 464.2
-        },
-        "pendingNote": "9注(7个3串1+2个4串1)。核心：美/摩/巴三穿盘，土耳其胜平复式放大回报。最大命门巴西穿盘(8/9注含它)。全中土耳其平最高+2022。"
+        "settledScore": { "2040239": "2-0", "2040240": "0-1", "2040241": "3-0", "2040242": "0-1" },
+        "settledNote": "全损360元。美国2-0穿✅、巴西3-0穿✅都到位，但摩洛哥0-1只赢1球(让平，需净胜2球才穿)打穿失败，土耳其0-1输巴拉圭。9注里6注含摩洛哥死腿、6注含土耳其死腿，两条死腿拖垮整张单。命门巴西反而穿了。"
       }
     }
   ]
