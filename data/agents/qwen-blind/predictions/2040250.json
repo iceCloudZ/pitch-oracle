@@ -11,24 +11,24 @@
     },
     {
       "score": "0-2",
-      "prob": 0.16
-    },
-    {
-      "score": "1-2",
-      "prob": 0.14
+      "prob": 0.15
     },
     {
       "score": "1-1",
       "prob": 0.12
     },
     {
-      "score": "0-0",
+      "score": "1-2",
       "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.09
     }
   ],
   "confidence": 0.75,
-  "reasoning": "Egypt possesses significantly higher individual quality and tactical discipline compared to New Zealand. While the All Whites are physically robust and dangerous on set-pieces, Egypt's superior technical ability in midfield and attack should allow them to control possession and create more high-quality chances, leading to a likely away victory.",
+  "reasoning": "Egypt possesses significantly higher technical quality and World Cup experience compared to New Zealand. While the All Whites are physically robust and organized defensively, Egypt's attacking talent (e.g., Salah) should be sufficient to break down a low block over 90 minutes. A narrow Egyptian victory is the most probable outcome, with a draw being the second most likely scenario if New Zealand defends perfectly.",
   "agentId": "qwen-blind",
   "matchId": "2040250",
-  "createdAt": "2026-06-19T10:00:00.495Z"
+  "createdAt": "2026-06-21T14:36:46.463Z"
 }

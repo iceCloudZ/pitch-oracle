@@ -6,29 +6,29 @@
   },
   "scoreProbs": [
     {
-      "score": "2-0",
-      "prob": 0.18
-    },
-    {
-      "score": "1-0",
-      "prob": 0.15
-    },
-    {
       "score": "2-1",
       "prob": 0.14
     },
     {
-      "score": "1-1",
-      "prob": 0.12
+      "score": "1-0",
+      "prob": 0.13
     },
     {
-      "score": "3-0",
-      "prob": 0.09
+      "score": "2-0",
+      "prob": 0.11
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "3-1",
+      "prob": 0.08
     }
   ],
   "confidence": 0.75,
-  "reasoning": "Belgium possesses superior technical quality and depth compared to Iran's disciplined but less creative squad. While Iran is known for defensive organization, Belgium's attacking talent should break them down over 90 minutes. The political context mentioned in the prompt does not significantly alter on-pitch tactical probabilities.",
+  "reasoning": "Belgium possesses superior individual talent and tactical structure compared to Iran. While Iran is known for disciplined defensive organization which keeps the draw probability significant, Belgium's attacking quality in transition and set pieces should likely break down their defense over 90 minutes. The political context provided does not alter the fundamental sporting disparity between the two squads.",
   "agentId": "qwen-blind",
   "matchId": "2040248",
-  "createdAt": "2026-06-19T09:58:53.970Z"
+  "createdAt": "2026-06-21T14:34:46.595Z"
 }

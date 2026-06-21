@@ -1,17 +1,17 @@
 {
   "resultProbs": {
-    "home": 0.72,
+    "home": 0.73,
     "draw": 0.18,
-    "away": 0.1
+    "away": 0.09
   },
   "scoreProbs": [
     {
       "score": "2-0",
-      "prob": 0.18
+      "prob": 0.22
     },
     {
       "score": "1-0",
-      "prob": 0.16
+      "prob": 0.18
     },
     {
       "score": "2-1",
@@ -26,9 +26,9 @@
       "prob": 0.09
     }
   ],
-  "confidence": 0.75,
-  "reasoning": "Uruguay's superior squad depth and defensive organization heavily outweigh Cape Verde's physical resilience. Market odds (1.31) imply a strong home favorite status; Uruguay is likely to control possession and break down a low block, leading to a comfortable but potentially narrow victory given Cape Verde's ability to frustrate opponents.",
+  "confidence": 0.85,
+  "reasoning": "Uruguay possesses significantly superior squad depth and tactical organization compared to Cape Verde. The market odds heavily favor Uruguay (implied ~73%), reflecting the massive gap in FIFA rankings and World Cup experience. Cape Verde's best hope is a low-scoring draw via defensive resilience, but Uruguay's attacking quality should break them down over 90 minutes.",
   "agentId": "qwen-odds",
   "matchId": "2040249",
-  "createdAt": "2026-06-19T09:59:36.636Z"
+  "createdAt": "2026-06-21T14:36:03.807Z"
 }

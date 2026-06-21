@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.09,
+    "draw": 0.17,
+    "away": 0.74
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.147
+    },
+    {
+      "score": "0-1",
+      "prob": 0.1338
+    },
+    {
+      "score": "0-3",
+      "prob": 0.1079
+    },
+    {
+      "score": "1-2",
+      "prob": 0.0883
+    },
+    {
+      "score": "1-1",
+      "prob": 0.0803
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Croatia's superior experience and technical quality, plus historical performance, make them clear favorites. Panama likely to defend deep, but expected to concede. Draw possible if Panama stays compact.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040257",
+  "createdAt": "2026-06-21T14:39:59.765Z"
+}

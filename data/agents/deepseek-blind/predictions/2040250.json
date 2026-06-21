@@ -1,8 +1,8 @@
 {
   "resultProbs": {
     "home": 0.2,
-    "draw": 0.25,
-    "away": 0.55
+    "draw": 0.32,
+    "away": 0.48
   },
   "scoreProbs": [
     {
@@ -11,7 +11,7 @@
     },
     {
       "score": "0-0",
-      "prob": 0.1
+      "prob": 0.12
     },
     {
       "score": "1-1",
@@ -19,16 +19,16 @@
     },
     {
       "score": "1-0",
-      "prob": 0.08
+      "prob": 0.09
     },
     {
       "score": "0-2",
-      "prob": 0.08
+      "prob": 0.07
     }
   ],
   "confidence": 0.6,
-  "reasoning": "Egypt are the stronger side with more World Cup experience and higher-quality players, while New Zealand are typically underdogs. A tight match is expected, with Egypt likely to edge a low-scoring contest.",
+  "reasoning": "New Zealand are defensively organized but lack attacking quality; Egypt have Mohamed Salah and more overall talent; expect a tight match with Egypt likely edging it.",
   "agentId": "deepseek-blind",
   "matchId": "2040250",
-  "createdAt": "2026-06-19T09:59:46.975Z"
+  "createdAt": "2026-06-21T14:36:26.997Z"
 }

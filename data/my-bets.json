@@ -1057,6 +1057,41 @@
         "settledScore": { "2040243": "5-1", "2040244": "2-1", "2040245": "0-0", "2040246": "0-4" },
         "settledNote": "全损360元。荷兰5-1大胜✅、日本4-0穿✅都中，但德国2-1只赢1球(让平不中)、厄瓜多尔0-0平局(让负)两条死腿。9注里7注含德国、6注含厄瓜多尔，两条死腿覆盖了几乎所有注。讽刺：荷兰和日本表现最好却绑在死腿上。厄瓜多尔0-0验证了赛前数据担忧(连续0-0记录)。"
       }
+    },
+    {
+      "id": "slip-008",
+      "description": "6/22三场。比利时让1胜×乌拉圭让1胜×埃及客胜，3串1，50倍，100元。三个强队碾压局，含两穿盘。比乌让胜需净胜2+，埃及胜负客胜。",
+      "boughtAt": "2026-06-21T22:41:00+08:00",
+      "totalStake": 100,
+      "multiplier": 50,
+      "unitPrice": 2,
+      "totalLegs": 1,
+      "legs": [
+        {
+          "type": "3串1",
+          "combination": "比利时让1胜 × 乌拉圭让1胜 × 埃及客胜",
+          "count": 1,
+          "multiplier": 50,
+          "stake": 100,
+          "matches": [
+            { "matchIndexId": "2040248", "matchNum": "周日038", "homeTeam": "比利时", "awayTeam": "伊朗", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 1.89, "note": "比利时净胜2+算中" },
+            { "matchIndexId": "2040249", "matchNum": "周日039", "homeTeam": "乌拉圭", "awayTeam": "佛得角", "market": "hhad", "selection": "home", "goalLine": -1, "odds": 2.04, "note": "乌拉圭净胜2+算中" },
+            { "matchIndexId": "2040250", "matchNum": "周日040", "homeTeam": "新西兰", "awayTeam": "埃及", "market": "had", "selection": "away", "odds": 1.42, "note": "埃及客胜(胜负盘)" }
+          ],
+          "combinedOdds": 5.477476,
+          "status": "pending"
+        }
+      ],
+      "summary": {
+        "totalStake": 100,
+        "multiplier": 50,
+        "unitPrice": 2,
+        "totalLegs": 1,
+        "payoutScenario": {
+          "allWin": 547.75
+        },
+        "pendingNote": "1注3串1。综合赔率5.477。50倍×2元=100元。全中回报547.75元，净赚447.75元。最大命门比利时让球(伊朗防守顽强)，乌拉圭穿盘相对稳，埃及客胜铁盘。"
+      }
     }
   ]
 }

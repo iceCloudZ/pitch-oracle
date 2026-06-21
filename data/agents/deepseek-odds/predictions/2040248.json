@@ -1,34 +1,34 @@
 {
   "resultProbs": {
-    "home": 0.68,
+    "home": 0.7,
     "draw": 0.2,
-    "away": 0.12
+    "away": 0.1
   },
   "scoreProbs": [
     {
       "score": "2-0",
-      "prob": 0.18
+      "prob": 0.2
     },
     {
       "score": "1-0",
       "prob": 0.15
     },
     {
-      "score": "3-0",
-      "prob": 0.13
+      "score": "2-1",
+      "prob": 0.12
     },
     {
-      "score": "2-1",
+      "score": "3-0",
       "prob": 0.1
     },
     {
       "score": "1-1",
-      "prob": 0.08
+      "prob": 0.1
     }
   ],
   "confidence": 0.75,
-  "reasoning": "Belgium's superior quality and attacking threats, combined with Iran's likely defensive approach, points to a controlled home win with a few goals. Political narratives add noise but limited on-pitch impact.",
+  "reasoning": "Belgium's superior squad quality and attacking depth make them strong favorites. Iran likely to defend deep, but Belgium expected to break through with a couple of goals. Market odds heavily favor Belgium.",
   "agentId": "deepseek-odds",
   "matchId": "2040248",
-  "createdAt": "2026-06-19T09:58:47.686Z"
+  "createdAt": "2026-06-21T14:34:40.002Z"
 }

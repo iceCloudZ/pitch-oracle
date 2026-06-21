@@ -118,5 +118,25 @@
   "2040250": {
     "homeTeam": "新西兰",
     "awayTeam": "埃及"
+  },
+  "2040251": {
+    "homeTeam": "阿根廷",
+    "awayTeam": "奥地利"
+  },
+  "2040253": {
+    "homeTeam": "挪威",
+    "awayTeam": "塞内加尔"
+  },
+  "2040254": {
+    "homeTeam": "约旦",
+    "awayTeam": "阿尔及利"
+  },
+  "2040257": {
+    "homeTeam": "巴拿马",
+    "awayTeam": "克罗地亚"
+  },
+  "2040258": {
+    "homeTeam": "哥伦比亚",
+    "awayTeam": "刚果金"
   }
 }

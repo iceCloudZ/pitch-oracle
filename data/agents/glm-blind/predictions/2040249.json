@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040249",
+  "resultProbs": {
+    "home": 0.74,
+    "draw": 0.18,
+    "away": 0.08
+  },
+  "scoreProbs": [
+    { "score": "2-0", "prob": 0.16 },
+    { "score": "3-0", "prob": 0.12 },
+    { "score": "2-1", "prob": 0.11 },
+    { "score": "1-0", "prob": 0.10 },
+    { "score": "3-1", "prob": 0.08 }
+  ],
+  "confidence": 0.72,
+  "reasoning": "乌拉圭南美传统强队对非洲小国佛得角实力差距明显，努涅斯巴尔韦德领衔。预计大胜，穿盘概率较高。",
+  "createdAt": "2026-06-21T14:41:31.687Z"
+}

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.35,
+    "draw": 0.28,
+    "away": 0.37
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-2",
+      "prob": 0.12
+    },
+    {
+      "score": "0-1",
+      "prob": 0.11
+    },
+    {
+      "score": "1-0",
+      "prob": 0.1
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Senegal possesses superior physicality and squad depth typical of top African nations, giving them a slight edge in transition play. Norway relies heavily on individual brilliance (Haaland/Odegaard) but lacks consistent defensive solidity against athletic opponents. The match is expected to be tight and low-scoring, with Senegal's defensive organization slightly outweighing Norway's home advantage.",
+  "agentId": "qwen-blind",
+  "matchId": "2040253",
+  "createdAt": "2026-06-21T14:38:09.097Z"
+}

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.15,
+    "draw": 0.25,
+    "away": 0.6
+  },
+  "scoreProbs": [
+    {
+      "score": "0-1",
+      "prob": 0.2
+    },
+    {
+      "score": "0-2",
+      "prob": 0.15
+    },
+    {
+      "score": "0-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    },
+    {
+      "score": "1-2",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.6,
+  "reasoning": "Algeria's superior quality and experience should dominate, but Jordan's defensive organization could frustrate them, making a narrow Algeria win or draw likely.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040254",
+  "createdAt": "2026-06-21T14:38:22.995Z"
+}

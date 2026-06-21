@@ -11,15 +11,15 @@
     },
     {
       "score": "0-2",
-      "prob": 0.16
+      "prob": 0.15
     },
     {
       "score": "1-2",
-      "prob": 0.14
+      "prob": 0.12
     },
     {
       "score": "1-1",
-      "prob": 0.12
+      "prob": 0.11
     },
     {
       "score": "0-0",
@@ -27,8 +27,8 @@
     }
   ],
   "confidence": 0.75,
-  "reasoning": "Egypt is the clear favorite based on market odds (1.46) and superior squad depth compared to New Zealand. While NZ's physical style can cause upsets, Egypt's technical advantage and experience in major tournaments make a low-scoring away win the most probable outcome.",
+  "reasoning": "Egypt is the clear favorite based on market odds (implied ~70% win probability) and superior squad depth compared to New Zealand. While NZ's physicality could cause an upset or draw, Egypt's technical advantage in midfield and attack should secure a victory, likely by a narrow margin given NZ's defensive organization.",
   "agentId": "qwen-odds",
   "matchId": "2040250",
-  "createdAt": "2026-06-19T10:00:06.229Z"
+  "createdAt": "2026-06-21T14:36:53.255Z"
 }

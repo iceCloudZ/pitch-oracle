@@ -11,24 +11,24 @@
     },
     {
       "score": "1-0",
-      "prob": 0.16
+      "prob": 0.15
     },
     {
       "score": "2-1",
-      "prob": 0.13
-    },
-    {
-      "score": "1-1",
-      "prob": 0.11
+      "prob": 0.12
     },
     {
       "score": "3-0",
+      "prob": 0.1
+    },
+    {
+      "score": "1-1",
       "prob": 0.09
     }
   ],
   "confidence": 0.75,
-  "reasoning": "Uruguay possesses a significantly stronger squad depth and tactical discipline under Bielsa compared to Cape Verde's limited World Cup experience. While Cape Verde is organized defensively, Uruguay's high press and individual quality in attack (Nunez, Valverde) should break them down over 90 minutes. The gap in class suggests a comfortable home win, though a low-scoring affair is possible if Cape Verde parks the bus effectively.",
+  "reasoning": "Uruguay possesses a significant advantage in squad depth, tactical discipline under Bielsa (or similar high-intensity system), and individual quality compared to Cape Verde. While Cape Verde is organized and physically robust, Uruguay's ability to control possession and exploit transitions should lead to a comfortable victory in regular time.",
   "agentId": "qwen-blind",
   "matchId": "2040249",
-  "createdAt": "2026-06-19T09:59:30.013Z"
+  "createdAt": "2026-06-21T14:35:57.220Z"
 }

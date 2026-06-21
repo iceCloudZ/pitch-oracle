@@ -1,8 +1,8 @@
 {
   "resultProbs": {
-    "home": 0.155,
-    "draw": 0.238,
-    "away": 0.607
+    "home": 0.13,
+    "draw": 0.24,
+    "away": 0.63
   },
   "scoreProbs": [
     {
@@ -11,24 +11,24 @@
     },
     {
       "score": "0-2",
-      "prob": 0.15
+      "prob": 0.14
     },
     {
       "score": "1-2",
-      "prob": 0.1
-    },
-    {
-      "score": "1-1",
       "prob": 0.12
     },
     {
-      "score": "0-0",
-      "prob": 0.08
+      "score": "1-1",
+      "prob": 0.11
+    },
+    {
+      "score": "1-0",
+      "prob": 0.07
     }
   ],
   "confidence": 0.7,
-  "reasoning": "Egypt is heavily favored with Salah up front; New Zealand likely to defend but Egypt's quality should prevail. Market odds imply ~61% away win. Possible tight scorelines.",
+  "reasoning": "Market odds strongly favor Egypt, who possess superior quality and likely control the match. New Zealand may struggle to create chances. Low-scoring game expected, with Egypt winning by one or two goals.",
   "agentId": "deepseek-odds",
   "matchId": "2040250",
-  "createdAt": "2026-06-19T09:59:54.013Z"
+  "createdAt": "2026-06-21T14:36:38.240Z"
 }

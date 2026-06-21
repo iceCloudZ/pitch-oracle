@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.73,
+    "draw": 0.19,
+    "away": 0.08
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "2-1",
+      "prob": 0.14
+    },
+    {
+      "score": "3-0",
+      "prob": 0.11
+    },
+    {
+      "score": "1-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Colombia is a significantly stronger team with superior tactical organization and individual quality compared to DR Congo. The market odds (1.36) heavily favor the home side, reflecting Colombia's status as a top-tier South American side versus DR Congo's inconsistent form in major tournaments. Expect Colombia to control possession and create high-quality chances, likely securing a comfortable win without conceding.",
+  "agentId": "qwen-odds",
+  "matchId": "2040258",
+  "createdAt": "2026-06-21T14:41:09.660Z"
+}

@@ -1,8 +1,8 @@
 {
   "resultProbs": {
-    "home": 0.78,
-    "draw": 0.15,
-    "away": 0.07
+    "home": 0.89,
+    "draw": 0.08,
+    "away": 0.03
   },
   "scoreProbs": [
     {
@@ -10,11 +10,11 @@
       "prob": 0.2
     },
     {
-      "score": "1-0",
+      "score": "3-0",
       "prob": 0.15
     },
     {
-      "score": "3-0",
+      "score": "1-0",
       "prob": 0.12
     },
     {
@@ -27,8 +27,8 @@
     }
   ],
   "confidence": 0.85,
-  "reasoning": "Uruguay significantly stronger with world-class players; Cape Verde debutants likely to defend deep but lack quality to threaten consistently; Uruguay's firepower should secure a win, possibly with a clean sheet.",
+  "reasoning": "Uruguay is historically stronger with world-class players; Cape Verde is a minnow. Uruguay expected to dominate possession and create many chances.",
   "agentId": "deepseek-blind",
   "matchId": "2040249",
-  "createdAt": "2026-06-19T09:59:13.758Z"
+  "createdAt": "2026-06-21T14:35:05.190Z"
 }

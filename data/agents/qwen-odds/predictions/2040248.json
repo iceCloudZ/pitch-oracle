@@ -1,8 +1,8 @@
 {
   "resultProbs": {
-    "home": 0.72,
-    "draw": 0.18,
-    "away": 0.1
+    "home": 0.75,
+    "draw": 0.16,
+    "away": 0.09
   },
   "scoreProbs": [
     {
@@ -11,24 +11,24 @@
     },
     {
       "score": "1-0",
-      "prob": 0.15
+      "prob": 0.16
     },
     {
       "score": "3-0",
-      "prob": 0.12
+      "prob": 0.14
     },
     {
       "score": "2-1",
-      "prob": 0.1
+      "prob": 0.11
     },
     {
-      "score": "1-1",
+      "score": "3-1",
       "prob": 0.09
     }
   ],
   "confidence": 0.85,
-  "reasoning": "Belgium's superior squad depth and technical quality significantly outweigh Iran's defensive resilience. Market odds (1.33) strongly favor the home side, reflecting a high probability of a controlled victory. Iran may limit damage but lacks the offensive firepower to consistently threaten Belgium over 90 minutes.",
+  "reasoning": "Market odds heavily favor Belgium (implied ~79% win prob), reflecting a significant talent gap. Iran's defensive organization may limit the margin, but Belgium's attacking quality should secure a comfortable victory in regular time.",
   "agentId": "qwen-odds",
   "matchId": "2040248",
-  "createdAt": "2026-06-19T09:58:59.807Z"
+  "createdAt": "2026-06-21T14:34:53.405Z"
 }
