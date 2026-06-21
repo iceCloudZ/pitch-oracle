@@ -883,7 +883,7 @@
     },
     {
       "id": "slip-007",
-      "description": "6/21四场。德/厄/日三穿盘 × 荷兰胜平复式，4串1(2注)+3串1(7注)=9注，20倍，360元。荷兰复式做放大器，荷平时所有含荷注赔率翻倍。耐揍：荷平+任一穿盘挂仍多正收益。",
+      "description": "6/21四场。德/厄/日三穿盘 × 荷兰胜平复式，4串1(2注)+3串1(7注)=9注，20倍，360元。结算：德国只赢1球(让平)+厄瓜多尔0-0(让负)双死腿，荷5-1日4-0穿都中但绑一起，9注全挂，-360。",
       "boughtAt": "2026-06-20T19:00:00+08:00",
       "totalStake": 360,
       "multiplier": 20,
@@ -903,7 +903,10 @@
             { "matchIndexId": "2040243", "matchNum": "周六033", "homeTeam": "荷兰", "awayTeam": "瑞典", "market": "had", "selection": "home", "odds": 1.53 }
           ],
           "combinedOdds": 12.7648746,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040244": "2-1", "2040245": "0-0", "2040246": "0-4", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "德国2-1只赢1球(让平不中)+厄瓜多尔0-0(让负)→全挂。"
         },
         {
           "type": "4串1",
@@ -918,7 +921,10 @@
             { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
           ],
           "combinedOdds": 31.9378215,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040244": "2-1", "2040245": "0-0", "2040246": "0-4", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "德国让平+厄瓜多尔让负+荷兰胜非平→全挂。"
         },
         {
           "type": "3串1",
@@ -932,7 +938,10 @@
             { "matchIndexId": "2040246", "market": "hhad", "selection": "away", "goalLine": 1, "odds": 2.21 }
           ],
           "combinedOdds": 8.3408340,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040244": "2-1", "2040245": "0-0", "2040246": "0-4" },
+          "pnl": -40,
+          "note": "日本4-0穿✅，但德国让平+厄瓜多尔让负→全挂。"
         },
         {
           "type": "3串1",
@@ -946,7 +955,10 @@
             { "matchIndexId": "2040243", "market": "had", "selection": "home", "odds": 1.53 }
           ],
           "combinedOdds": 5.77605,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040244": "2-1", "2040245": "0-0", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "荷兰5-1胜✅，但德国让平+厄瓜多尔让负→全挂。"
         },
         {
           "type": "3串1",
@@ -960,7 +972,10 @@
             { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
           ],
           "combinedOdds": 14.45881,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040244": "2-1", "2040245": "0-0", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "德国让平+厄瓜多尔让负+荷兰胜非平→全挂。"
         },
         {
           "type": "3串1",
@@ -974,7 +989,10 @@
             { "matchIndexId": "2040243", "market": "had", "selection": "home", "odds": 1.53 }
           ],
           "combinedOdds": 6.8998446,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040244": "2-1", "2040246": "0-4", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "日本4-0穿✅+荷兰5-1胜✅，但德国2-1只赢1球让平→全挂。德国单独死腿拖垮。"
         },
         {
           "type": "3串1",
@@ -988,7 +1006,10 @@
             { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
           ],
           "combinedOdds": 17.2791486,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040244": "2-1", "2040246": "0-4", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "德国让平+荷兰胜非平→全挂。"
         },
         {
           "type": "3串1",
@@ -1002,7 +1023,10 @@
             { "matchIndexId": "2040243", "market": "had", "selection": "home", "odds": 1.53 }
           ],
           "combinedOdds": 6.2470055,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040245": "0-0", "2040246": "0-4", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "日本4-0穿✅+荷兰5-1胜✅，但厄瓜多尔0-0(让负)→全挂。厄瓜多尔单独死腿拖垮。"
         },
         {
           "type": "3串1",
@@ -1016,23 +1040,22 @@
             { "matchIndexId": "2040243", "market": "had", "selection": "draw", "odds": 3.83 }
           ],
           "combinedOdds": 15.6684255,
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040245": "0-0", "2040246": "0-4", "2040243": "5-1" },
+          "pnl": -40,
+          "note": "厄瓜多尔0-0让负+荷兰胜非平→全挂。"
         }
       ],
       "summary": {
         "totalStake": 360,
+        "totalReturn": 0,
+        "netPnl": -360,
+        "roi": -1.0,
         "multiplier": 20,
         "unitPrice": 2,
         "totalLegs": 9,
-        "payoutScenario": {
-          "threeThrough_netherlandsDraw": 4534.4,
-          "threeThrough_netherlandsWin": 1776.8,
-          "threeThrough_netherlandsLoss": 313.6,
-          "germanyMiss_netherlandsDraw": 606.7,
-          "ecuadorMiss_netherlandsDraw": 681.2,
-          "japanMiss_netherlandsDraw": 558.4
-        },
-        "pendingNote": "9注(2个4串1+7个3串1)。核心：德/厄/日三穿盘，荷兰胜平复式放大回报。荷兰复式是放大器：荷平时所有含荷注赔率翻倍。耐揍结构：荷平+任一穿盘挂仍多正收益。全损仅在'荷胜+某穿盘挂'。全中荷平最高+4534。"
+        "settledScore": { "2040243": "5-1", "2040244": "2-1", "2040245": "0-0", "2040246": "0-4" },
+        "settledNote": "全损360元。荷兰5-1大胜✅、日本4-0穿✅都中，但德国2-1只赢1球(让平不中)、厄瓜多尔0-0平局(让负)两条死腿。9注里7注含德国、6注含厄瓜多尔，两条死腿覆盖了几乎所有注。讽刺：荷兰和日本表现最好却绑在死腿上。厄瓜多尔0-0验证了赛前数据担忧(连续0-0记录)。"
       }
     }
   ]

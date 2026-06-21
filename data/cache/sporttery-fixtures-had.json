@@ -1,33 +1,6 @@
 {
-  "expiresAt": 1781950305465,
+  "expiresAt": 1782051407889,
   "data": [
-    {
-      "id": "2040243",
-      "homeTeam": "荷兰",
-      "awayTeam": "瑞典",
-      "commenceTime": "2026-06-21T01:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周六033"
-    },
-    {
-      "id": "2040244",
-      "homeTeam": "德国",
-      "awayTeam": "科特迪瓦",
-      "commenceTime": "2026-06-21T04:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周六034"
-    },
-    {
-      "id": "2040246",
-      "homeTeam": "突尼斯",
-      "awayTeam": "日本",
-      "commenceTime": "2026-06-21T12:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周六036"
-    },
     {
       "id": "2040248",
       "homeTeam": "比利时",
@@ -81,6 +54,24 @@
       "competition": "世界杯",
       "status": "Selling",
       "matchNum": "周一044"
+    },
+    {
+      "id": "2040257",
+      "homeTeam": "巴拿马",
+      "awayTeam": "克罗地亚",
+      "commenceTime": "2026-06-24T07:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周二047"
+    },
+    {
+      "id": "2040258",
+      "homeTeam": "哥伦比亚",
+      "awayTeam": "刚果金",
+      "commenceTime": "2026-06-24T10:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周二048"
     }
   ]
 }
