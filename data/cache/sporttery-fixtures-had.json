@@ -1,33 +1,6 @@
 {
-  "expiresAt": 1782052757364,
+  "expiresAt": 1782119002069,
   "data": [
-    {
-      "id": "2040248",
-      "homeTeam": "比利时",
-      "awayTeam": "伊朗",
-      "commenceTime": "2026-06-22T03:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周日038"
-    },
-    {
-      "id": "2040249",
-      "homeTeam": "乌拉圭",
-      "awayTeam": "佛得角",
-      "commenceTime": "2026-06-22T06:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周日039"
-    },
-    {
-      "id": "2040250",
-      "homeTeam": "新西兰",
-      "awayTeam": "埃及",
-      "commenceTime": "2026-06-22T09:00:00+08:00",
-      "competition": "世界杯",
-      "status": "Selling",
-      "matchNum": "周日040"
-    },
     {
       "id": "2040251",
       "homeTeam": "阿根廷",
@@ -72,6 +45,51 @@
       "competition": "世界杯",
       "status": "Selling",
       "matchNum": "周二048"
+    },
+    {
+      "id": "2040285",
+      "homeTeam": "瑞士",
+      "awayTeam": "加拿大",
+      "commenceTime": "2026-06-25T03:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周三049"
+    },
+    {
+      "id": "2040286",
+      "homeTeam": "波黑",
+      "awayTeam": "卡塔尔",
+      "commenceTime": "2026-06-25T03:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周三050"
+    },
+    {
+      "id": "2040287",
+      "homeTeam": "苏格兰",
+      "awayTeam": "巴西",
+      "commenceTime": "2026-06-25T06:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周三051"
+    },
+    {
+      "id": "2040289",
+      "homeTeam": "南非",
+      "awayTeam": "韩国",
+      "commenceTime": "2026-06-25T09:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周三053"
+    },
+    {
+      "id": "2040290",
+      "homeTeam": "捷克",
+      "awayTeam": "墨西哥",
+      "commenceTime": "2026-06-25T09:00:00+08:00",
+      "competition": "世界杯",
+      "status": "Selling",
+      "matchNum": "周三054"
     }
   ]
 }

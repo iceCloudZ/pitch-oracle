@@ -2,38 +2,38 @@
   "accuracy": [
     {
       "agentId": "glm-blind",
-      "totalPoints": 19,
-      "matches": 24,
+      "totalPoints": 20,
+      "matches": 27,
       "exactScores": 2,
-      "correctResults": 13
+      "correctResults": 14
     },
     {
       "agentId": "glm-odds",
-      "totalPoints": 19,
-      "matches": 24,
+      "totalPoints": 20,
+      "matches": 27,
       "exactScores": 2,
-      "correctResults": 13
+      "correctResults": 14
     },
     {
       "agentId": "qwen-odds",
-      "totalPoints": 18,
-      "matches": 19,
+      "totalPoints": 19,
+      "matches": 22,
       "exactScores": 3,
-      "correctResults": 9
-    },
-    {
-      "agentId": "deepseek-odds",
-      "totalPoints": 16,
-      "matches": 19,
-      "exactScores": 2,
       "correctResults": 10
     },
     {
-      "agentId": "qwen-blind",
-      "totalPoints": 14,
-      "matches": 19,
-      "exactScores": 1,
+      "agentId": "deepseek-odds",
+      "totalPoints": 17,
+      "matches": 22,
+      "exactScores": 2,
       "correctResults": 11
+    },
+    {
+      "agentId": "qwen-blind",
+      "totalPoints": 15,
+      "matches": 22,
+      "exactScores": 1,
+      "correctResults": 12
     },
     {
       "agentId": "me-ai",
@@ -44,10 +44,10 @@
     },
     {
       "agentId": "deepseek-blind",
-      "totalPoints": 12,
-      "matches": 19,
+      "totalPoints": 13,
+      "matches": 22,
       "exactScores": 0,
-      "correctResults": 12
+      "correctResults": 13
     }
   ],
   "betting": [
@@ -61,10 +61,10 @@
     },
     {
       "agentId": "deepseek-odds",
-      "settledBets": 1,
+      "settledBets": 2,
       "wonBets": 0,
-      "totalStakedUnits": 6.043956043956049,
-      "totalPnlUnits": -6.043956043956049,
+      "totalStakedUnits": 7.3094839942666106,
+      "totalPnlUnits": -7.3094839942666106,
       "roiPct": -100
     },
     {
@@ -77,20 +77,20 @@
     },
     {
       "agentId": "qwen-blind",
-      "settledBets": 20,
-      "wonBets": 4,
-      "totalStakedUnits": 225.88572785247212,
-      "totalPnlUnits": -170.29557566924754,
-      "roiPct": -75.39014407340912
+      "settledBets": 23,
+      "wonBets": 5,
+      "totalStakedUnits": 248.652853457699,
+      "totalPnlUnits": -163.05950978511274,
+      "roiPct": -65.57717215694552
     },
     {
       "agentId": "deepseek-blind",
-      "settledBets": 26,
-      "wonBets": 2,
-      "totalStakedUnits": 273.4884718034065,
-      "totalPnlUnits": -238.5877562399003,
-      "roiPct": -87.23868858772441
+      "settledBets": 31,
+      "wonBets": 3,
+      "totalStakedUnits": 425.90635156940846,
+      "totalPnlUnits": -369.77097342921513,
+      "roiPct": -86.81978375449394
     }
   ],
-  "generatedAt": "2026-06-21T14:11:49.087Z"
+  "generatedAt": "2026-06-22T08:58:22.998Z"
 }
