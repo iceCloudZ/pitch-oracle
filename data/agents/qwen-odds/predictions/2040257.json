@@ -1,8 +1,8 @@
 {
   "resultProbs": {
-    "home": 0.14,
+    "home": 0.12,
     "draw": 0.23,
-    "away": 0.63
+    "away": 0.65
   },
   "scoreProbs": [
     {
@@ -10,25 +10,25 @@
       "prob": 0.18
     },
     {
-      "score": "1-2",
-      "prob": 0.15
+      "score": "0-1",
+      "prob": 0.16
     },
     {
-      "score": "0-1",
+      "score": "1-2",
       "prob": 0.14
     },
     {
-      "score": "1-1",
-      "prob": 0.12
+      "score": "0-3",
+      "prob": 0.11
     },
     {
-      "score": "0-3",
-      "prob": 0.09
+      "score": "1-1",
+      "prob": 0.1
     }
   ],
   "confidence": 0.75,
-  "reasoning": "Croatia's superior technical quality and World Cup experience heavily favor them against Panama. The market odds (1.41 for away win) imply a ~63% probability, which aligns with the significant gap in squad depth and tactical discipline. Panama may defend resolutely, making a low-scoring affair likely, but Croatia's ability to control possession should lead to a comfortable victory.",
+  "reasoning": "Croatia's superior technical quality and World Cup experience significantly outweigh Panama's physical approach. The market odds heavily favor the away side, reflecting Croatia's ability to control possession and exploit defensive gaps. While Panama may defend resolutely, a low-scoring Croatian victory is the most probable outcome.",
   "agentId": "qwen-odds",
   "matchId": "2040257",
-  "createdAt": "2026-06-21T14:40:25.071Z"
+  "createdAt": "2026-06-22T09:19:22.238Z"
 }

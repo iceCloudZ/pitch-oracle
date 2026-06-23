@@ -7,28 +7,28 @@
   "scoreProbs": [
     {
       "score": "1-0",
-      "prob": 0.18
+      "prob": 0.15
     },
     {
       "score": "2-0",
-      "prob": 0.16
-    },
-    {
-      "score": "1-1",
-      "prob": 0.12
+      "prob": 0.14
     },
     {
       "score": "2-1",
+      "prob": 0.12
+    },
+    {
+      "score": "1-1",
       "prob": 0.1
     },
     {
-      "score": "0-0",
+      "score": "3-0",
       "prob": 0.08
     }
   ],
-  "confidence": 0.75,
-  "reasoning": "Colombia's superior quality and World Cup experience give them a clear edge; DR Congo will be resilient but likely outclassed.",
+  "confidence": 0.8,
+  "reasoning": "Colombia, with superior talent and World Cup experience, is expected to dominate possession and create more chances against a DR Congo side that lacks high-level international exposure. However, DR Congo's physicality could keep the match relatively close.",
   "agentId": "deepseek-blind",
   "matchId": "2040258",
-  "createdAt": "2026-06-21T14:40:37.653Z"
+  "createdAt": "2026-06-22T09:19:38.478Z"
 }

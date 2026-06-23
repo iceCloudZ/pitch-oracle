@@ -1,34 +1,34 @@
 {
   "resultProbs": {
-    "home": 0.15,
-    "draw": 0.23,
-    "away": 0.62
+    "home": 0.14,
+    "draw": 0.22,
+    "away": 0.64
   },
   "scoreProbs": [
     {
       "score": "0-1",
-      "prob": 0.15
+      "prob": 0.2
     },
     {
       "score": "0-2",
-      "prob": 0.12
+      "prob": 0.14
     },
     {
       "score": "1-1",
-      "prob": 0.1
-    },
-    {
-      "score": "0-0",
       "prob": 0.09
     },
     {
       "score": "1-2",
       "prob": 0.08
+    },
+    {
+      "score": "0-3",
+      "prob": 0.06
     }
   ],
-  "confidence": 0.68,
-  "reasoning": "Algeria are clear favorites, implied by odds and superior squad. Jordan expected to sit back, leading to a low-scoring game. Most probable outcomes involve Algeria winning by one or two goals, though a draw is also plausible.",
+  "confidence": 0.75,
+  "reasoning": "Algeria is the stronger team with market odds implying over 60% win probability. Jordan is the underdog. Expect a controlled low-scoring win for Algeria.",
   "agentId": "deepseek-odds",
   "matchId": "2040254",
-  "createdAt": "2026-06-21T14:39:09.993Z"
+  "createdAt": "2026-06-22T09:18:27.319Z"
 }

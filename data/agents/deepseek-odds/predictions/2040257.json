@@ -1,34 +1,34 @@
 {
   "resultProbs": {
     "home": 0.12,
-    "draw": 0.22,
-    "away": 0.66
+    "draw": 0.2,
+    "away": 0.68
   },
   "scoreProbs": [
     {
-      "score": "0-1",
+      "score": "0-2",
       "prob": 0.15
     },
     {
-      "score": "0-2",
-      "prob": 0.12
-    },
-    {
-      "score": "1-1",
-      "prob": 0.1
-    },
-    {
-      "score": "0-0",
-      "prob": 0.09
+      "score": "0-1",
+      "prob": 0.14
     },
     {
       "score": "1-2",
+      "prob": 0.1
+    },
+    {
+      "score": "0-3",
+      "prob": 0.09
+    },
+    {
+      "score": "1-1",
       "prob": 0.08
     }
   ],
-  "confidence": 0.85,
-  "reasoning": "克罗地亚整体实力远超巴拿马，市场赔率也反映客胜概率约63%。预计克罗地亚控制场面，巴拿马难有威胁，但克罗地亚可能小胜。考虑到杯赛偶然性，给予平局和冷门概率。",
+  "confidence": 0.7,
+  "reasoning": "Croatia's superior quality and World Cup experience against a less competitive Panama side, though set-piece threats could narrow the gap.",
   "agentId": "deepseek-odds",
   "matchId": "2040257",
-  "createdAt": "2026-06-21T14:40:12.607Z"
+  "createdAt": "2026-06-22T09:19:09.871Z"
 }

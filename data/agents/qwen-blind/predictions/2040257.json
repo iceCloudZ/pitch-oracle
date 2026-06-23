@@ -1,8 +1,8 @@
 {
   "resultProbs": {
-    "home": 0.15,
-    "draw": 0.25,
-    "away": 0.6
+    "home": 0.12,
+    "draw": 0.23,
+    "away": 0.65
   },
   "scoreProbs": [
     {
@@ -18,17 +18,17 @@
       "prob": 0.14
     },
     {
-      "score": "1-3",
-      "prob": 0.1
+      "score": "1-1",
+      "prob": 0.12
     },
     {
-      "score": "1-1",
-      "prob": 0.09
+      "score": "0-3",
+      "prob": 0.1
     }
   ],
   "confidence": 0.75,
-  "reasoning": "Croatia possesses significantly higher technical quality and World Cup experience compared to Panama. While Panama may defend resolutely, Croatia's midfield control and clinical finishing should secure a comfortable win in regular time.",
+  "reasoning": "Croatia possesses superior technical quality and midfield control compared to Panama. While Panama is organized defensively, Croatia's experience in major tournaments and ability to break down low blocks makes them clear favorites. A comfortable away win is the most likely outcome, though a narrow victory or draw remains possible if Panama defends resolutely.",
   "agentId": "qwen-blind",
   "matchId": "2040257",
-  "createdAt": "2026-06-21T14:40:18.662Z"
+  "createdAt": "2026-06-22T09:19:16.316Z"
 }

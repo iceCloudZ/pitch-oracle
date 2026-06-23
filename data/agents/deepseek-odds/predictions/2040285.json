@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.4,
+    "draw": 0.31,
+    "away": 0.29
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "1-0",
+      "prob": 0.11
+    },
+    {
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    },
+    {
+      "score": "2-0",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.7,
+  "reasoning": "Switzerland's technical edge and experience make them favorites, but Canada's co-host status and home crowd provide a significant boost. The match is expected to be tight, with Switzerland slightly more likely to edge it. Draw probability elevated due to both teams' defensive organization.",
+  "agentId": "deepseek-odds",
+  "matchId": "2040285",
+  "createdAt": "2026-06-22T09:22:11.519Z"
+}

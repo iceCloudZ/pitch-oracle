@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.25,
+    "draw": 0.3,
+    "away": 0.45
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "0-1",
+      "prob": 0.11
+    },
+    {
+      "score": "1-2",
+      "prob": 0.09
+    },
+    {
+      "score": "0-0",
+      "prob": 0.08
+    },
+    {
+      "score": "1-0",
+      "prob": 0.07
+    }
+  ],
+  "confidence": 0.45,
+  "reasoning": "Mexico is historically stronger with higher FIFA ranking, but Czech home advantage and future uncertainty limit confidence.",
+  "agentId": "deepseek-blind",
+  "matchId": "2040290",
+  "createdAt": "2026-06-22T09:26:23.329Z"
+}

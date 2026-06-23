@@ -1,34 +1,34 @@
 {
   "resultProbs": {
-    "home": 0.09,
-    "draw": 0.17,
-    "away": 0.74
+    "home": 0.1,
+    "draw": 0.2,
+    "away": 0.7
   },
   "scoreProbs": [
     {
-      "score": "0-2",
-      "prob": 0.147
+      "score": "0-1",
+      "prob": 0.25
     },
     {
-      "score": "0-1",
-      "prob": 0.1338
+      "score": "0-2",
+      "prob": 0.2
     },
     {
       "score": "0-3",
-      "prob": 0.1079
+      "prob": 0.1
     },
     {
       "score": "1-2",
-      "prob": 0.0883
+      "prob": 0.08
     },
     {
-      "score": "1-1",
-      "prob": 0.0803
+      "score": "0-0",
+      "prob": 0.07
     }
   ],
-  "confidence": 0.65,
-  "reasoning": "Croatia's superior experience and technical quality, plus historical performance, make them clear favorites. Panama likely to defend deep, but expected to concede. Draw possible if Panama stays compact.",
+  "confidence": 0.85,
+  "reasoning": "Croatia's vast experience and technical edge over Panama, who typically struggle against top nations, make a Croatia win likely. Panama may defend deep but quality gap should lead to a low-scoring Croatia victory.",
   "agentId": "deepseek-blind",
   "matchId": "2040257",
-  "createdAt": "2026-06-21T14:39:59.765Z"
+  "createdAt": "2026-06-22T09:18:56.693Z"
 }

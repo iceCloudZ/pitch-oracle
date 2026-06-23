@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.12,
+    "draw": 0.23,
+    "away": 0.65
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.18
+    },
+    {
+      "score": "1-2",
+      "prob": 0.16
+    },
+    {
+      "score": "0-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-3",
+      "prob": 0.11
+    },
+    {
+      "score": "1-1",
+      "prob": 0.1
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Brazil's superior individual talent and attacking depth significantly outweigh Scotland's defensive organization. While Scotland can be resilient in World Cup group stages, Brazil's quality in transition and set pieces should secure a victory in regular time.",
+  "agentId": "qwen-blind",
+  "matchId": "2040287",
+  "createdAt": "2026-06-22T09:24:57.452Z"
+}

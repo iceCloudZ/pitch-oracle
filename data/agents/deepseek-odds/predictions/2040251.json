@@ -11,24 +11,24 @@
     },
     {
       "score": "2-0",
-      "prob": 0.12
-    },
-    {
-      "score": "2-1",
-      "prob": 0.1
+      "prob": 0.14
     },
     {
       "score": "1-1",
       "prob": 0.1
     },
     {
-      "score": "0-0",
-      "prob": 0.08
+      "score": "2-1",
+      "prob": 0.09
+    },
+    {
+      "score": "3-0",
+      "prob": 0.09
     }
   ],
   "confidence": 0.7,
-  "reasoning": "Argentina are defending champions with a deep squad, even beyond Messi. Austria are competitive but clear underdogs; likely to defend deep.",
+  "reasoning": "Argentina clear favorites with world-class talent, but aging Messi dependency raises slight uncertainty. Austria organized and capable of a draw, but lack firepower for frequent upsets.",
   "agentId": "deepseek-odds",
   "matchId": "2040251",
-  "createdAt": "2026-06-21T14:37:21.101Z"
+  "createdAt": "2026-06-22T09:16:35.462Z"
 }

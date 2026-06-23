@@ -1,34 +1,34 @@
 {
   "resultProbs": {
-    "home": 0.48,
-    "draw": 0.27,
-    "away": 0.25
+    "home": 0.52,
+    "draw": 0.26,
+    "away": 0.22
   },
   "scoreProbs": [
     {
       "score": "1-0",
-      "prob": 0.13
+      "prob": 0.18
     },
     {
       "score": "1-1",
-      "prob": 0.12
+      "prob": 0.14
     },
     {
       "score": "2-1",
-      "prob": 0.1
+      "prob": 0.13
+    },
+    {
+      "score": "2-0",
+      "prob": 0.11
     },
     {
       "score": "0-0",
       "prob": 0.09
-    },
-    {
-      "score": "2-0",
-      "prob": 0.08
     }
   ],
   "confidence": 0.65,
-  "reasoning": "Market odds slightly favor Norway (Home) at 1.95, implying a ~48% win probability after margin adjustment. Senegal is a strong physical side but often struggles against organized European defenses in neutral venues. The tight draw and away odds suggest a low-scoring, tactical affair where Norway's home advantage (or perceived neutrality bias) gives them the edge.",
+  "reasoning": "Market odds favor Norway (Home) with an implied probability of ~52% after adjusting for overround. Norway's structured defensive approach and home advantage in this hypothetical fixture give them the edge against a Senegal side that relies on individual brilliance but may struggle against organized low blocks. The high draw probability reflects the potential for a tight, tactical stalemate typical of World Cup group stages.",
   "agentId": "qwen-odds",
   "matchId": "2040253",
-  "createdAt": "2026-06-21T14:38:16.107Z"
+  "createdAt": "2026-06-22T09:17:30.063Z"
 }

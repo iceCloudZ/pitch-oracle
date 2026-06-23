@@ -1,0 +1,14 @@
+[
+  {
+    "matchId": "2040285",
+    "agentId": "deepseek-blind",
+    "market": "away",
+    "modelProb": 0.35,
+    "impliedProb": 0.3125,
+    "decimalOdds": 3.2,
+    "oddsTimestamp": "2026-06-22 16:25:14",
+    "ev": 0.11999999999999988,
+    "kellyFraction": 0.05454545454545449,
+    "recommendedStakePct": 0.013636363636363622
+  }
+]

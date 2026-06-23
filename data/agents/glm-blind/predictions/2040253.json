@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040253",
+  "resultProbs": {
+    "home": 0.46,
+    "draw": 0.30,
+    "away": 0.24
+  },
+  "scoreProbs": [
+    { "score": "1-1", "prob": 0.15 },
+    { "score": "1-0", "prob": 0.12 },
+    { "score": "0-0", "prob": 0.11 },
+    { "score": "2-1", "prob": 0.09 },
+    { "score": "0-1", "prob": 0.08 }
+  ],
+  "confidence": 0.46,
+  "reasoning": "挪威哈兰德领衔但塞内加尔非洲冠军实力不弱，两队胶着。低进球局，1-1平局是合理首选，0-0也有可能。这届世界杯平局频发进一步支持平局判断。",
+  "createdAt": "2026-06-22T09:24:36.518Z"
+}

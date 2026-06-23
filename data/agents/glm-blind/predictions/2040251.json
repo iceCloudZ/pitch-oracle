@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040251",
+  "resultProbs": {
+    "home": 0.72,
+    "draw": 0.20,
+    "away": 0.08
+  },
+  "scoreProbs": [
+    { "score": "2-0", "prob": 0.18 },
+    { "score": "1-0", "prob": 0.15 },
+    { "score": "2-1", "prob": 0.11 },
+    { "score": "1-1", "prob": 0.10 },
+    { "score": "3-0", "prob": 0.09 }
+  ],
+  "confidence": 0.70,
+  "reasoning": "阿根廷刚3-0胜阿尔及利亚状态在线，梅西阿尔瓦雷斯领衔进攻端，对奥地利(欧洲二流)实力占优。预计小胜，2-0或1-0最可能。",
+  "createdAt": "2026-06-22T09:24:36.518Z"
+}

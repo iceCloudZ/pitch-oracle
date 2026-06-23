@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.26,
+    "draw": 0.27,
+    "away": 0.47
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.13
+    },
+    {
+      "score": "0-1",
+      "prob": 0.12
+    },
+    {
+      "score": "1-2",
+      "prob": 0.11
+    },
+    {
+      "score": "0-0",
+      "prob": 0.09
+    },
+    {
+      "score": "1-0",
+      "prob": 0.08
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Market odds strongly favor Mexico (implied ~48% win prob). Czechia's physical style may struggle against Mexico's technical midfield control in a World Cup setting. Expect a tight game with low scoring, but Mexico's superior squad depth and recent form give them the edge.",
+  "agentId": "qwen-odds",
+  "matchId": "2040290",
+  "createdAt": "2026-06-22T09:27:08.606Z"
+}

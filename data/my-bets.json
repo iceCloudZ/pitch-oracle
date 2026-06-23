@@ -1096,6 +1096,53 @@
         "settledScore": { "2040248": "0-0", "2040249": "2-2", "2040250": "1-3" },
         "settledNote": "全损100元。比利时0-0+乌拉圭2-2双平局(都让负)，埃及1-3客胜✅但绑在死腿上。讽刺：赛前所有AI最一致看好乌拉圭(0.67-0.89)，结果佛得角硬生生逼平。比利时0-0验证伊朗防守顽强的赛前预警。"
       }
+    },
+    {
+      "id": "slip-009",
+      "description": "6/23三场。GLM指导胜负盘：阿根廷胜×阿尔及利亚胜 2串1 + 挪威vs塞内加尔平局单关。纯胜负不碰穿盘，规避连亏主因。50+50=100元。",
+      "boughtAt": "2026-06-22T17:24:00+08:00",
+      "totalStake": 100,
+      "unitPrice": 2,
+      "totalLegs": 2,
+      "legs": [
+        {
+          "type": "2串1",
+          "combination": "阿根廷胜 × 阿尔及利亚客胜",
+          "count": 1,
+          "multiplier": 25,
+          "stake": 50,
+          "matches": [
+            { "matchIndexId": "2040251", "matchNum": "周一041", "homeTeam": "阿根廷", "awayTeam": "奥地利", "market": "had", "selection": "home", "odds": 1.30 },
+            { "matchIndexId": "2040254", "matchNum": "周一044", "homeTeam": "约旦", "awayTeam": "阿尔及利亚", "market": "had", "selection": "away", "odds": 1.38 }
+          ],
+          "combinedOdds": 1.794,
+          "status": "pending"
+        },
+        {
+          "type": "单关",
+          "combination": "挪威 vs 塞内加尔 平局",
+          "count": 1,
+          "multiplier": 25,
+          "stake": 50,
+          "matches": [
+            { "matchIndexId": "2040253", "matchNum": "周一043", "homeTeam": "挪威", "awayTeam": "塞内加尔", "market": "had", "selection": "draw", "odds": 3.48, "note": "GLM平局概率0.28-0.30，3.48赔率EV为正" }
+          ],
+          "status": "pending"
+        }
+      ],
+      "summary": {
+        "totalStake": 100,
+        "multiplier": 25,
+        "unitPrice": 2,
+        "totalLegs": 2,
+        "payoutScenario": {
+          "argAlgeWin_norwayWin": 39.8,
+          "argAlgeWin_norwayDraw": 113.8,
+          "argAlgeWin_norwayLoss": 39.8,
+          "oneMiss_allMiss": -100
+        },
+        "pendingNote": "2注。Leg1(50元2串1)阿胜×阿胜=1.794，25倍回报+39.8。Leg2(50元单关)挪威平局3.48，25倍回报+74。两注独立互不影响。只要阿+阿都赢大概率+39.8起步。"
+      }
     }
   ]
 }

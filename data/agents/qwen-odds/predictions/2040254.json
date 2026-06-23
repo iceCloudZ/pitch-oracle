@@ -11,7 +11,7 @@
     },
     {
       "score": "0-2",
-      "prob": 0.15
+      "prob": 0.16
     },
     {
       "score": "1-2",
@@ -19,16 +19,16 @@
     },
     {
       "score": "1-1",
-      "prob": 0.11
+      "prob": 0.1
     },
     {
       "score": "0-0",
       "prob": 0.09
     }
   ],
-  "confidence": 0.72,
-  "reasoning": "Algeria is the clear favorite based on market odds (1.44) and superior squad depth compared to Jordan. While Jordan may defend resolutely, Algeria's technical advantage in midfield and attack should allow them to control the game and secure a narrow victory or comfortable win.",
+  "confidence": 0.75,
+  "reasoning": "Algeria is heavily favored by market odds (implied ~72% win prob), reflecting a significant quality gap against Jordan. While World Cup upsets occur, Algeria's superior squad depth and tactical discipline make them the clear favorite. The most likely outcomes are narrow Algerian victories or low-scoring draws if Jordan defends resolutely.",
   "agentId": "qwen-odds",
   "matchId": "2040254",
-  "createdAt": "2026-06-21T14:39:22.541Z"
+  "createdAt": "2026-06-22T09:18:40.545Z"
 }

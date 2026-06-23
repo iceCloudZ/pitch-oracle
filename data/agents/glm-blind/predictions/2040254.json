@@ -1,0 +1,19 @@
+{
+  "agentId": "glm-blind",
+  "matchId": "2040254",
+  "resultProbs": {
+    "home": 0.13,
+    "draw": 0.24,
+    "away": 0.63
+  },
+  "scoreProbs": [
+    { "score": "0-1", "prob": 0.17 },
+    { "score": "0-2", "prob": 0.15 },
+    { "score": "1-1", "prob": 0.11 },
+    { "score": "0-0", "prob": 0.08 },
+    { "score": "1-2", "prob": 0.08 }
+  ],
+  "confidence": 0.63,
+  "reasoning": "阿尔及利亚马赫雷斯领衔硬实力碾压约旦，但约旦死守摆大巴可能让阿尔及利亚攻坚受阻，小胜0-1最可能。有被偷平的小风险。",
+  "createdAt": "2026-06-22T09:24:36.518Z"
+}

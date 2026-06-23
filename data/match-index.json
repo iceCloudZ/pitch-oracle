@@ -138,5 +138,25 @@
   "2040258": {
     "homeTeam": "哥伦比亚",
     "awayTeam": "刚果金"
+  },
+  "2040285": {
+    "homeTeam": "瑞士",
+    "awayTeam": "加拿大"
+  },
+  "2040286": {
+    "homeTeam": "波黑",
+    "awayTeam": "卡塔尔"
+  },
+  "2040287": {
+    "homeTeam": "苏格兰",
+    "awayTeam": "巴西"
+  },
+  "2040289": {
+    "homeTeam": "南非",
+    "awayTeam": "韩国"
+  },
+  "2040290": {
+    "homeTeam": "捷克",
+    "awayTeam": "墨西哥"
   }
 }

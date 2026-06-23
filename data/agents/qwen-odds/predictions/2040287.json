@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.12,
+    "draw": 0.2,
+    "away": 0.68
+  },
+  "scoreProbs": [
+    {
+      "score": "0-2",
+      "prob": 0.18
+    },
+    {
+      "score": "1-2",
+      "prob": 0.15
+    },
+    {
+      "score": "0-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-3",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Brazil's superior individual talent and squad depth heavily favor them against a disciplined but technically limited Scotland side. While Scotland may organize defensively to keep the scoreline respectable, Brazil's attacking quality is likely to break through, making an away win the clear probable outcome.",
+  "agentId": "qwen-odds",
+  "matchId": "2040287",
+  "createdAt": "2026-06-22T09:25:05.818Z"
+}

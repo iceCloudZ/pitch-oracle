@@ -4,11 +4,11 @@
     "agentId": "qwen-blind",
     "market": "away",
     "modelProb": 0.37,
-    "impliedProb": 0.3125,
-    "decimalOdds": 3.2,
-    "oddsTimestamp": "2026-06-21 21:08:31",
-    "ev": 0.18399999999999994,
-    "kellyFraction": 0.0836363636363636,
-    "recommendedStakePct": 0.0209090909090909
+    "impliedProb": 0.3048780487804878,
+    "decimalOdds": 3.28,
+    "oddsTimestamp": "2026-06-22 16:25:14",
+    "ev": 0.2136,
+    "kellyFraction": 0.0936842105263158,
+    "recommendedStakePct": 0.02342105263157895
   }
 ]

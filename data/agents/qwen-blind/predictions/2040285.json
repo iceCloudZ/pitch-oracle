@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.42,
+    "draw": 0.31,
+    "away": 0.27
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-0",
+      "prob": 0.13
+    },
+    {
+      "score": "2-1",
+      "prob": 0.11
+    },
+    {
+      "score": "0-0",
+      "prob": 0.1
+    },
+    {
+      "score": "0-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Switzerland's tactical discipline and experience in major tournaments give them a slight edge over Canada's athletic but less structured approach. Expect a tight, low-scoring affair where Switzerland controls possession but Canada remains dangerous on the counter.",
+  "agentId": "qwen-blind",
+  "matchId": "2040285",
+  "createdAt": "2026-06-22T09:22:17.085Z"
+}

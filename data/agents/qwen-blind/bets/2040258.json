@@ -1,0 +1,14 @@
+[
+  {
+    "matchId": "2040258",
+    "agentId": "qwen-blind",
+    "market": "away",
+    "modelProb": 0.15,
+    "impliedProb": 0.13333333333333333,
+    "decimalOdds": 7.5,
+    "oddsTimestamp": "2026-06-22 16:25:14",
+    "ev": 0.125,
+    "kellyFraction": 0.019230769230769232,
+    "recommendedStakePct": 0.004807692307692308
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.68,
+    "draw": 0.2,
+    "away": 0.12
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.15
+    },
+    {
+      "score": "2-1",
+      "prob": 0.13
+    },
+    {
+      "score": "1-1",
+      "prob": 0.11
+    },
+    {
+      "score": "3-0",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Market odds heavily favor Bosnia (Home) at 1.38, implying a ~68% win probability. Qatar's lower FIFA ranking and historical struggles against European sides in neutral/away contexts support this. The significant gap in quality suggests a comfortable home win, likely with a clean sheet or single goal conceded.",
+  "agentId": "qwen-odds",
+  "matchId": "2040286",
+  "createdAt": "2026-06-22T09:23:42.051Z"
+}

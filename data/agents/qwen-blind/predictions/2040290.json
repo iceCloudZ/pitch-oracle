@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.32,
+    "draw": 0.29,
+    "away": 0.39
+  },
+  "scoreProbs": [
+    {
+      "score": "1-1",
+      "prob": 0.14
+    },
+    {
+      "score": "0-1",
+      "prob": 0.13
+    },
+    {
+      "score": "1-0",
+      "prob": 0.12
+    },
+    {
+      "score": "1-2",
+      "prob": 0.1
+    },
+    {
+      "score": "0-0",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.65,
+  "reasoning": "Mexico typically holds a slight tactical edge in midfield organization and counter-attacking efficiency against European sides like Czechia, who can be defensively rigid but lack consistent finishing. The match is likely to be tight and low-scoring, with Mexico's experience in World Cup group stages giving them a marginal advantage.",
+  "agentId": "qwen-blind",
+  "matchId": "2040290",
+  "createdAt": "2026-06-22T09:27:01.919Z"
+}

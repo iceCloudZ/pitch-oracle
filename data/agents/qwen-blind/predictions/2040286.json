@@ -1,0 +1,34 @@
+{
+  "resultProbs": {
+    "home": 0.62,
+    "draw": 0.23,
+    "away": 0.15
+  },
+  "scoreProbs": [
+    {
+      "score": "2-0",
+      "prob": 0.18
+    },
+    {
+      "score": "1-0",
+      "prob": 0.16
+    },
+    {
+      "score": "2-1",
+      "prob": 0.14
+    },
+    {
+      "score": "1-1",
+      "prob": 0.12
+    },
+    {
+      "score": "3-1",
+      "prob": 0.09
+    }
+  ],
+  "confidence": 0.75,
+  "reasoning": "Bosnia and Herzegovina possesses a significant advantage in physicality, aerial ability, and European club experience compared to Qatar. While Qatar has improved technically under recent management, they struggle against high-intensity pressing and set-piece threats typical of Balkan teams. Bosnia's home-like support or neutral venue adaptation favors their structured approach, making them clear favorites despite potential defensive lapses.",
+  "agentId": "qwen-blind",
+  "matchId": "2040286",
+  "createdAt": "2026-06-22T09:23:35.583Z"
+}
