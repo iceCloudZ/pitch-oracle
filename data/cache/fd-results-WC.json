@@ -1,5 +1,5 @@
 {
-  "expiresAt": 1782119002069,
+  "expiresAt": 1782210443329,
   "data": [
     {
       "matchId": "537327",
@@ -280,6 +280,34 @@
       "awayScore": 3,
       "homeTeam": "New Zealand",
       "awayTeam": "Egypt"
+    },
+    {
+      "matchId": "537399",
+      "homeScore": 2,
+      "awayScore": 0,
+      "homeTeam": "Argentina",
+      "awayTeam": "Austria"
+    },
+    {
+      "matchId": "537393",
+      "homeScore": 3,
+      "awayScore": 0,
+      "homeTeam": "France",
+      "awayTeam": "Iraq"
+    },
+    {
+      "matchId": "537394",
+      "homeScore": 3,
+      "awayScore": 2,
+      "homeTeam": "Norway",
+      "awayTeam": "Senegal"
+    },
+    {
+      "matchId": "537400",
+      "homeScore": 1,
+      "awayScore": 2,
+      "homeTeam": "Jordan",
+      "awayTeam": "Algeria"
     }
   ]
 }

@@ -1099,7 +1099,7 @@
     },
     {
       "id": "slip-009",
-      "description": "6/23三场。GLM指导胜负盘：阿根廷胜×阿尔及利亚胜 2串1 + 挪威vs塞内加尔平局单关。纯胜负不碰穿盘，规避连亏主因。50+50=100元。",
+      "description": "6/23三场。GLM指导胜负盘：阿根廷胜×阿尔及利亚胜 2串1 + 挪威vs塞内加尔平局单关。纯胜负不碰穿盘，规避连亏主因。结算：阿2-0✅+阿尔1-2客胜✅Leg1中+39.7，挪威3-2赢Leg2平局挂-50，净-10.3。终于不全损。",
       "boughtAt": "2026-06-22T17:24:00+08:00",
       "totalStake": 100,
       "unitPrice": 2,
@@ -1116,7 +1116,11 @@
             { "matchIndexId": "2040254", "matchNum": "周一044", "homeTeam": "约旦", "awayTeam": "阿尔及利亚", "market": "had", "selection": "away", "odds": 1.38 }
           ],
           "combinedOdds": 1.794,
-          "status": "pending"
+          "status": "won",
+          "settledScore": { "2040251": "2-0", "2040254": "1-2" },
+          "payout": 89.7,
+          "pnl": 39.7,
+          "note": "阿根廷2-0胜✅+约旦1-2阿尔及利亚客胜✅，2串1全中！1.794×25×2=89.7元回报，净赚39.7元。"
         },
         {
           "type": "单关",
@@ -1127,21 +1131,22 @@
           "matches": [
             { "matchIndexId": "2040253", "matchNum": "周一043", "homeTeam": "挪威", "awayTeam": "塞内加尔", "market": "had", "selection": "draw", "odds": 3.48, "note": "GLM平局概率0.28-0.30，3.48赔率EV为正" }
           ],
-          "status": "pending"
+          "status": "lost",
+          "settledScore": { "2040253": "3-2" },
+          "pnl": -50,
+          "note": "挪威3-2赢塞内加尔(选平局不中)。GLM给平局28-30%概率，结果挪威直接赢了。3-2是高进球局，和GLM预期的低进球(1-1/1-0)相反。"
         }
       ],
       "summary": {
         "totalStake": 100,
+        "totalReturn": 89.7,
+        "netPnl": -10.3,
+        "roi": -0.103,
         "multiplier": 25,
         "unitPrice": 2,
         "totalLegs": 2,
-        "payoutScenario": {
-          "argAlgeWin_norwayWin": 39.8,
-          "argAlgeWin_norwayDraw": 113.8,
-          "argAlgeWin_norwayLoss": 39.8,
-          "oneMiss_allMiss": -100
-        },
-        "pendingNote": "2注。Leg1(50元2串1)阿胜×阿胜=1.794，25倍回报+39.8。Leg2(50元单关)挪威平局3.48，25倍回报+74。两注独立互不影响。只要阿+阿都赢大概率+39.8起步。"
+        "settledScore": { "2040251": "2-0", "2040253": "3-2", "2040254": "1-2" },
+        "settledNote": "小亏10.3元。Leg1(阿胜×阿尔胜2串1)全中+39.7✅，Leg2(挪威平单关)挂-50❌。净-10.3。这是9期以来首次非全损——纯胜负策略终于打破了连续全损的魔咒。GLM对阿根廷和阿尔及利亚的判断完全正确。"
       }
     }
   ]
